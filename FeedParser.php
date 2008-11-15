@@ -6,9 +6,13 @@ if (true) {
 	//$feed = $parser->parse('http://mf.feeds.reuters.com/reuters/UKTopNews');
 	//$feed = $parser->parseXml(file_get_contents('testdata/001-reuters.xml'));
 	//$feed = $parser->parseXml(file_get_contents('testdata/002-reuters.xml'));
-	$feed = $parser->parseXml(file_get_contents('testdata/003-guardian.xml'));
-	//echo "FEED: "; print_r($feed);
+	//$feed = $parser->parseXml(file_get_contents('testdata/003-guardian.xml'));
+	//$feed = $parser->parseXml(file_get_contents('testdata/004-guardian.xml'));
+	//$feed = $parser->parseXml(file_get_contents('testdata/005-reuters-video.xml'));
+	$feed = $parser->parseXml(file_get_contents('testdata/006-reuters-video.xml'));
+	echo "FEED: "; print_r($feed);
 }
+
 
 /**
  * An abstract class that supports parsing and processing namespaced data
@@ -528,6 +532,121 @@ class DcNamespaceHandler extends AbstractFeedNamespaceHandler {
 
 
 /**
+ * An implementation of FeedNamespaceHandler for the Yahoo Media namespace
+ * Handles Yahoo media namespaced elements in RSS
+ *
+ * http://search.yahoo.com/mrss
+ **/
+class MediaNamespaceHandler extends AbstractFeedNamespaceHandler {
+	public $prefix = 'dc';
+	
+	// Media containers/collections
+	private $isGroup   = false;
+	private $isContent = false;
+	private $group;
+	private $content;
+	
+	/**
+	 * Callback handler for the FeedParser's startElement callback
+	 **/
+	public function startElement($elData) {
+		switch($elData->elName) {
+			case 'group':
+				$this->isGroup = true;
+				$this->group   = array();
+				break;
+				
+			case 'content':
+				$this->isContent = true;
+				$this->content = (object) NULL;
+				break;
+				
+			case 'text':
+			case 'thumbnail':
+				break;
+
+			default:
+				echo "START media: $elData->elName not handled.\n";
+				break;
+		}
+	}
+	
+	/**
+	 * Callback handler for the FeedParser's startElement callback
+	 **/
+	public function endElement($elData) {
+		switch($elData->elName) {
+			case 'content': // translate into atom:link
+				// pick up any child content.
+				$link = $content;
+				$link->href   = $elData->attr['url']; 
+				$link->rel    = 'enclosure';
+				$link->type   = $elData->attr['type'];
+				if (!empty($elData->attr['filesize'])) {
+					$link->length = $elData->attr['filesize'];
+				}
+				
+				if ($this->isGroup) {
+					if (empty($link->href)) {
+						// TODO: this needs to be more robust.
+						// Need to be able to iterate through the links array
+						// to find the right enclosure link.
+						if (!empty($this->entry->links[0]->href)) {
+							$link->href = $this->entry->links[0]->href;
+						}
+					}
+					array_push($this->group, $link);
+				} elseif ($this->isEntry) {
+					if (empty($this->entry->links)) {
+						$this->entry->links = array();
+					}
+					array_push($this->entry->links, $link);
+					
+					##// Also add it with the media namespace
+					##if (empty($this->entry->{'media-contents'})) {
+					##	$this->entry->{'media-contents'} = array();
+					##}
+					##array_push($this->entry->{'media-contents'}, $elData->attr);
+				}
+				$this->isContent = false;
+				break;
+				
+			case 'group':
+				$this->entry->{$elData->nsName} = $this->group;
+				$this->isGroup = false;
+				break;
+				
+			case 'thumbnail':
+				if ($this->isContent) {
+					$this->content->thumbnail = $elData->attr;
+				} elseif ($this->isGroup) {
+					echo "WARN: thumbnail is inside a group, not content\n";
+				} elseif ($this->isEntry) {
+					echo "WARN: thumbnail is inside an entry, not content\n";
+				}
+				break;
+				
+			case 'text':
+				if ($this->isContent) {
+					echo "WARN: text is inside content, not a group\n";
+				} elseif ($this->isGroup) {
+					$text = (object) $elData->attr;
+					$text->text = $elData->text;
+					array_push($this->group, $text);
+				} elseif ($this->isEntry) {
+					echo "WARN: text is inside an entry, not a group\n";
+				}
+				break;
+				
+			default:
+				echo "END media:   $elData->elName not handled.\n";
+				break;
+		}
+	}
+}
+
+
+/**
  * Parses syndication feeds and returns a normalised data structure
  * based on Atom (RFC4287) constructs. The Parser supports data in
  * namespaces. Each namespace is handled by a separate *NamespaceHandler,
@@ -560,6 +679,7 @@ class FeedParser {
 		'http://www.w3.org/2005/Atom'                 => 'atom',
 		'http://rssnamespace.org/feedburner/ext/1.0'  => 'feedburner',
 		'http://purl.org/dc/elements/1.1/'            => 'dc',
+		'http://search.yahoo.com/mrss/'               => 'media',
 //		'http://purl.org/rss/1.0/modules/taxonomy/'   => 'taxo',
 //		'http://www.itunes.com/dtds/podcast-1.0.dtd'  => 'itunes',
 		'' => 'rss20'
