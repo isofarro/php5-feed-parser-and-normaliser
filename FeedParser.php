@@ -461,7 +461,7 @@ class FeedParser {
 	/**
 	 * Adds a new namespace to be handled. The prefix is used to find
 	 * a supporting NamespaceHandler class by uppercasing the first letter
-	 * and prefixing it to NamespaceHander. So the prefix 'rss20' means the
+	 * and prefixing it to NamespaceHandler. So the prefix 'rss20' means the
 	 * parser looks for the class Rss20NamespaceHandler that extends
 	 * FeedNamespaceHandler.
 	 * 
