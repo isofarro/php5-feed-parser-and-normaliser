@@ -711,27 +711,6 @@ class FeedParser {
 			$this->entry = (object) NULL;
 		}
 
-/********
-		switch($elName) {
-			#
-			# Atom Elements
-			#
-			case 'atom-link':
-				if ($this->isEntry) {
-					if (empty($this->entry->link)) {
-						$this->entry->link = array();
-					}
-					array_push($this->entry->link, $this->xmlData->el->attr);
-				} elseif ($this->isFeed) {
-					if (empty($this->feed->link)) {
-						$this->feed->link = array();
-					}
-					array_push($this->feed->link, $this->xmlData->el->attr);
-				}
-				break;
-		}
-********/
-		
 		$this->endCurrentElement();
 	}
 
@@ -741,7 +720,7 @@ class FeedParser {
 	 * each namespace declared.
 	 **/
 	public function startNamespace($parser, $prefix, $uri) {
-		echo "STARTNS: $prefix = $uri\n";
+		//echo "STARTNS: $prefix = $uri\n";
 		
 		// Initialise the namespace handler now.
 		if (!empty($this->namespaces[$uri])) {
