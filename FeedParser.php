@@ -9,7 +9,9 @@ if (true) {
 	//$feed = $parser->parseXml(file_get_contents('testdata/003-guardian.xml'));
 	//$feed = $parser->parseXml(file_get_contents('testdata/004-guardian.xml'));
 	//$feed = $parser->parseXml(file_get_contents('testdata/005-reuters-video.xml'));
-	$feed = $parser->parseXml(file_get_contents('testdata/006-reuters-video.xml'));
+	//$feed = $parser->parseXml(file_get_contents('testdata/006-reuters-video.xml'));
+	//$feed = $parser->parseXml(file_get_contents('testdata/007-bbc-frontpage.xml'));
+	$feed = $parser->parseXml(file_get_contents('testdata/008-bbc-video.xml'));
 	echo "FEED: "; print_r($feed);
 }
 
@@ -561,6 +563,7 @@ class MediaNamespaceHandler extends AbstractFeedNamespaceHandler {
 				$this->content = (object) NULL;
 				break;
 				
+			case 'player':
 			case 'text':
 			case 'thumbnail':
 				break;
@@ -578,8 +581,10 @@ class MediaNamespaceHandler extends AbstractFeedNamespaceHandler {
 		switch($elData->elName) {
 			case 'content': // translate into atom:link
 				// pick up any child content.
-				$link = $content;
-				$link->href   = $elData->attr['url']; 
+				$link = $this->content;
+				if (!empty($elData->attr['url'])) {
+					$link->href   = $elData->attr['url'];
+				} 
 				$link->rel    = 'enclosure';
 				$link->type   = $elData->attr['type'];
 				if (!empty($elData->attr['filesize'])) {
@@ -622,7 +627,17 @@ class MediaNamespaceHandler extends AbstractFeedNamespaceHandler {
 				} elseif ($this->isGroup) {
 					echo "WARN: thumbnail is inside a group, not content\n";
 				} elseif ($this->isEntry) {
-					echo "WARN: thumbnail is inside an entry, not content\n";
+					$this->entry->{$elData->nsName} = $elData->attr;
+				}
+				break;
+				
+			case 'player':
+				if ($this->isContent) {
+					$this->content->href = $elData->attr['url'];
+				} elseif ($this->isGroup) {
+					echo "WARN: player is inside a group, not content\n";
+				} elseif ($this->isEntry) {
+					echo "WARN: player is inside an entry, not content\n";
 				}
 				break;
 				
