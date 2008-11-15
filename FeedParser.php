@@ -341,6 +341,56 @@ class Rss20NamespaceHandler extends FeedNamespaceHandler {
 	}
 }
 
+/**
+ * An implementation of FeedNamespaceHandler for the Atom namespace/feeds
+ *
+ * http://www.atompub.org/rfc4287.html
+ **/
+class AtomNamespaceHandler extends FeedNamespaceHandler {
+	public $prefix = 'atom';
+	
+	/**
+	 * Callback handler for the FeedParser's startElement callback
+	 **/
+	public function startElement($elData) {
+		switch($elData->elName) {
+			case 'link':
+				break;
+
+			default:
+				echo "START atom: $elData->elName not handled.\n";
+				break;
+		}
+	}
+	
+	/**
+	 * Callback handler for the FeedParser's startElement callback
+	 **/
+	public function endElement($elData) {
+		switch($elData->elName) {
+			case 'link':
+				$link = (object) $elData->attr;
+				if ($this->isEntry) {
+					if (empty($this->entry->links)) {
+						$this->entry->links = array();
+					}
+					array_push($this->entry->links, $link);
+				} elseif($this->isFeed) {
+					if (empty($this->feed->links)) {
+						$this->feed->links = array();
+					}
+					array_push($this->feed->links, $link);
+				}
+				break;
+				
+			default:
+				echo "END atom:   $elData->elName not handled.\n";
+				break;
+		}
+	}
+}
+
+
 
 /**
  * An implementation of FeedNamespaceHandler for the Feedburner namespace
