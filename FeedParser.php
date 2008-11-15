@@ -563,6 +563,9 @@ class MediaNamespaceHandler extends AbstractFeedNamespaceHandler {
 				$this->content = (object) NULL;
 				break;
 				
+			case 'category':
+			case 'copyright':
+			case 'credit':
 			case 'player':
 			case 'text':
 			case 'thumbnail':
@@ -653,6 +656,48 @@ class MediaNamespaceHandler extends AbstractFeedNamespaceHandler {
 				}
 				break;
 				
+			case 'copyright':
+				if ($this->isContent) {
+					echo "WARN: copyright is inside content, not an entry\n";
+				} elseif ($this->isGroup) {
+					echo "WARN: copyright is inside a group, not an entry\n";
+				} elseif ($this->isEntry) {
+					$this->entry->{$elData->nsName} = $elData->text;
+				}
+				break;
+				
+			case 'credit':
+				$credit = (object) NULL;
+				$credit->role = $elData->attr['role'];
+				$credit->text = $elData->text;
+				if ($this->isContent) {
+					echo "WARN: credit is inside content, not an entry\n";
+				} elseif ($this->isGroup) {
+					echo "WARN: credit is inside a group, not an entry\n";
+				} elseif ($this->isEntry) {
+					$this->entry->{$elData->nsName} = $credit;
+				}
+				break;
+
+			case 'category':
+				$category = (object) NULL;
+				if(!empty($elData->attr['scheme'])) {
+					$category->scheme = $elData->attr['scheme'];
+				}
+				$category->term   = $elData->text;
+				
+				if ($this->isContent) {
+					echo "WARN: category is inside content, not an entry\n";
+				} elseif ($this->isGroup) {
+					echo "WARN: category is inside a group, not an entry\n";
+				} elseif ($this->isEntry) {
+					if (empty($this->entry->{'media-categories'})) {
+						$this->entry->{'media-categories'} = array();
+					}
+					array_push($this->entry->{'media-categories'}, $category);
+				}
+				break;
+
 			default:
 				echo "END media:   $elData->elName not handled.\n";
 				break;
