@@ -5,18 +5,19 @@ if (true) {
 	//$feed = $parser->parse('http://feeds.reuters.com/reuters/UKSportsNews');
 	//$feed = $parser->parse('http://mf.feeds.reuters.com/reuters/UKTopNews');
 	//$feed = $parser->parseXml(file_get_contents('testdata/001-reuters.xml'));
-	$feed = $parser->parseXml(file_get_contents('testdata/002-reuters.xml'));
-	echo "FEED: "; print_r($feed);
+	//$feed = $parser->parseXml(file_get_contents('testdata/002-reuters.xml'));
+	$feed = $parser->parseXml(file_get_contents('testdata/003-guardian.xml'));
+	//echo "FEED: "; print_r($feed);
 }
 
 /**
  * An abstract class that supports parsing and processing namespaced data
  * in RSS or Atom feeds. To use this class create a new class named along
- * the lines of {Prefix}NamespaceHandler that extends FeedNamespaceHandler,
- * Where {Prefix} is the internal shortname of the namespace, with the first
- * letter uppercased. For example: The Dublin Core namespace is named
- * internally as 'dc', so the class to handle this namespaced data must be
- * called DcNamespaceHandler.
+ * the lines of {Prefix}NamespaceHandler that extends 
+ * AbstractFeedNamespaceHandler, where {Prefix} is the internal shortname
+ * of the namespace, with the first letter uppercased. For example: 
+ * The Dublin Core namespace is named internally as 'dc', so the class to
+ * handle this namespaced data must be called DcNamespaceHandler.
  * This class needs to implement two methods:
  * * startElement($elData)
  * * endElement($elData)
@@ -24,7 +25,7 @@ if (true) {
  * element.
  *
  **/
-abstract class FeedNamespaceHandler {
+abstract class AbstractFeedNamespaceHandler {
 	public  $prefix='XXX';
 	protected $parser;
 
@@ -76,7 +77,7 @@ abstract class FeedNamespaceHandler {
  * 
  * http://www.rssboard.org/rss-specification
  **/
-class Rss20NamespaceHandler extends FeedNamespaceHandler {
+class Rss20NamespaceHandler extends AbstractFeedNamespaceHandler {
 	public $prefix = 'rss20';
 	
 	// RSS 2.0 specific container flags
@@ -346,7 +347,7 @@ class Rss20NamespaceHandler extends FeedNamespaceHandler {
  *
  * http://www.atompub.org/rfc4287.html
  **/
-class AtomNamespaceHandler extends FeedNamespaceHandler {
+class AtomNamespaceHandler extends AbstractFeedNamespaceHandler {
 	public $prefix = 'atom';
 	
 	/**
@@ -398,7 +399,7 @@ class AtomNamespaceHandler extends FeedNamespaceHandler {
  *
  * http://code.google.com/apis/feedburner/feedburner_namespace_reference.html
  **/
-class FeedburnerNamespaceHandler extends FeedNamespaceHandler {
+class FeedburnerNamespaceHandler extends AbstractFeedNamespaceHandler {
 	public $prefix = 'feedburner';
 	
 	/**
@@ -464,10 +465,72 @@ class FeedburnerNamespaceHandler extends FeedNamespaceHandler {
 	}
 }
 
+
+/**
+ * An implementation of FeedNamespaceHandler for the Dublin Core namespace
+ * Handles dublin core namespaced elements in RSS
+ *
+ * http://dublincore.org/documents/dces/
+ **/
+class DcNamespaceHandler extends AbstractFeedNamespaceHandler {
+	public $prefix = 'dc';
+	
+	/**
+	 * Callback handler for the FeedParser's startElement callback
+	 **/
+	public function startElement($elData) {
+		switch($elData->elName) {
+			case 'creator':
+			case 'type':
+				break;
+
+			default:
+				echo "START dc: $elData->elName not handled.\n";
+				break;
+		}
+	}
+	
+	/**
+	 * Callback handler for the FeedParser's startElement callback
+	 **/
+	public function endElement($elData) {
+		switch($elData->elName) {
+			case 'creator': // translate to atom:author/name
+				$author = (object) NULL;
+				$author->name = $elData->text;
+				if ($this->isEntry) {
+					if (empty($this->entry->authors)) {
+						$this->entry->authors = array();
+					}
+					array_push($this->entry->authors, $author);
+				} elseif ($this->isFeed) {
+					if (empty($this->feed->authors)) {
+						$this->feed->authors = array();
+					}
+					array_push($this->feed->authors, $author);
+				}
+				break;
+			
+			case 'type':
+				if ($this->isEntry) {
+					$this->entry->{$elData->nsName} = $elData->text;
+				} elseif ($this->isFeed) {
+					$this->feed->{$elData->nsName} = $elData->text;
+				}
+				break;
+				
+			default:
+				echo "END dc:   $elData->elName not handled.\n";
+				break;
+		}
+	}
+}
+
+
 /**
  * Parses syndication feeds and returns a normalised data structure
  * based on Atom (RFC4287) constructs. The Parser supports data in
- * namespaces. Each namespace is handled by a separate FeedNamespaceHandler,
+ * namespaces. Each namespace is handled by a separate *NamespaceHandler,
  * so the FeedParser is modular and extendable.
  * A feed can be normalised further by using site-specific FeedNormalisation
  * classes - so taking advantage of the peculiarities of more complex feeds
@@ -495,10 +558,10 @@ class FeedParser {
 	public $namespaces = array(
 		'http://www.w3.org/1999/02/22-rdf-syntax-ns#' => 'rdf',
 		'http://www.w3.org/2005/Atom'                 => 'atom',
-		'http://purl.org/dc/elements/1.1/'            => 'dc',
-		'http://purl.org/rss/1.0/modules/taxonomy/'   => 'taxo',
-		'http://www.itunes.com/dtds/podcast-1.0.dtd'  => 'itunes',
 		'http://rssnamespace.org/feedburner/ext/1.0'  => 'feedburner',
+		'http://purl.org/dc/elements/1.1/'            => 'dc',
+//		'http://purl.org/rss/1.0/modules/taxonomy/'   => 'taxo',
+//		'http://www.itunes.com/dtds/podcast-1.0.dtd'  => 'itunes',
 		'' => 'rss20'
 	);
 	
@@ -521,6 +584,10 @@ class FeedParser {
 	 * Generates a warning if the namespace URI already exists.
 	 */	 
 	public function addNamespaceSupport($uri, $prefix) {
+		if (strtolower($prefix)=='abstractfeed') {
+			echo "WARN: Invalid prefix: $prefix\n";
+		}
+	
 		if (empty($this->namespaces[$uri])) {
 			$this->namespaces[$uri] = $prefix;
 		} else {
@@ -626,7 +693,7 @@ class FeedParser {
 		$className = ucfirst($prefix) . 'NamespaceHandler';
 		if (class_exists($className)) {
 			$handler = new $className($this);
-			if (is_a($handler, 'FeedNamespaceHandler')) {
+			if (is_a($handler, 'AbstractFeedNamespaceHandler')) {
 				return $handler;
 			}
 		}
@@ -721,6 +788,13 @@ class FeedParser {
 	 **/
 	public function startNamespace($parser, $prefix, $uri) {
 		//echo "STARTNS: $prefix = $uri\n";
+
+		// See if this namespace has been specified
+		if (empty($this->namespaces[$uri])) {
+			// Temporarily add it to our list of namespaces.
+			// Who knows, maybe there's a handler class for it
+			$this->addNamespaceSupport($uri, $prefix);
+		}
 		
 		// Initialise the namespace handler now.
 		if (!empty($this->namespaces[$uri])) {
@@ -751,7 +825,7 @@ class FeedParser {
 			if (!empty($this->namespaces[$uri])) {
 				$prefix = $this->namespaces[$uri];
 			} else {
-				echo "WARN: Namespace $segments[0] not defined.\n";
+				echo "WARN: Namespace $uri not defined.\n";
 				$prefix = 'XXX';
 			}
 			return array($prefix, $elName);
