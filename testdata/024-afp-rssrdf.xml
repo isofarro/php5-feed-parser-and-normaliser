@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:content="http://purl.org/rss/1.0/modules/content/"
+ xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+ xmlns:admin="http://webns.net/mvcb/"
+>
+
+<channel rdf:about="http://www.afp.com/english/">
+<title>AFP - Wire stories</title>
+<link>http://www.afp.com/english/</link>
+<description>The News / wire stories</description>
+<dc:language>en</dc:language>
+<dc:rights>Copyright 2008, Agence France-Presse</dc:rights>
+<dc:date>2008-11-15T19:31:38Z</dc:date>
+<dc:publisher>Agence France-Presse</dc:publisher>
+<dc:creator>AFP</dc:creator>
+<syn:updateBase>2000-01-01T00:00+00:00</syn:updateBase>
+<syn:updateFrequency>4</syn:updateFrequency>
+<syn:updatePeriod>hourly</syn:updatePeriod>
+<items>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://www.afp.com/english/news/stories/newsmlmmd.aef0bc4b2d044e772eddc3fdde06d8ff.ad1.html" />
+  <rdf:li rdf:resource="http://www.afp.com/english/news/stories/newsmlmmd.5799dcda0c0fc0380e0a0b4ec616e970.281.html" />
+  <rdf:li rdf:resource="http://www.afp.com/english/news/stories/newsmlmmd.aef0bc4b2d044e772eddc3fdde06d8ff.b81.html" />
+  <rdf:li rdf:resource="http://www.afp.com/english/news/stories/newsmlmmd.82ad6bf091df97c0b3acfe0d27021f2a.101.html" />
+  <rdf:li rdf:resource="http://www.afp.com/english/news/stories/newsmlmmd.5799dcda0c0fc0380e0a0b4ec616e970.191.html" />
+  <rdf:li rdf:resource="http://www.afp.com/english/news/stories/newsmlmmd.50291f6e756b2390ce2050f02a903e27.1b1.html" />
+  <rdf:li rdf:resource="http://www.afp.com/english/news/stories/newsmlmmd.5799dcda0c0fc0380e0a0b4ec616e970.5b1.html" />
+ </rdf:Seq>
+</items>
+<image rdf:resource="http://www.afp.com/english/imgs/logo.gif" />
+</channel>
+<image rdf:about="http://www.afp.com/english/imgs/logo.gif">
+<title>AFP.com</title>
+<url>http://www.afp.com/english/imgs/logo.gif</url>
+<link>http://www.afp.com</link>
+<dc:creator>Agence France-Presse</dc:creator>
+</image>
+<item rdf:about="http://www.afp.com/english/news/stories/newsmlmmd.aef0bc4b2d044e772eddc3fdde06d8ff.ad1.html">
+<title>G20 summit aims to boost growth, prevent new crisis</title>
+<link>http://www.afp.com/english/news/stories/newsmlmmd.aef0bc4b2d044e772eddc3fdde06d8ff.ad1.html</link>
+<description>WASHINGTON (AFP) - Leaders of the world's 20 largest economies on Saturday thrashed out steps to reverse a looming global recession and prevent future upheaval despite differences over how to remedy the crisis.</description>
+<dc:date>2008-11-15T16:46+00:00</dc:date>
+</item>
+<item rdf:about="http://www.afp.com/english/news/stories/newsmlmmd.5799dcda0c0fc0380e0a0b4ec616e970.281.html">
+<title>UN special envoy to Congo to meet rebel chief</title>
+<link>http://www.afp.com/english/news/stories/newsmlmmd.5799dcda0c0fc0380e0a0b4ec616e970.281.html</link>
+<description>KINSHASA (AFP) - The UN's special envoy for the crisis in the Democratic Republic of Congo prepared Saturday to meet rebel leader Laurent Nkunda as reports emerged of renewed fighting between government forces and Nkunda's men in the east of the country.</description>
+<dc:date>2008-11-15T16:08+00:00</dc:date>
+</item>
+<item rdf:about="http://www.afp.com/english/news/stories/newsmlmmd.aef0bc4b2d044e772eddc3fdde06d8ff.b81.html">
+<title>Obama presses for new rescue for US economy</title>
+<link>http://www.afp.com/english/news/stories/newsmlmmd.aef0bc4b2d044e772eddc3fdde06d8ff.b81.html</link>
+<description>WASHINGTON (AFP) - President-elect Barack Obama said on Saturday the US economy was already in &#x22;recession&#x22; and urged Congress to take urgent steps to alleviate the financial pain of millions of Americans.</description>
+<dc:date>2008-11-15T17:09+00:00</dc:date>
+</item>
+<item rdf:about="http://www.afp.com/english/news/stories/newsmlmmd.82ad6bf091df97c0b3acfe0d27021f2a.101.html">
+<title>Obama presses for new rescue moves for US economy</title>
+<link>http://www.afp.com/english/news/stories/newsmlmmd.82ad6bf091df97c0b3acfe0d27021f2a.101.html</link>
+<description>WASHINGTON (AFP) - President-elect Barack Obama said Saturday the US economy was already in &#x22;recession&#x22; and urged Congress to take urgent steps to alleviate the financial pain of millions of Americans.</description>
+<dc:date>2008-11-15T18:06+00:00</dc:date>
+</item>
+<item rdf:about="http://www.afp.com/english/news/stories/newsmlmmd.5799dcda0c0fc0380e0a0b4ec616e970.191.html">
+<title>Thousands of Thais bid farewell to princess</title>
+<link>http://www.afp.com/english/news/stories/newsmlmmd.5799dcda0c0fc0380e0a0b4ec616e970.191.html</link>
+<description>BANGKOK (AFP) - More than 100,000 Thais paid their last respects to the sister of the world's longest reigning king at a lavish funeral on Saturday, in a brief respite from the political crisis gripping the country.</description>
+<dc:date>2008-11-15T16:29+00:00</dc:date>
+</item>
+<item rdf:about="http://www.afp.com/english/news/stories/newsmlmmd.50291f6e756b2390ce2050f02a903e27.1b1.html">
+<title>Pakistan secures IMF loan of at least $7.6bln: govt</title>
+<link>http://www.afp.com/english/news/stories/newsmlmmd.50291f6e756b2390ce2050f02a903e27.1b1.html</link>
+<description>KARACHI (AFP) - Pakistan announced on Saturday it will receive a loan of at least 7.6 billion dollars from the International Monetary Fund, the Fund's first rescue in Asia since the global financial crisis began.</description>
+<dc:date>2008-11-15T12:33+00:00</dc:date>
+</item>
+<item rdf:about="http://www.afp.com/english/news/stories/newsmlmmd.5799dcda0c0fc0380e0a0b4ec616e970.5b1.html">
+<title>At least 59 killed in Burkina Faso road accident</title>
+<link>http://www.afp.com/english/news/stories/newsmlmmd.5799dcda0c0fc0380e0a0b4ec616e970.5b1.html</link>
+<description>OUAGADOUGOU (AFP) - At least 59 people were killed on Saturday when a bus carrying 75 passengers and a truck collided and caught fire in Burkina Faso in one of west Africa's worst road accidents, an official said.</description>
+<dc:date>2008-11-15T16:42+00:00</dc:date>
+</item>
+</rdf:RDF>

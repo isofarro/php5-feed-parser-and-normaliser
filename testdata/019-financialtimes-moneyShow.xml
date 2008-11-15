@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+  <channel>
+    <title>The FT Money show</title>
+    <link>http://podcast.ft.com/?section=finance</link>
+    <language>en</language>
+    <itunes:author>FT.com</itunes:author>
+    <description>The FT Money show: your weekly guide to personal finance</description>
+    <itunes:subtitle>The FT Money show: your weekly guide to personal finance</itunes:subtitle>
+    <itunes:summary>The FT Money show: your weekly guide to personal finance</itunes:summary>
+    <itunes:category text="Business">
+      <itunes:category text="Investing" />
+    </itunes:category>
+    <copyright>Copyright The Financial Times Ltd 2007. 'FT' and 'Financial Times' are trademarks of the Financial Times.</copyright>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:image href="http://tamborcast.com/albumart/38.jpg" />
+    <image>
+      <url>http://tamborcast.com/albumart/38.jpg</url>
+      <title>MS</title>
+      <link>http://podcast.ft.com/?section=finance</link>
+    </image>
+    <webMaster>support@ft.com</webMaster>
+    <itunes:owner>
+      <itunes:email>support@ft.com</itunes:email>
+    </itunes:owner>
+    <item>
+      <title>FT Money Show, 13 November 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/836.guid</guid>
+      <pubDate>Thu, 13 Nov 2008 00:00:00 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Why there are now opportunities to cut your inheritance bill? After the interest rate cut, can you still get a cheap tracker-rate mortgage? Plus, some good news amid the bad news about investing in funds.</description>
+      <enclosure url="http://podcast.ft.com/media/836.mp3" length="990" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money Show, 6 November 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/833.guid</guid>
+      <pubDate>Thu, 06 Nov 2008 00:00:00 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Will the base rate cut really be good news for borrowers? 
+Plus, will Barack Obama's election lift the US equities markets, and a credit card that offers you 3 per cent cashback in the run up to Christmas</description>
+      <enclosure url="http://podcast.ft.com/media/833.mp3" length="727" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money Show, 30 October 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/825.guid</guid>
+      <pubDate>Thu, 30 Oct 2008 00:00:00 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Can you help your home hold its value in the property crash? 
+how to cash in as the pound goes down;
+and mixed news on investing in film to beat the recession</description>
+      <enclosure url="http://podcast.ft.com/media/825.mp3" length="840" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money Show, 23 October 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/812.guid</guid>
+      <pubDate>Thu, 23 Oct 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Frozen in Iceland: what are the chances of getting your offshore savings back?
+A guide to alternatives to annuities
+And mixed news on hedge funds and small-cap shares</description>
+      <enclosure url="http://podcast.ft.com/media/812.mp3" length="989" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money Show, 16 October 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/808.guid</guid>
+      <pubDate>Thu, 16 Oct 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>As the dust settles, how the UK bank bail-out affects you
+How to get a mortgage from the private banks
+And is it time to buy US shares?</description>
+      <enclosure url="http://podcast.ft.com/media/808.mp3" length="1140" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money Show, 9 October 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/801.guid</guid>
+      <pubDate>Thu, 09 Oct 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>What the bank rescue package means for savings, mortgages and investments
+Are investors reacting rationally to the storm?
+And some thoughts on the defensive sectors where investors can take shelter
+
+</description>
+      <enclosure url="http://podcast.ft.com/media/801.mp3" length="932" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 2 October 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/795.guid</guid>
+      <pubDate>Thu, 02 Oct 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>With confidence in banks so low that they won't lend to each other, what hope do borrowers in the UK have of getting an affordable mortgage? Is this the end of the line for buy-to-let morgages? Plus: How badly have pension funds been hit by falling equity markets and what should investors do?</description>
+      <enclosure url="http://podcast.ft.com/media/795.mp3" length="1002" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 25 September 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/791.guid</guid>
+      <pubDate>Thu, 25 Sep 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Where can investors find safety in the financial storm? Mortgage rates rise again - and it's not just first time buyers being priced out of the market. Plus: good news and bad news on tax free savings </description>
+      <enclosure url="http://podcast.ft.com/media/791.mp3" length="1135" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Money Show 18 September </title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/782.guid</guid>
+      <pubDate>Thu, 18 Sep 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>A special edition of the money show, focusing on the effects of the financial crisis on savers, mortgage-holders and shareholders.
+Plus - how pensions for eight year-olds could set them up for life.</description>
+      <enclosure url="http://podcast.ft.com/media/782.mp3" length="1015" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Money Show 11 September 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/769.guid</guid>
+      <pubDate>Thu, 11 Sep 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Have UK shares bounced off the bottom?
+How to profit from the plunging pound
+And some good news for mortgage borrowers</description>
+      <enclosure url="http://podcast.ft.com/media/769.mp3" length="929" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Money Show 4 September 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/759.guid</guid>
+      <pubDate>Thu, 04 Sep 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>With house price indices diverging, which is the most reliable? Plus - one analyst calls the end of the equities bear market, and how to safeguard your inheritance</description>
+      <enclosure url="http://podcast.ft.com/media/759.mp3" length="982" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Money Show 28 August 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/749.guid</guid>
+      <pubDate>Thu, 28 Aug 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Did you know that if your bank loses your data, you might be entitled to compensation just for the stress?
+Plus part-exchanging properties and investing in Latin America</description>
+      <enclosure url="http://podcast.ft.com/media/749.mp3" length="952" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Money Show 21 August 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/730.guid</guid>
+      <pubDate>Thu, 21 Aug 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Should you transfer your 'contracted out' pension fund?
+Why some City workers can't buy unemployment cover
+And how to inflation-proof your savings</description>
+      <enclosure url="http://podcast.ft.com/media/730.mp3" length="955" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Money Show 14 August 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/723.guid</guid>
+      <pubDate>Thu, 14 Aug 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Should investors start reinvesting in the US?
+Fraud abroad: how your card may be holidaying without you
+And the good and bad news about falling mortgage rates</description>
+      <enclosure url="http://podcast.ft.com/media/723.mp3" length="895" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Money Show 7 August 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/721.guid</guid>
+      <pubDate>Thu, 07 Aug 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Could stamp duty concessions kickstart the housing market? 
+A guide to the worst performing funds, with advice on safeguarding your investments. 
+And how a smart postcode might affect your pension.</description>
+      <enclosure url="http://podcast.ft.com/media/721.mp3" length="896" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Money Show 31 July 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/717.guid</guid>
+      <pubDate>Thu, 31 Jul 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Summer is heating up savings rates again
+Putting a Thai hotel room in a self-invested pension
+And the bad and good news on the 35% price hike by British Gas</description>
+      <enclosure url="http://podcast.ft.com/media/717.mp3" length="765" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Money Show 24 July 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/714.guid</guid>
+      <pubDate>Thu, 24 Jul 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Has the housing market hit rock bottom?
+Are luxury goods firms being squeezed like the rest of us?
+And good and bad news about a scheme for donating small lots of shares to charity</description>
+      <enclosure url="http://podcast.ft.com/media/714.mp3" length="960" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Money Show 18 July 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/703.guid</guid>
+      <pubDate>Fri, 18 Jul 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>The winners and losers from the Santander bid for Alliance and Leicester  
+Is it time to invest in Japan?
+And how to keep your cash ahead of inflation </description>
+      <enclosure url="http://podcast.ft.com/media/703.mp3" length="1229" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Money Show 11 July 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/699.guid</guid>
+      <pubDate>Thu, 10 Jul 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>As expected the Bank of England has held base rates at 5%, so why are mortgage rates still moving all over the place?
+Inflation-proofing your pension: what rising prices today mean for your retirement income
+Paying your tax on time: you only have a few days left if you are self employed or a buy-to-let landlord 
+And some good news and bad news on a home loan under 5%
+</description>
+      <enclosure url="http://podcast.ft.com/media/699.mp3" length="993" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Money Show 4 July 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/691.guid</guid>
+      <pubDate>Fri, 04 Jul 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>The rights and wrongs of bank's share issues: should you part with more cash?
+Insurance against higher mortgage rates - a new product that protects borrowers on variable rates
+Pensions: why anyone who contracted out of the second state pension can give their self-invested pension a big boost 
+And we have some good news and bad news on foreign exchange deals 
+
+</description>
+      <enclosure url="http://podcast.ft.com/media/691.mp3" length="1388" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>Money Show 27 June 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/683.guid</guid>
+      <pubDate>Fri, 27 Jun 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Housing market - with mortgage rates rising out of step with base rates, can it still be cheaper to buy than rent? 
+
+Investment funds - have any fund managers been able to keep their heads - and your money - above water in volatile markets?
+
+Spanish property - why Brits owning abroad may be due tax rebate of nearly 20,000GBP
+
+Plus: good news and Bad News on long-term savings</description>
+      <enclosure url="http://podcast.ft.com/media/683.mp3" length="1486" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 20 June 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/670.guid</guid>
+      <pubDate>Fri, 20 Jun 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>This week: Savings rates of 7 per cent - but is it any good if inflation is rising? Investing in India - still a good idea? How a postcode lottery is shaking up the pensions market; plus building society mergers.</description>
+      <enclosure url="http://podcast.ft.com/media/670.mp3" length="1698" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 13 June 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/656.guid</guid>
+      <pubDate>Fri, 13 Jun 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Inflation - how much of a threat is it to fund investors, and what are fund managers doing about it?
+Stock-market indicators - why American consumers, truck drivers, and Disneyland holidaymakers have good news for UK shareholders
+Tax-efficient investments - how to take and old 40 per cent capital tax gains bill and shrink it to 18 per cent
+Plus: good news and bad news on the high-street savings accounts</description>
+      <enclosure url="http://podcast.ft.com/media/656.mp3" length="1551" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 6 June 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/647.guid</guid>
+      <pubDate>Fri, 06 Jun 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: Bradford &amp;amp; Bingley - is the buy-to-let lender an investment in ruins or an investment opportunity? Mortgage rates - why the best deals are to be found not on the high street but in the oak-panelled halls of the private banks; why a so-called variable annuity can actually give you more certainty in retirement; and good and bad news on managing your credit card bills.</description>
+      <enclosure url="http://podcast.ft.com/media/647.mp3" length="1514" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 30 May 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/637.guid</guid>
+      <pubDate>Fri, 30 May 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: Happy Tax Freedom Day - the day we stop working for the government and start for ourselves - but could it be earlier in the year? Coping with redundancy; Driven to drink - how to trade wine futures; and good news and bad news on savings rates.</description>
+      <enclosure url="http://podcast.ft.com/media/637.mp3" length="1536" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 23 May 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/627.guid</guid>
+      <pubDate>Fri, 23 May 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: unfair bank charges - will compensation ever come? Emerging markets: is it easier or safer to invest in them through UK blue chips? Volatile markets - why it's better to be in than out; and good news and bad news on cash-backs that cut the cost of travel</description>
+      <enclosure url="http://podcast.ft.com/media/627.mp3" length="1470" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 16 May 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/625.guid</guid>
+      <pubDate>Fri, 16 May 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: inflation is up but income tax is down - what do this week's announcements mean for borrowers and savers; House prices aren't all falling - we look at areas on the up; Pension investors - the unlikely winners in the credit crunch? And good news and bad news on making payments in euros.</description>
+      <enclosure url="http://podcast.ft.com/media/625.mp3" length="1695" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 9 May 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/613.guid</guid>
+      <pubDate>Fri, 09 May 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Why borrowers are struggling to find standard variable rate mortgages with no fee; a positive return every month and 10% a year - Nicola Horlick on a fund manager's secrets; how to avoid 40% inheritance tax; and some good news and bad news on regular saving.</description>
+      <enclosure url="http://podcast.ft.com/media/613.mp3" length="1460" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 2 May 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/601.guid</guid>
+      <pubDate>Fri, 02 May 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Why aren't savings rates going down? How to be a private currency trader; Asian equity markets - are they a good diversification strategy? Plus good news and bad news on Peps and Isas.</description>
+      <enclosure url="http://podcast.ft.com/media/601.mp3" length="1625" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 25 April 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/598.guid</guid>
+      <pubDate>Fri, 25 Apr 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>This week: 50 billion from the Bank of England, but will it make any difference to mortgages? Putting property into your pension - is it still a good idea? Why we are so bad at making decisions, and what we can do about it - a behavioural psychologist explains. Plus the good news and bad news on using credit cards abroad.</description>
+      <enclosure url="http://podcast.ft.com/media/598.mp3" length="1097" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 18 April 2008 - Mortgage special</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/592.guid</guid>
+      <pubDate>Fri, 18 Apr 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: long-term fixed rates - will government action make them cheaper? Buy-to-let mortgages - are they still a good idea as house prices fall? European property - can you hedge against costly euro mortgages?</description>
+      <enclosure url="http://podcast.ft.com/media/592.mp3" length="1304" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 11 April 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/586.guid</guid>
+      <pubDate>Fri, 11 Apr 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: Mortgages - who benefits from the rate cut? Water - is it really 'blue gold' for investors? Commercial property - legal threats over fund lock-ins</description>
+      <enclosure url="http://podcast.ft.com/media/586.mp3" length="1541" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 4 April 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/584.guid</guid>
+      <pubDate>Fri, 04 Apr 2008 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: housing market - how the mortgage squeeze is cutting asking prices; Agricultural commodities - what's the best way to invest as prices fall? Emerging markets - why New Star is launching a new India fund</description>
+      <enclosure url="http://podcast.ft.com/media/584.mp3" length="1348" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 28 March 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/581.guid</guid>
+      <pubDate>Fri, 28 Mar 2008 00:00:00 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: UK mortgage upheaval - are people looking for alternative property investments abroad? The good news and bad news on equity ISAs. Plus, a long view of the markets.</description>
+      <enclosure url="http://podcast.ft.com/media/581.mp3" length="834" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 21 March 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/575.guid</guid>
+      <pubDate>Fri, 21 Mar 2008 00:00:00 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: Bank shares or bank account - should you take the risk, or take 6 per cent? Executive pensions - how to switch plans and keep benefits? Emerging markets funds - can they keep on growing?</description>
+      <enclosure url="http://podcast.ft.com/media/575.mp3" length="1483" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show 14 March 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/565.guid</guid>
+      <pubDate>Fri, 14 Mar 2008 00:00:00 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's Budget 2008 special: Enterprise investment schemes - why they're even more tax efficient? Stamp duty and mortgages - where was the help for homebuyers? 'Sin' taxes on tobacco and alcohol - how it helps with life insurance?</description>
+      <enclosure url="http://podcast.ft.com/media/565.mp3" length="1129" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 7 March 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/551.guid</guid>
+      <pubDate>Fri, 07 Mar 2008 00:00:00 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: Income investments - which are most tax-efficient in an Isa? Free financial advice - what will the new government proposals offer? Inflation-proof savings - why an RPI-linked Isa is a market-beater</description>
+      <enclosure url="http://podcast.ft.com/media/551.mp3" length="1393" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 29 February 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/544.guid</guid>
+      <pubDate>Fri, 29 Feb 2008 00:00:00 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>No description</description>
+      <enclosure url="http://podcast.ft.com/media/544.mp3" length="1403" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 22 February 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/534.guid</guid>
+      <pubDate>Fri, 22 Feb 2008 00:00:00 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Guaranteed savings: why Northern Rock is safer than foreign banks; Tax-efficient investments - what Enterprise Investment Schemes offer; Star fund managers - who performs the best in volatile markets</description>
+      <enclosure url="http://podcast.ft.com/media/534.mp3" length="1389" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 15 February 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/527.guid</guid>
+      <pubDate>Fri, 15 Feb 2008 00:00:00 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>This week: tax rules and U-turns - the latest on tax planning for investors in individual savings accounts (Isas), and for non-doms with offshore trusts; commodities - how to profit from falling oil, gold and crop prices; and overseas banks - where to find savings rates of 6.5 per cent</description>
+      <enclosure url="http://podcast.ft.com/media/527.mp3" length="1618" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 8 February 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/518.guid</guid>
+      <pubDate>Fri, 08 Feb 2008 00:00:00 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>This week: Another interest-rate cut - why it's not all bad news for savers, or good news for all borrowers; Investment funds - how to profit from shipping, food and pop music; and green investments - what are the prospects for clean energy?</description>
+      <enclosure url="http://podcast.ft.com/media/518.mp3" length="1038" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 1 February 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/499.guid</guid>
+      <pubDate>Fri, 01 Feb 2008 00:00:00 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: Savings rates - guess who is offering 6.99 per cent with instant access? Buy-to-let property - can rising yields offset slow price growth? And pension investments - do volatile markets put retirement at risk?</description>
+      <enclosure url="http://podcast.ft.com/media/499.mp3" length="1768" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 25 January 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/483.guid</guid>
+      <pubDate>Fri, 25 Jan 2008 00:00:00 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: Market falls and recession fears: how they affect your finances; Exchange-traded tracker funds: is now the time to invest? Tax planning: what the new rules mean for offshore trusts.</description>
+      <enclosure url="http://podcast.ft.com/media/483.mp3" length="1676" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 18 January 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/459.guid</guid>
+      <pubDate>Fri, 18 Jan 2008 00:00:00 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: Commercial property - the professional vultures are swooping on cheap assets but what should private investors do? Is it too late to join the gold rush?  Tips on making self assessment less painful; The good and bad news of 0 per cent credit cards.</description>
+      <enclosure url="http://podcast.ft.com/media/459.mp3" length="1480" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 11 January 2008</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/455.guid</guid>
+      <pubDate>Fri, 11 Jan 2008 00:00:00 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: savings and loan deals: the best of the bank 'sales'; shares and currencies: the effects of a weaker pound; venture capital: the changes to the risks and rewards.</description>
+      <enclosure url="http://podcast.ft.com/media/455.mp3" length="1224" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 21 December 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/449.guid</guid>
+      <pubDate>Fri, 21 Dec 2007 00:00:00 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: market predictions for 2008: forecasts for shares and house prices; commercial property funds - discounts and buying opportunities; plus smarter ways to switch gas and electricity suppliers</description>
+      <enclosure url="http://podcast.ft.com/media/449.mp3" length="1596" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 14 December 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/443.guid</guid>
+      <pubDate>Fri, 14 Dec 2007 00:00:00 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: Markets outlook: is the rally over, and what will 2008 bring? Savings rates: how to get 8 per cent, even as rates fall; Mortgage insurance: a new scheme to protect homeowners</description>
+      <enclosure url="http://podcast.ft.com/media/443.mp3" length="1261" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 7 December 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/438.guid</guid>
+      <pubDate>Fri, 07 Dec 2007 00:00:00 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: Cash deposits: should you move into cash, in spite of the rate cut? Actively-managed funds: are they a better bet than 'quant' funds? Wealth secrets: how to learn them through social networking </description>
+      <enclosure url="http://podcast.ft.com/media/438.mp3" length="1347" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 30 November 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/433.guid</guid>
+      <pubDate>Fri, 30 Nov 2007 00:00:00 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: insuring against falling house prices: what homeowners can do now; Getting out of commercial property: should fund investors sell up? Plus: investing in a Sipp: is a 'full' pension or a low-cost plan better? </description>
+      <enclosure url="http://podcast.ft.com/media/433.mp3" length="1404" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money Show 23 November 2007 </title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/427.guid</guid>
+      <pubDate>Fri, 23 Nov 2007 00:00:00 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: Residential property: why buyers are resorting to 'gazundering' again. Tax-efficient investments: which is better - a pension or an Isa? Lower-cost funds: how investors benefit from a GBP300m VAT rebate.</description>
+      <enclosure url="http://podcast.ft.com/media/427.mp3" length="1012" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money Show 16 November 2007 </title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/421.guid</guid>
+      <pubDate>Fri, 16 Nov 2007 00:00:00 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: The credit crunch hits Christmas: why card issuers are behaving like Ebenezer Scrooge with their credit limits. The gold rush: forget the yellow stuff - platinum is exciting some investors right now. The end of private equity? Is a lack of cheap borrowing facilities limiting the opportunities for private investors? Plus good news and bad news for cash-back deals.</description>
+      <enclosure url="http://podcast.ft.com/media/421.mp3" length="1446" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 9 November 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/416.guid</guid>
+      <pubDate>Fri, 09 Nov 2007 00:00:00 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: Bank shares: should investors sell or hold, as the credit crisis rolls on? Exchange traded funds: how new funds do more than track an index. Emerging markets: Dr Mark Mobius goes in search of small caps </description>
+      <enclosure url="http://podcast.ft.com/media/416.mp3" length="1615" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 2 November 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/409.guid</guid>
+      <pubDate>Fri, 02 Nov 2007 00:00:00 +0000</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: Will the chancellor do a U-turn on capital gains tax changes? Should private investors buy into agricultural commodities? Is buy-to-let still a good investment as the housing market slows?</description>
+      <enclosure url="http://podcast.ft.com/media/409.mp3" length="1317" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show. 26 Oct 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/406.guid</guid>
+      <pubDate>Fri, 26 Oct 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>This week: pension planning: How a flexible annuity can deliver a higher income; inheritance tax: What to leave to your children - and how; Sharedealing and spread-betting: How the European 'Mifid' regulations will affect you, when they come into force in November </description>
+      <enclosure url="http://podcast.ft.com/media/406.mp3" length="1397" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money Show, 19 Oct 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/402.guid</guid>
+      <pubDate>Fri, 19 Oct 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>This week: is it time to get out of commercial property, as property prices and fund values fall? will the regulatory shake-up of financial advice give you a better deal? and some good and bad news on mortgage rates.</description>
+      <enclosure url="http://podcast.ft.com/media/402.mp3" length="1186" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money Show, 12 Oct 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/395.guid</guid>
+      <pubDate>Fri, 12 Oct 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>This week: Pre-budget report special - what chancellor Darling's changes to inheritance tax and capital gains tax will mean for you.</description>
+      <enclosure url="http://podcast.ft.com/media/395.mp3" length="1147" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money Show, 5 Oct 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/387.guid</guid>
+      <pubDate>Fri, 05 Oct 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>This week: ethical funds - how to check if you might be invested in Burma; mixed news on cashback cards; and a guide to timing investments in collective funds. </description>
+      <enclosure url="http://podcast.ft.com/media/387.mp3" length="977" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money Show, 28 September 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/375.guid</guid>
+      <pubDate>Fri, 28 Sep 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>This week: should you rely on private medical insurance or NHS provision? mixed news on credit cards; and the pros and cons of split capital invesment trusts. 
+</description>
+      <enclosure url="http://podcast.ft.com/media/375.mp3" length="1172" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money Show, 21 September 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/367.guid</guid>
+      <pubDate>Fri, 21 Sep 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>This week: a guide to low-cost trackers in uncertain markets; planning tips for your tax return; and mixed news for First Direct customers.</description>
+      <enclosure url="http://podcast.ft.com/media/367.mp3" length="985" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 14 September 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/358.guid</guid>
+      <pubDate>Fri, 14 Sep 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: the best use of cash when savings rates top 7 per cent; How your postcode can affect your pension income. Plus where to find car insurance quotes you can trust</description>
+      <enclosure url="http://podcast.ft.com/media/358.mp3" length="959" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 7 September 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/353.guid</guid>
+      <pubDate>Fri, 07 Sep 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: why banks are taking a closer look at who they are lending to; new ways to profit from oil prices, as shares remain volatile; plus how writing a will can save you tax - and benefit your pet</description>
+      <enclosure url="http://podcast.ft.com/media/353.mp3" length="1019" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 31 August 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/347.guid</guid>
+      <pubDate>Fri, 31 Aug 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>This week: what???s the best place to invest a child trust fund? How parents and investors can buy into student property, plus why late payment of tax bills is now even more costly</description>
+      <enclosure url="http://podcast.ft.com/media/347.mp3" length="1136" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 24 August 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/344.guid</guid>
+      <pubDate>Fri, 24 Aug 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>This week: is releasing equity from your home really a good idea? The latest developments on the expansion of home information packs; How new regulations will affect smaller financial advisers</description>
+      <enclosure url="http://podcast.ft.com/media/344.mp3" length="866" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money Show, 17 Aug 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/341.guid</guid>
+      <pubDate>Fri, 17 Aug 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>This week:tips on how to make and save money; which way mortgage rates are heading; and how you can pass on assets to future generations without passing on exorbitant tax and good news - bad news.</description>
+      <enclosure url="http://podcast.ft.com/media/341.mp3" length="820" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money Show, 10 Aug 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/337.guid</guid>
+      <pubDate>Fri, 10 Aug 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>This week: is this really the end of mortgage exit fees? how paying on a card abroad can cost you dear; the rise in insurance premiums after the recent floods; and will investment boards stick to their pledges to buy back shares?</description>
+      <enclosure url="http://podcast.ft.com/media/337.mp3" length="1068" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 3 August 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/333.guid</guid>
+      <pubDate>Fri, 03 Aug 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: Do hedge funds really protect against market volatility? Why the OFT is taking banks to court over charges; and is now the time to snap up a place in the sun?</description>
+      <enclosure url="http://podcast.ft.com/media/333.mp3" length="1064" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 27 July 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/331.guid</guid>
+      <pubDate>Fri, 27 Jul 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: Is the UK's love affair with commercial property over? Do widening investment trust discounts signal a buying opportunity? plus save tax and ease your conscience with charitable giving</description>
+      <enclosure url="http://podcast.ft.com/media/331.mp3" length="786" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 20 July 2007 </title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/327.guid</guid>
+      <pubDate>Fri, 20 Jul 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>This week the Money Show clears up the confusion about self-invested personal pensions or SIPPS; examines the pros and cons of 25-year mortgages; asks if consumers should be investing in pharmaceutical stocks; and looks at the impact of the strong pound on investing in the US.</description>
+      <enclosure url="http://podcast.ft.com/media/327.mp3" length="982" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 13 July 2007 </title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/320.guid</guid>
+      <pubDate>Fri, 13 Jul 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>This week: How green is your wallet? We look at the eco credentials of  bank accounts and credit cards; and the price of property funds. </description>
+      <enclosure url="http://podcast.ft.com/media/320.mp3" length="668" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 6 July 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/314.guid</guid>
+      <pubDate>Fri, 06 Jul 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>This week: how to protect your property against flood damage. Is the bottom falling out of the buy-to-let market? Plus divorce at the supermarket - is there anything that Tescos won't sell?</description>
+      <enclosure url="http://podcast.ft.com/media/314.mp3" length="918" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 29 June 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/305.guid</guid>
+      <pubDate>Fri, 29 Jun 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>This week: how to get a piece of the private equity action. The Chinese bubble - what would a stock market correction mean for emerging market funds? Plus the latest money news, including the pros and cons of switching current accounts.</description>
+      <enclosure url="http://podcast.ft.com/media/305.mp3" length="637" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 22 June 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/301.guid</guid>
+      <pubDate>Fri, 22 Jun 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Matthew Vincent, editor of Investors Chronicle, presents the long and short of long-short funds. Can investing in climate change make a difference to the planet and your pocket? And how giving up smoking can cut the cost of your insurance.</description>
+      <enclosure url="http://podcast.ft.com/media/301.mp3" length="1016" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 15 June 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/296.guid</guid>
+      <pubDate>Fri, 15 Jun 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>Robert Budden, the FT's personal finance editor, and Matthew Vincent, edior of Investors Chronicle on whether bonds now are a good buy; Do 100 per cent mortgages make sense; The Zopa lending model unravelled.</description>
+      <enclosure url="http://podcast.ft.com/media/296.mp3" length="889" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 8 June 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/292.guid</guid>
+      <pubDate>Fri, 08 Jun 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>This week: Protecting your home for less, looking after your profits plus advice on how to insure your art collection. </description>
+      <enclosure url="http://podcast.ft.com/media/292.mp3" length="938" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 1 June 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/286.guid</guid>
+      <pubDate>Fri, 01 Jun 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>This week: Cheaper mobile calls from abroad, lower-cost pensions, and shareholder perks</description>
+      <enclosure url="http://podcast.ft.com/media/286.mp3" length="835" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 25 May 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/279.guid</guid>
+      <pubDate>Fri, 25 May 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>With mortgage rates rising, are buy-to-let properties still a good investment? How green is your car insurance? A look at carbon neutral cover. Plus commission rates and your pension: advice on income drawdown.</description>
+      <enclosure url="http://podcast.ft.com/media/279.mp3" length="793" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 18 May 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/272.guid</guid>
+      <pubDate>Fri, 18 May 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's show: how to get more bang from your holiday buck; are interest rate hikes hurting the property market? And, 10 years on, should you hold onto shares in former building societies?</description>
+      <enclosure url="http://podcast.ft.com/media/272.mp3" length="832" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 11 May 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/265.guid</guid>
+      <pubDate>Fri, 11 May 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>This week: when interest rates rise why do savings rates lag so far behind? How much should your investment in ISAs have grown? And are the yields from bond funds and commercial property funds still attractive?</description>
+      <enclosure url="http://podcast.ft.com/media/265.mp3" length="838" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 04 May 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/263.guid</guid>
+      <pubDate>Fri, 04 May 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>This week: the true cost of estate agents' free home information packs; Should you switch energy supplier? Why stockbrokers are turning to spread betting. Plus split capital investment trusts demystified.</description>
+      <enclosure url="http://podcast.ft.com/media/263.mp3" length="927" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 27 April 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/258.guid</guid>
+      <pubDate>Fri, 27 Apr 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In this week's FT Money programme: Does selling in May pay dividends? How to cut your tax bill on the sale of a holiday home. Should you fix your mortgage? Plus more on the rights of nominee shareholders.</description>
+      <enclosure url="http://podcast.ft.com/media/258.mp3" length="980" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>FT Money show, 20 April 2007</title>
+      <author>support@ft.com</author>
+      <guid isPermaLink="false">http://tamborcast.com/media/253.guid</guid>
+      <pubDate>Fri, 20 Apr 2007 00:00:00 +0100</pubDate>
+      <itunes:explicit>No</itunes:explicit>
+      <description>In the first FT Money programme: why rattling windows, amongst other things, could cost you money; one of the UK's most successful fund managers launches a new product - at the age of 78; and listeners and readers questions on  building society windfalls.</description>
+      <enclosure url="http://podcast.ft.com/media/253.mp3" length="1252" type="audio/mpeg" />
+    </item>
+  </channel>
+</rss>
+

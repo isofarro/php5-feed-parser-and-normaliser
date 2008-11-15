@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<rss xmlns:dc="http://dublincore.org/documents/dcmi-namespace/" xmlns:media="http://search.yahoo.com/mrss" xmlns:nyt="http://www.nytimes.com/namespaces/rss/2.0" version="2.0">
+  <channel>
+    <title>NYT &gt; Week in Review</title>
+    <link>http://www.nytimes.com/pages/weekinreview/index.html?partner=rss</link>
+    <description/>
+    <language>en-us</language>
+    <copyright>Copyright 2008
+ The New York Times Company</copyright>
+    <lastBuildDate>Sat, 15 Nov 2008 07:34:00 GMT
+</lastBuildDate>
+    <image>
+      <title>NYT &gt; Week in Review</title>
+      <url>http://graphics.nytimes.com/images/section/NytSectionHeader.gif</url>
+      <link>http://www.nytimes.com/pages/weekinreview/index.html</link>
+    </image>
+    <item>
+      <title>The Nation: The Transformation of Levittown</title>
+      <link>http://www.nytimes.com/2008/11/09/weekinreview/09sokolove.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">http://www.nytimes.com/2008/11/09/weekinreview/09sokolove.html</guid>
+      <media:group>
+        <media:content>
+          <media:url>http://graphics8.nytimes.com/images/2008/11/09/weekinreview/09sokolove.751.jpg</media:url>
+          <media:medium>image</media:medium>
+          <media:height>75</media:height>
+          <media:width>75</media:width>
+        </media:content>
+        <media:description><em class="bold">BEHIND THE CURTAIN</em> Election workers stand at their posts last week in Levittown, Pa.</media:description>
+        <media:credit>Sabina Louise Pierce for The New York Times</media:credit>
+      </media:group>
+      <description>How did Barack Obama win over white, blue-collar Levittown, Pa.? A writer returns after seven months.&lt;br/&gt;&lt;br/&gt;&lt;span class="advertisement"&gt;    &lt;a href="http://www.pheedo.com/click.phdo?x=42a5e4e1b7bb48ba8141b0e8bb32f565&amp;u=http://www.nytimes.com/2008/11/09/weekinreview/09sokolove.html"&gt;&lt;img src="http://www.pheedo.com/img.phdo?x=42a5e4e1b7bb48ba8141b0e8bb32f565&amp;u=http://www.nytimes.com/2008/11/09/weekinreview/09sokolove.html" border="0"/&gt;&lt;/a&gt;
+
+&lt;/span&gt;
+</description>
+      <dc:creator>By MICHAEL SOKOLOVE</dc:creator>
+      <pubDate>Sun, 09 Nov 2008 22:07:04 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Presidential Election of 2008</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Blue Collar Workers</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Race</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Obama, Barack</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Levitt, William J</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Levittown (PA)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Pennsylvania</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Election Results</category>
+    </item>
+    <item>
+      <title>The Nation: Seeking a Poet for the Great Mess of &#x2019;08</title>
+      <link>http://www.nytimes.com/2008/11/09/weekinreview/09powell.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">http://www.nytimes.com/2008/11/09/weekinreview/09powell.html</guid>
+      <media:group>
+        <media:content>
+          <media:url>http://graphics8.nytimes.com/images/2008/11/09/weekinreview/09powell.751.jpg</media:url>
+          <media:medium>image</media:medium>
+          <media:height>75</media:height>
+          <media:width>75</media:width>
+        </media:content>
+        <media:description><em class="bold">THINGS COULD BE WORSE</em> The &#x2019;29 crash was the big one; a lot of ink has been spilled over it.</media:description>
+        <media:credit>Hulton Archive - Getty Images</media:credit>
+      </media:group>
+      <description>The year 1929 is defined by a single event. One of its chief chroniclers put human foolishness on notice.&lt;br/&gt;&lt;br/&gt;&lt;span class="advertisement"&gt;    &lt;a href="http://www.pheedo.com/click.phdo?x=42a5e4e1b7bb48ba8141b0e8bb32f565&amp;u=http://www.nytimes.com/2008/11/09/weekinreview/09powell.html"&gt;&lt;img src="http://www.pheedo.com/img.phdo?x=42a5e4e1b7bb48ba8141b0e8bb32f565&amp;u=http://www.nytimes.com/2008/11/09/weekinreview/09powell.html" border="0"/&gt;&lt;/a&gt;
+
+&lt;/span&gt;
+</description>
+      <dc:creator>By MICHAEL POWELL</dc:creator>
+      <pubDate>Sun, 09 Nov 2008 17:52:57 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Galbraith, John Kenneth</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Economy</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Great Depression (1930's)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Subprime Mortgage Crisis</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_ttl">Great Crash, 1929, The (Book)</category>
+    </item>
+    <item>
+      <title>Harnessing a Cause Without Yielding to It</title>
+      <link>http://www.nytimes.com/2008/11/09/weekinreview/09tanenhaus.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">http://www.nytimes.com/2008/11/09/weekinreview/09tanenhaus.html</guid>
+      <media:group>
+        <media:content>
+          <media:url>http://graphics8.nytimes.com/images/2008/11/09/weekinreview/09tanen.751.jpg</media:url>
+          <media:medium>image</media:medium>
+          <media:height>75</media:height>
+          <media:width>75</media:width>
+        </media:content>
+        <media:description><em class="bold">PARTY PARTNERSHIP</em> Lyndon Johnson joined the Democrats to Martin Luther King Jr.&#x2019;s civil rights movement ...</media:description>
+        <media:credit>Hulton Archive/Getty Images</media:credit>
+      </media:group>
+      <description>Parties and movements have a history of uneasy friendships.&lt;br/&gt;&lt;br/&gt;&lt;span class="advertisement"&gt;    &lt;a href="http://www.pheedo.com/click.phdo?x=42a5e4e1b7bb48ba8141b0e8bb32f565&amp;u=http://www.nytimes.com/2008/11/09/weekinreview/09tanenhaus.html"&gt;&lt;img src="http://www.pheedo.com/img.phdo?x=42a5e4e1b7bb48ba8141b0e8bb32f565&amp;u=http://www.nytimes.com/2008/11/09/weekinreview/09tanenhaus.html" border="0"/&gt;&lt;/a&gt;
+
+&lt;/span&gt;
+</description>
+      <dc:creator>By SAM TANENHAUS</dc:creator>
+      <pubDate>Sun, 09 Nov 2008 07:03:20 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">United States Politics and Government</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Conservatism (US Politics)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Republican Party</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_org_all">Democratic Party</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Civil Rights</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Presidential Election of 2008</category>
+    </item>
+    <item>
+      <title>The Nation: Dissecting the Changing Electorate</title>
+      <link>http://www.nytimes.com/2008/11/09/weekinreview/09connelly.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">http://www.nytimes.com/2008/11/09/weekinreview/09connelly.html</guid>
+      <description>A look at the exit poll numbers for important voter groups.&lt;br/&gt;&lt;br/&gt;&lt;span class="advertisement"&gt;    &lt;a href="http://www.pheedo.com/click.phdo?x=42a5e4e1b7bb48ba8141b0e8bb32f565&amp;u=http://www.nytimes.com/2008/11/09/weekinreview/09connelly.html"&gt;&lt;img src="http://www.pheedo.com/img.phdo?x=42a5e4e1b7bb48ba8141b0e8bb32f565&amp;u=http://www.nytimes.com/2008/11/09/weekinreview/09connelly.html" border="0"/&gt;&lt;/a&gt;
+
+&lt;/span&gt;
+</description>
+      <dc:creator>By MARJORIE CONNELLY</dc:creator>
+      <pubDate>Sun, 09 Nov 2008 07:25:28 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Election Results</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Presidential Election of 2008</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Presidential Elections (US)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Voting and Voters</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Obama, Barack</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">McCain, John</category>
+    </item>
+    <item>
+      <title>White Houses Past: The Underside of the Welcome Mat</title>
+      <link>http://www.nytimes.com/2008/11/09/weekinreview/09harris.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">http://www.nytimes.com/2008/11/09/weekinreview/09harris.html</guid>
+      <media:group>
+        <media:content>
+          <media:url>http://graphics8.nytimes.com/images/2008/11/09/weekinreview/09arris.751.jpg</media:url>
+          <media:medium>image</media:medium>
+          <media:height>75</media:height>
+          <media:width>75</media:width>
+        </media:content>
+        <media:description><em class="bold">A FIRST</em> A lithograph of the historic White House dinner shared by Theodore Roosevelt and Booker T. Washington.</media:description>
+        <media:credit>David J. &amp; Janice L. Frent Collection/Corbis</media:credit>
+      </media:group>
+      <description>Slaves helped build the White House. Now their descendants can feel fully at home.&lt;br/&gt;&lt;br/&gt;&lt;span class="advertisement"&gt;    &lt;a href="http://www.pheedo.com/click.phdo?x=42a5e4e1b7bb48ba8141b0e8bb32f565&amp;u=http://www.nytimes.com/2008/11/09/weekinreview/09harris.html"&gt;&lt;img src="http://www.pheedo.com/img.phdo?x=42a5e4e1b7bb48ba8141b0e8bb32f565&amp;u=http://www.nytimes.com/2008/11/09/weekinreview/09harris.html" border="0"/&gt;&lt;/a&gt;
+
+&lt;/span&gt;
+</description>
+      <dc:creator>By GARDINER HARRIS</dc:creator>
+      <pubDate>Mon, 10 Nov 2008 03:17:43 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Blacks</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Presidents and Presidency (US)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Obama, Barack</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Washington (DC)</category>
+    </item>
+    <item>
+      <title>The World: Mumbai, Striving and Sinking</title>
+      <link>http://www.nytimes.com/2008/11/09/weekinreview/09giridharadas.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">http://www.nytimes.com/2008/11/09/weekinreview/09giridharadas.html</guid>
+      <media:group>
+        <media:content>
+          <media:url>http://graphics8.nytimes.com/images/2008/11/09/weekinreview/09world.751.jpg</media:url>
+          <media:medium>image</media:medium>
+          <media:height>75</media:height>
+          <media:width>75</media:width>
+        </media:content>
+        <media:description><em class="bold">TWO WORLDS</em> Mumbai is seeking world-class status with luxury boutiques, right. Beggars seek alms on its streets, left.</media:description>
+        <media:credit>Arko Datta/Reuters, left; Pascal Le Segretain/Getty Images for Cartier International</media:credit>
+      </media:group>
+      <description>The poor rush in, seeking opportunity. The rich fly off, for even more glitter.&lt;br/&gt;&lt;br/&gt;&lt;span class="advertisement"&gt;    &lt;a href="http://www.pheedo.com/click.phdo?x=42a5e4e1b7bb48ba8141b0e8bb32f565&amp;u=http://www.nytimes.com/2008/11/09/weekinreview/09giridharadas.html"&gt;&lt;img src="http://www.pheedo.com/img.phdo?x=42a5e4e1b7bb48ba8141b0e8bb32f565&amp;u=http://www.nytimes.com/2008/11/09/weekinreview/09giridharadas.html" border="0"/&gt;&lt;/a&gt;
+
+&lt;/span&gt;
+</description>
+      <dc:creator>By ANAND GIRIDHARADAS</dc:creator>
+      <pubDate>Sun, 09 Nov 2008 07:36:27 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">Mumbai (India)</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_geo">India</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Income Inequality</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Millionaires and Billionaires</category>
+    </item>
+    <item>
+      <title>Ideas &amp; Trends: When Science Fiction Morphed Into Politics</title>
+      <link>http://www.nytimes.com/2008/11/09/weekinreview/09itzkoff.html?partner=rss&amp;emc=rss</link>
+      <guid isPermaLink="true">http://www.nytimes.com/2008/11/09/weekinreview/09itzkoff.html</guid>
+      <media:group>
+        <media:content>
+          <media:url>http://graphics8.nytimes.com/images/2008/11/09/weekinreview/09itzkoff.751.jpg</media:url>
+          <media:medium>image</media:medium>
+          <media:height>75</media:height>
+          <media:width>75</media:width>
+        </media:content>
+        <media:description><em class="bold"> THE MASTER </em> Michael Crichton.</media:description>
+        <media:credit>Reuters</media:credit>
+      </media:group>
+      <description>Readers trusted Michael Crichton to signal exaggerations. He may have fallen short at the end.&lt;br/&gt;&lt;br/&gt;&lt;span class="advertisement"&gt;    &lt;a href="http://www.pheedo.com/click.phdo?x=42a5e4e1b7bb48ba8141b0e8bb32f565&amp;u=http://www.nytimes.com/2008/11/09/weekinreview/09itzkoff.html"&gt;&lt;img src="http://www.pheedo.com/img.phdo?x=42a5e4e1b7bb48ba8141b0e8bb32f565&amp;u=http://www.nytimes.com/2008/11/09/weekinreview/09itzkoff.html" border="0"/&gt;&lt;/a&gt;
+
+&lt;/span&gt;
+</description>
+      <dc:creator>By DAVE ITZKOFF</dc:creator>
+      <pubDate>Sun, 09 Nov 2008 06:48:00 GMT</pubDate>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Books and Literature</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/nyt_per">Crichton, Michael</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/des">Science Fiction</category>
+      <category domain="http://www.nytimes.com/namespaces/keywords/mdes">Global Warming</category>
+    </item>
+  </channel>
+</rss>

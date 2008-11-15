@@ -1,0 +1,117 @@
+<!-- Feed -->
+<!--DO ALL THIS ONLY WHEN 'finalstring' !="" -->
+<?xml-stylesheet type="text/xsl" href="/tol/xsl/rss.xsl"?>
+<rss version="2.0" xmlns:thespringbox="http://www.thespringbox.com/dtds/thespringbox-1.0.dtd">
+<channel>
+<title>Top stories from Times Online</title>
+<description>Top stories from Times Online</description>
+<language>en-uk</language>
+<pubDate>Tue, 30 Oct 2007 15:37:29 GMT</pubDate>
+<copyright>Copyright 2007 Times Newspapers Ltd.</copyright>
+<webMaster>custserv@timesonline.co.uk</webMaster>
+<link>http://www.timesonline.co.uk </link>
+<lastBuildDate>
+Sat, 15 Nov 2008 02:59:06 GMT
+</lastBuildDate>
+<category>Newspapers</category>
+<image>
+<title>Top stories from Times Online </title>
+<width>144 </width>
+<height>21 </height>	
+<link>http://www.timesonline.co.uk </link>
+<url>http://images.thetimes.co.uk/TGD/picture/0,,116979,00.gif </url>
+</image>
+<!--START: Fix for Artifact 715508: Archive RSS Feed-->
+<!--END: Fix for Artifact 715508: Archive RSS Feed-->
+<item>
+<title>Gordon Brown calls on world leaders to combat crisis</title>
+<pubDate>
+Sat, 15 Nov 2008 15:52:34 GMT
+</pubDate>
+<link>
+<![CDATA[http://www.timesonline.co.uk/tol/news/politics/article5161758.ece#cid=OTC-RSS&attr=2015164]]>
+</link>
+<guid>
+<![CDATA[http://www.timesonline.co.uk/tol/news/politics/article5161758.ece]]>
+</guid>
+<description>	
+THE government's economic policies must be repeated by other world leaders to 
+combat the global crisis, Gordon Brown has warned.	
+</description>
+</item>
+<!--START: Fix for Artifact 715508: Archive RSS Feed-->
+<!--END: Fix for Artifact 715508: Archive RSS Feed-->
+<item>
+<title>Barack Obama is warned to beware of a &#8216;huge threat&#8217; from al&#45;Qaeda</title>
+<pubDate>
+Sat, 15 Nov 2008 00:00:00 GMT
+</pubDate>
+<link>
+<![CDATA[http://www.timesonline.co.uk/tol/news/world/us_and_americas/article5158569.ece#cid=OTC-RSS&attr=2015164]]>
+</link>
+<guid>
+<![CDATA[http://www.timesonline.co.uk/tol/news/world/us_and_americas/article5158569.ece]]>
+</guid>
+<description>	
+Barack Obama is being given ominous advice from leaders on both sides of the 
+Atlantic to brace himself for an early assault from terrorists.	
+</description>
+</item>
+<!--START: Fix for Artifact 715508: Archive RSS Feed-->
+<!--END: Fix for Artifact 715508: Archive RSS Feed-->
+<item>
+<title>Headteachers back Sharon Shoesmith</title>
+<pubDate>
+Sat, 15 Nov 2008 12:21:19 GMT
+</pubDate>
+<link>
+<![CDATA[http://www.timesonline.co.uk/tol/news/uk/crime/article5161092.ece#cid=OTC-RSS&attr=2015164]]>
+</link>
+<guid>
+<![CDATA[http://www.timesonline.co.uk/tol/news/uk/crime/article5161092.ece]]>
+</guid>
+<description>	
+Ministers 
+on defensive | Statement 
+from Baby P's father	
+</description>
+</item>
+<!--START: Fix for Artifact 715508: Archive RSS Feed-->
+<!--END: Fix for Artifact 715508: Archive RSS Feed-->
+<item>
+<title>Saving car giants will cause havoc, Gordon Brown warns US</title>
+<pubDate>
+Sat, 15 Nov 2008 00:00:00 GMT
+</pubDate>
+<link>
+<![CDATA[http://www.timesonline.co.uk/tol/business/economics/article5158583.ece#cid=OTC-RSS&attr=2015164]]>
+</link>
+<guid>
+<![CDATA[http://www.timesonline.co.uk/tol/business/economics/article5158583.ece]]>
+</guid>
+<description>	
+In a veiled warning to the next American President, Gordon Brown described 
+protectionism as the &#8220;road to ruin&#8221; yesterday as international tensions 
+surfaced at the start of the G20 summit in Washington.	
+</description>
+</item>
+<!--START: Fix for Artifact 715508: Archive RSS Feed-->
+<!--END: Fix for Artifact 715508: Archive RSS Feed-->
+<item>
+<title>Over 250,000 displaced as sexual violence erupts in DRC</title>
+<pubDate>
+Sat, 15 Nov 2008 00:00:00 GMT
+</pubDate>
+<link>
+<![CDATA[http://www.timesonline.co.uk/tol/news/world/africa/article5158488.ece#cid=OTC-RSS&attr=2015164]]>
+</link>
+<guid>
+<![CDATA[http://www.timesonline.co.uk/tol/news/world/africa/article5158488.ece]]>
+</guid>
+<description>	
+The first soldiers kicked down the door to her house, killed her younger 
+brother, his wife and son.	
+</description>
+</item>
+</channel>
+</rss>

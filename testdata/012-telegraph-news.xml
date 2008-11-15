@@ -1,0 +1,756 @@
+<?xml version="1.0"?>
+<?xml-stylesheet title="XSL_formatting" type="text/xsl" href="http://www.telegraph.co.uk/telegraph/template/ver1-0/xslt/rss_layout.xsl"?>
+
+<rss version="2.0">
+	<channel>
+		<title>Telegraph Home</title>
+		<link>http://www.telegraph.co.uk/</link>
+		<description>telegraph.co.uk for the latest news from the UK and around the world.</description>
+		<language>en-uk</language>
+		<copyright>&#x2117; &amp; &#xA9; 2008 of Telegraph Media Group Limited. Please refer to the Terms and Conditions of Use at http://www.telegraph.co.uk/rss</copyright>
+  		<webMaster>rss@telegraph.co.uk</webMaster>
+		<pubDate>Sat, 15 Nov 2008 17:19:43 +0000</pubDate>
+  		<lastBuildDate>Sat, 15 Nov 2008 17:45:21 +0000</lastBuildDate>
+  		<ttl>60</ttl>
+		<image>
+			<title>Telegraph Home</title>
+			<link>http://www.telegraph.co.uk/</link>
+			<width>124</width>
+			<height>18</height>
+			<url>http://www.telegraph.co.uk/telegraph/template/core/i/rss/tcuk_main.gif</url>
+		</image>
+		<category>Home</category>
+		<item>
+					<title>Anglican Church lacks leadership say bishops </title>
+							<link>http://www.telegraph.co.uk/news/newstopics/religion/3464612/Anglican-Church-lacks-leadership-say-bishops.html</link>
+							<category>rowan williams</category>
+							<category>michael nazirali</category>
+							<category>evangelicals</category>
+							<category>Anglican church</category>
+							<category>homosexuality</category>
+							<description>The Archbishop of Canterbury has failed to provide leadership in the Anglican Church's war over homosexuality according to two of his bishops. </description>
+							<pubDate>Sat, 15 Nov 2008 17:19:43 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/news/newstopics/religion/3464612/Anglican-Church-lacks-leadership-say-bishops.html</guid>
+						</item>
+			<item>
+					<title>Hillary Clinton would face tough questions about Bill's finances if chosen for Secretary of State</title>
+							<link>http://www.telegraph.co.uk/news/worldnews/northamerica/usa/barackobama/3464473/Hillary-Clinton-would-face-tough-questions-about-Bills-finances-if-chosen-for-Secretary-of-State.html</link>
+							<category>Hillary Clinton</category>
+							<category>Bill Clinton</category>
+							<category>financial dealings</category>
+							<category>Barack Obama</category>
+							<category>Secretary of State</category>
+							<category>presidentelect</category>
+							<category>rival</category>
+							<category>First Lady</category>
+							<category>confirmation hearings</category>
+							<category>Capitol Hill</category>
+							<category>Clinton library</category>
+							<category>Clinton foundation</category>
+							<category>Gulf</category>
+							<category>Arab</category>
+							<category>central Asian</category>
+							<category>oligarchs</category>
+							<category>White House</category>
+							<category>David Plouffe</category>
+							<category>secretive</category>
+							<category>impeachment</category>
+							<category>intern</category>
+							<category>Monica Lewinsky</category>
+							<category>Bill Richardson</category>
+							<category>John Kerry</category>
+							<category>Chicago talks</category>
+							<category>Iran</category>
+							<category>North Korea</category>
+							<category>meet without preconditions</category>
+							<category>debate</category>
+							<category>Bosnia</category>
+							<category>sniper fire</category>
+							<category>Northern Ireland</category>
+							<category>peace deal</category>
+							<category>John McCain</category>
+							<description>Hillary Clinton will face awkward questions about her husband's financial ties   if she becomes Secretary of State. </description>
+							<pubDate>Sat, 15 Nov 2008 17:09:08 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/news/worldnews/northamerica/usa/barackobama/3464473/Hillary-Clinton-would-face-tough-questions-about-Bills-finances-if-chosen-for-Secretary-of-State.html</guid>
+						</item>
+			<item>
+					<title>England beaten by Australia as Martin Johnson's reign suffers first defeat</title>
+							<link>http://www.telegraph.co.uk/sport/rugbyunion/international/england/3464556/England-beaten-by-Australia-as-Martin-Johnsons-reign-suffers-first-defeat-Rugby-Union.html</link>
+							<category>Twickenham</category>
+							<category>England</category>
+							<category>Australia</category>
+							<category>Martin Johnson</category>
+							<category>Danny Cipriani</category>
+							<category>autumn international</category>
+							<description>England 14 Australia 28Matt Giteau returned to the scene of his Test debut to mastermind Australia's   first win at Twickenham for four years.</description>
+							<pubDate>Sat, 15 Nov 2008 16:50:58 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/sport/rugbyunion/international/england/3464556/England-beaten-by-Australia-as-Martin-Johnsons-reign-suffers-first-defeat-Rugby-Union.html</guid>
+						</item>
+			<item>
+					<title>Gordon Brown hits back at George Osborne over 'irresponsible' sterling claim </title>
+							<link>http://www.telegraph.co.uk/news/newstopics/politics/labour/3464309/Gordon-Brown-hits-back-at-George-Osborne-over-irresponsible-sterling-claim.html</link>
+							<category>Gorodn brown</category>
+							<category>george osborne</category>
+							<category>G20</category>
+							<category>summit</category>
+							<category>crisis</category>
+							<category>irresponsible</category>
+							<category>sterling</category>
+							<category>scorched earth</category>
+							<category>devaluation</category>
+							<category>currency</category>
+							<category>collapse</category>
+							<category>pound</category>
+							<category>dollar</category>
+							<category>euro</category>
+							<category>Bank of England</category>
+							<category>interest rate</category>
+							<category>Alan Duncan</category>
+							<description>Gordon Brown has criticised George Osborne for warning that sterling was being   pushed towards "collapse". </description>
+							<pubDate>Sat, 15 Nov 2008 15:50:21 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/news/newstopics/politics/labour/3464309/Gordon-Brown-hits-back-at-George-Osborne-over-irresponsible-sterling-claim.html</guid>
+						</item>
+			<item>
+					<title>Liverpool return to winning ways thanks to goals from Dirk Kuyt and Steven Gerrard</title>
+							<link>http://www.telegraph.co.uk/sport/football/leagues/premierleague/3459806/Liverpool-return-to-winning-ways-thanks-to-goals-from-Dirk-Kuyt-and-Steven-Gerrard-Football.html</link>
+							<description>Bolton 0 Liverpool 2Goals from Dirk Kuyt and Steven Gerrard sealed another Premier League win for   Rafael Benitez's side.</description>
+							<pubDate>Sat, 15 Nov 2008 15:42:42 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/sport/football/leagues/premierleague/3459806/Liverpool-return-to-winning-ways-thanks-to-goals-from-Dirk-Kuyt-and-Steven-Gerrard-Football.html</guid>
+						</item>
+			<item>
+					<title>Premier League Roundup: Liverpool and United back to winning ways as Arsenal lose</title>
+							<link>http://www.telegraph.co.uk/sport/football/leagues/premierleague/3464137/Liverpool-and-United-back-to-winning-ways-and-Arsenal-lose-Football.html</link>
+							<category>Premier League</category>
+							<category>results</category>
+							<category>roundup</category>
+							<category>round up</category>
+							<category>Liverpool</category>
+							<category>Bolton</category>
+							<category>Steven gerrard</category>
+							<category>Dirk Kuyt</category>
+							<category>Fernando torres</category>
+							<description>Liverpool and Manchester United return to winning ways against Bolton and   Stoke respectively while Arsenal are beaten at home against Aston Villa.</description>
+							<pubDate>Sat, 15 Nov 2008 14:51:49 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/sport/football/leagues/premierleague/3464137/Liverpool-and-United-back-to-winning-ways-and-Arsenal-lose-Football.html</guid>
+						</item>
+			<item>
+					<title>Inside Europe's corruption capital: how Bulgaria's crime mafia plunders EU grant money</title>
+							<link>http://www.telegraph.co.uk/news/worldnews/europe/bulgaria/3463957/Inside-Europes-corruption-capital-how-Bulgarias-crime-mafia-plunders--EU-grant-money.html</link>
+							<category>Bulgaria</category>
+							<category>corruption</category>
+							<category>sapard</category>
+							<category>european union special accession programme for ag</category>
+							<category>mario nikolov</category>
+							<category>sofia</category>
+							<category>brussels</category>
+							<category>Atanas Atanaso</category>
+							<description>Just a year after Bulgaria became part of the EU its country lanes roar to   the sound of brand new fourwheel drives.</description>
+							<pubDate>Sat, 15 Nov 2008 14:47:59 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/news/worldnews/europe/bulgaria/3463957/Inside-Europes-corruption-capital-how-Bulgarias-crime-mafia-plunders--EU-grant-money.html</guid>
+						</item>
+			<item>
+					<title>George Osborne under fire for sterling warning</title>
+							<link>http://www.telegraph.co.uk/news/newstopics/politics/conservative/georgeosborne/3463793/George-Osborne-under-fire-for-sterling-warning.html</link>
+							<category>George Osborne</category>
+							<category>Gordon Brown</category>
+							<category>Sterling</category>
+							<category>row</category>
+							<category>Prime Minister</category>
+							<category>economy</category>
+							<category>credit crunch</category>
+							<category>shadow chancellor</category>
+							<description>George Osborne has faced renewed criticism for warning that sterling could   collapse because of government borrowing.</description>
+							<pubDate>Sat, 15 Nov 2008 13:56:12 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/news/newstopics/politics/conservative/georgeosborne/3463793/George-Osborne-under-fire-for-sterling-warning.html</guid>
+						</item>
+			<item>
+					<title>Josef Fritzl 'wanted to make dungeon a tourist attraction to raise money' </title>
+							<link>http://www.telegraph.co.uk/news/newstopics/joseffritzl/3463674/Josef-Fritzl-wanted-to-make-dungeon-a-tourist-attraction-to-raise-money.html</link>
+							<category>fritzl</category>
+							<category>elisabeth</category>
+							<category>josef</category>
+							<category>austria</category>
+							<category>dungeon</category>
+							<category>tourist attraction</category>
+							<category></category>
+							<description>The Austrian Josef Fritzl wanted to make a tourist attraction of the dungeon where he imprisoned his daughter and fathered seven children by her it has been reported.  </description>
+							<pubDate>Sat, 15 Nov 2008 13:03:13 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/news/newstopics/joseffritzl/3463674/Josef-Fritzl-wanted-to-make-dungeon-a-tourist-attraction-to-raise-money.html</guid>
+						</item>
+			<item>
+					<title>Pensions suffer as credit crisis bites </title>
+							<link>http://www.telegraph.co.uk/finance/personalfinance/pensions/3463707/Pensions-suffer-as-credit-crisis-bites.html</link>
+							<category>personal finance</category>
+							<category>pension</category>
+							<category>money</category>
+							<category>credit crunch</category>
+							<category>axa</category>
+							<category>sipp</category>
+							<category>stakeholder</category>
+							<description>One in 12 people intend to stop paying into their pension during the coming two years in a bid to save money according to new research. </description>
+							<pubDate>Sat, 15 Nov 2008 13:02:19 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/finance/personalfinance/pensions/3463707/Pensions-suffer-as-credit-crisis-bites.html</guid>
+						</item>
+			<item>
+					<title>George W Bush's dog bites two people </title>
+							<link>http://www.telegraph.co.uk/news/worldnews/northamerica/3463632/George-W-Bushs-dog-bites-two-people.html</link>
+							<category>barney</category>
+							<category>barack obama</category>
+							<category>dog bite</category>
+							<category>white house</category>
+							<category>president george w bush</category>
+							<category>oval office</category>
+							<category>heather walker</category>
+							<category>john decker</category>
+							<description>First dog Barney attacks PR woman days after he bit a reporter.</description>
+							<pubDate>Sat, 15 Nov 2008 12:53:36 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/news/worldnews/northamerica/3463632/George-W-Bushs-dog-bites-two-people.html</guid>
+						</item>
+			<item>
+					<title>Dr Who fans left in the dark </title>
+							<link>http://www.telegraph.co.uk/news/newstopics/celebritynews/3463456/Dr-Who-fans-left-in-the-dark.html</link>
+							<category>Doctor Who</category>
+							<category>David Tennant</category>
+							<category>David Morrissey</category>
+							<category>dalek</category>
+							<category>Dr Who</category>
+							<description>Christmas special preview keeps identity of the new Dr Who a mystery.</description>
+							<pubDate>Sat, 15 Nov 2008 12:39:23 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/news/newstopics/celebritynews/3463456/Dr-Who-fans-left-in-the-dark.html</guid>
+						</item>
+			<item>
+					<title>Carling Cup quarterfinal draw: Burnley host Arsenal as Blackburn face Manchester United</title>
+							<link>http://www.telegraph.co.uk/sport/football/leaguecup/3463624/Carling-Cup-quarter-final-draw-Burnley-host-Arsenal-as-Blackburn-tral-to-Manchester-United-Football.html</link>
+							<category>Arsenal</category>
+							<category>Blackburn rovers</category>
+							<category>Burnley</category>
+							<category>Derby County</category>
+							<category>Manchester United</category>
+							<category>Stoke City</category>
+							<category>Tottenham</category>
+							<category>Spurs</category>
+							<category>Watford</category>
+							<category>Carlign Cup</category>
+							<category>quarterfinal</category>
+							<category>draw</category>
+							<description>Burnley&#039;s reward for victory over Chelsea is a home Carling Cup quarterfinal   draw against Arsenal.</description>
+							<pubDate>Sat, 15 Nov 2008 12:39:22 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/sport/football/leaguecup/3463624/Carling-Cup-quarter-final-draw-Burnley-host-Arsenal-as-Blackburn-tral-to-Manchester-United-Football.html</guid>
+						</item>
+			<item>
+					<title>Facial scars can help win a woman's heart</title>
+							<link>http://www.telegraph.co.uk/scienceandtechnology/science/sciencenews/3463442/Facial-scars-can-help-win-a-womans-heart..html</link>
+							<category>scar</category>
+							<category>attractiveness</category>
+							<category>women</category>
+							<category>more attractive</category>
+							<category>facial</category>
+							<category>men</category>
+							<description>A facial scar preferably one that looks like it was inflicted in anger rather   than the aftermath of chickenpox or acne increases men's attractiveness to   a woman for a shortterm relationship according to researchers.</description>
+							<pubDate>Sat, 15 Nov 2008 12:02:18 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/scienceandtechnology/science/sciencenews/3463442/Facial-scars-can-help-win-a-womans-heart..html</guid>
+						</item>
+			<item>
+					<title>Women become freemen of Oxford  </title>
+							<link>http://www.telegraph.co.uk/news/newstopics/howaboutthat/3463390/Women-become-freemen-of-Oxford.html</link>
+							<category>doomsday book</category>
+							<category>freemen</category>
+							<category>oxford</category>
+							<description>THE age old right to be a freeman of Oxford is to be extended to women for the first time. </description>
+							<pubDate>Sat, 15 Nov 2008 11:41:26 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/news/newstopics/howaboutthat/3463390/Women-become-freemen-of-Oxford.html</guid>
+						</item>
+			<item>
+					<title>England crash out of World Cup as New Zealand expose defensive frailties</title>
+							<link>http://www.telegraph.co.uk/sport/rugbyleague/3463337/England-crash-out-of-World-Cup-as-New-Zealand-expose-defensive-frailties-Rugby-League.html</link>
+							<category>England</category>
+							<category>New Zealand</category>
+							<category>All Blacks</category>
+							<category>Kiwis</category>
+							<category>World Cup</category>
+							<category>Brisbane</category>
+							<description>England 22 New Zealand 32 England's World Cup campaign has ended as it started with another poor   defensive performance. </description>
+							<pubDate>Sat, 15 Nov 2008 11:19:04 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/sport/rugbyleague/3463337/England-crash-out-of-World-Cup-as-New-Zealand-expose-defensive-frailties-Rugby-League.html</guid>
+						</item>
+			<item>
+					<title>England taking no chances on Ryan Sidebottom ahead of second India ODI</title>
+							<link>http://www.telegraph.co.uk/sport/cricket/international/england/3463219/England-taking-no-chances-on-Ryan-Sidebottom-ahead-of-second-India-ODI-Cricket.html</link>
+							<category>cricket</category>
+							<category>internationals</category>
+							<category>india</category>
+							<category>england</category>
+							<category>peter moores</category>
+							<category>ryan sidebottom</category>
+							<category>second one day</category>
+							<category>Nehru Stadium</category>
+							<category>achilles injury</category>
+							<description>England unlikely to risk recalling seamer as they look to bounce back against   India in second ODI. </description>
+							<pubDate>Sat, 15 Nov 2008 10:57:53 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/sport/cricket/international/england/3463219/England-taking-no-chances-on-Ryan-Sidebottom-ahead-of-second-India-ODI-Cricket.html</guid>
+						</item>
+			<item>
+					<title>Harry Redknapp and FA urge action against cointhrowers as Didier Drogba is charged</title>
+							<link>http://www.telegraph.co.uk/sport/football/leagues/premierleague/chelsea/3463041/Harry-Redknapp-and-FA-urge-action-against-coin-throwers-as-Didier-Drogba-is-charged-Football.html</link>
+							<category>premier league</category>
+							<category>the fa</category>
+							<category>didier drigba</category>
+							<category>coin throwing</category>
+							<category>harry redknapp</category>
+							<category>tottenham</category>
+							<category>chelsea</category>
+							<category>punishment</category>
+							<category>charges</category>
+							<description>FA and Tottenham manager Harry Redknapp demand life bans for fans who throw   missiles on to pitches. </description>
+							<pubDate>Sat, 15 Nov 2008 09:46:33 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/sport/football/leagues/premierleague/chelsea/3463041/Harry-Redknapp-and-FA-urge-action-against-coin-throwers-as-Didier-Drogba-is-charged-Football.html</guid>
+						</item>
+			<item>
+					<title>Prime Minister Gordon Brown joins world leaders for emergency economic summit </title>
+							<link>http://www.telegraph.co.uk/finance/financetopics/financialcrisis/3462752/Prime-Minister-Gordon-Brown-joins-world-leaders-for-emergency-economic-summit.html</link>
+							<category>credit crunch</category>
+							<category>economy</category>
+							<category>george bush</category>
+							<category>Gordon Brown</category>
+							<category>washington</category>
+							<category>G20</category>
+							<description>Gordon Brown is attempting to win international support for a range of   measures that will try to end the financial turmoil. </description>
+							<pubDate>Sat, 15 Nov 2008 07:56:18 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/finance/financetopics/financialcrisis/3462752/Prime-Minister-Gordon-Brown-joins-world-leaders-for-emergency-economic-summit.html</guid>
+						</item>
+			<item>
+					<title>Top of the Pops 'to return to the BBC' </title>
+							<link>http://www.telegraph.co.uk/news/newstopics/celebritynews/3462157/Top-of-the-Pops-to-return-to-the-BBC.html</link>
+							<category>top</category>
+							<category>of</category>
+							<category>the</category>
+							<category>pops</category>
+							<category>bbc</category>
+							<category>revival</category>
+							<category>brought</category>
+							<category>back</category>
+							<category>lemar</category>
+							<category>return</category>
+							<description>Cult BBC show set for return after it was axed for falling ratings.</description>
+							<pubDate>Sat, 15 Nov 2008 02:23:45 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/news/newstopics/celebritynews/3462157/Top-of-the-Pops-to-return-to-the-BBC.html</guid>
+						</item>
+			<item>
+					<title>Police officers stay in jobs despite serious convictions </title>
+							<link>http://www.telegraph.co.uk/news/newstopics/politics/lawandorder/3462142/Police-officers-stay-in-jobs-despite-serious-convictions.html</link>
+							<category>POLICE</category>
+							<category>OFFICERS</category>
+							<category>convicted</category>
+							<category>violent</category>
+							<category>offences</category>
+							<category>gun</category>
+							<category>job</category>
+							<category>force</category>
+							<category>criminal</category>
+							<category>conviction</category>
+							<description>Police officers convicted of serious violent offences are continuing to serve it has emerged.  </description>
+							<pubDate>Sat, 15 Nov 2008 02:17:14 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/news/newstopics/politics/lawandorder/3462142/Police-officers-stay-in-jobs-despite-serious-convictions.html</guid>
+						</item>
+			<item>
+					<title>Gordon Brown risks 'collapse of sterling' says George Osborne </title>
+							<link>http://www.telegraph.co.uk/finance/3461972/Gordon-Brown-risks-collapse-of-sterling-says-George-Osborne.html</link>
+							<category>gordon brown</category>
+							<category>george osborne</category>
+							<category>sterling</category>
+							<category>run</category>
+							<description>Gordon Brown is risking the "collapse of sterling" by borrowing his   way out of economic turmoil George Osborne has warned.</description>
+							<pubDate>Sat, 15 Nov 2008 02:06:56 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/finance/3461972/Gordon-Brown-risks-collapse-of-sterling-says-George-Osborne.html</guid>
+						</item>
+			<item>
+					<title>Haringey: where no one will hear you cry</title>
+							<link>http://www.telegraph.co.uk/news/uknews/3461938/Haringey-where-no-one-will-hear-you-cry.html</link>
+							<category>Baby P</category>
+							<category>baby</category>
+							<category>Haringey</category>
+							<category>Haringey Council</category>
+							<category>Sharon S</category>
+							<category>child protection</category>
+							<category>child</category>
+							<category>children</category>
+							<category>CSCI</category>
+							<category>Nevres Ke</category>
+							<category>whistleblower</category>
+							<category>court</category>
+							<description>Neil Tweedie visited the seemingly respectable streets in which Baby P endured   a private hell and found no trace of a community. </description>
+							<pubDate>Sat, 15 Nov 2008 01:04:40 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/news/uknews/3461938/Haringey-where-no-one-will-hear-you-cry.html</guid>
+						</item>
+			<item>
+					<title>I'm a celebrity &#045; get me back in there </title>
+							<link>http://www.telegraph.co.uk/news/newstopics/celebritynews/3461939/Christine-Hamilton-Im-a-celebrity---get-me-back-in-there.html</link>
+							<category>celebrity</category>
+							<category>im a celebrity</category>
+							<category>itv</category>
+							<category>show</category>
+							<category>kilroy</category>
+							<category>takei</category>
+							<category>carly</category>
+							<category>dani</category>
+							<category>favourite</category>
+							<category>robert kilroysilk</category>
+							<category>kilroysilk</category>
+							<category>Christine Hamilton</category>
+							<description>As a new batch of hopefuls enters the jungle excontestant Christine Hamilton   offers some timely advice.</description>
+							<pubDate>Sat, 15 Nov 2008 00:55:04 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/news/newstopics/celebritynews/3461939/Christine-Hamilton-Im-a-celebrity---get-me-back-in-there.html</guid>
+						</item>
+			<item>
+					<title>Ovary transplant mother speaks of her "indescribable" joy after giving birth </title>
+							<link>http://www.telegraph.co.uk/health/women_shealth/3460954/Ovary-transplant-mother-speaks-of-her-indescribable-joy-after-giving-birth.html</link>
+							<category>ovary transplant</category>
+							<category>maja butscher</category>
+							<category>susanne</category>
+							<category>stephan</category>
+							<category>SHERMAN SILBER</category>
+							<description>Fourdayold Maja Butscher is the first baby to be born as the result of a   whole ovary transplant.</description>
+							<pubDate>Fri, 14 Nov 2008 22:11:51 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/health/women_shealth/3460954/Ovary-transplant-mother-speaks-of-her-indescribable-joy-after-giving-birth.html</guid>
+						</item>
+			<item>
+					<title>NASA astronauts to drink their own urine </title>
+							<link>http://www.telegraph.co.uk/news/worldnews/northamerica/usa/3461488/NASA-astronauts-to-drink-their-own-urine.html</link>
+							<category>nasa</category>
+							<category>astronaut</category>
+							<category>urine</category>
+							<category>drink</category>
+							<description>As NASA prepared to double the number of astronauts living aboard the International Space Station nothing did more for crew bonding than a machine being launched aboard the space shuttle Endeavour on Friday. </description>
+							<pubDate>Fri, 14 Nov 2008 21:53:34 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/news/worldnews/northamerica/usa/3461488/NASA-astronauts-to-drink-their-own-urine.html</guid>
+						</item>
+			<item>
+					<title>Brown calls on Bank to cut interest rates again </title>
+							<link>http://www.telegraph.co.uk/finance/economics/interestrates/3460603/Brown-calls-on-Bank-to-cut-interest-rates-again.html</link>
+							<category>gordon brown</category>
+							<category>bank of england</category>
+							<category>america</category>
+							<category>interest rates</category>
+							<description>Prime Minister admits Britain had lagged behind the United States in   attempting to stimulate the economy. </description>
+							<pubDate>Fri, 14 Nov 2008 21:27:22 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/finance/economics/interestrates/3460603/Brown-calls-on-Bank-to-cut-interest-rates-again.html</guid>
+						</item>
+			<item>
+					<title>British and US troops to leave Iraq by 2011 </title>
+							<link>http://www.telegraph.co.uk/news/worldnews/middleeast/iraq/3461368/British-and-US-troops-to-leave-Iraq-by-2011.html</link>
+							<category>iraq</category>
+							<category>us</category>
+							<category>british</category>
+							<category>troops</category>
+							<category>pull out</category>
+							<category>2011</category>
+							<description>Iraq is likely to approve a military pact with a timetable for the withdrawal of all US troops by 2011 and British troops will leave by the end of next year Iraq's national security adviser said on Friday. </description>
+							<pubDate>Fri, 14 Nov 2008 21:22:42 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/news/worldnews/middleeast/iraq/3461368/British-and-US-troops-to-leave-Iraq-by-2011.html</guid>
+						</item>
+			<item>
+					<title>Martin Johnson is the ideal leader of the pack for England as Australia enter town</title>
+							<link>http://www.telegraph.co.uk/sport/rugbyunion/international/england/3460875/Martin-Johnson-is-the-ideal-leader-of-the-pack-for-England-Rugby-Union.html</link>
+							<category>martin johnson</category>
+							<category>england</category>
+							<category>australia</category>
+							<category>manager</category>
+							<category>middle class</category>
+							<category>working class</category>
+							<category>roots</category>
+							<category>stateschool</category>
+							<description>A full house a game with a genuine edge against an old enemy &#045; this is where   the new era really kicks off for Martin Johnson.</description>
+							<pubDate>Fri, 14 Nov 2008 21:13:53 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/sport/rugbyunion/international/england/3460875/Martin-Johnson-is-the-ideal-leader-of-the-pack-for-England-Rugby-Union.html</guid>
+						</item>
+			<item>
+					<title>Kevin Pietersen's England dismantled by Yuvraj Singh's sizzling century  </title>
+							<link>http://www.telegraph.co.uk/sport/cricket/3460068/England-dismantled-by-Yuvraj-Singhs-sizzling-century-Cricket.html</link>
+							<category>england</category>
+							<category>india</category>
+							<category>yuvraj singh</category>
+							<category>kevin pietersen</category>
+							<category>andrew flintoff</category>
+							<category>dhoni</category>
+							<category>zaheer</category>
+							<category>rajkot</category>
+							<description>England captain Kevin Pietersen regrets putting India in as side suffer third   largest oneday defeat. </description>
+							<pubDate>Fri, 14 Nov 2008 20:54:54 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/sport/cricket/3460068/England-dismantled-by-Yuvraj-Singhs-sizzling-century-Cricket.html</guid>
+						</item>
+			<item>
+					<title>Baby P: Father speaks out</title>
+							<link>http://www.telegraph.co.uk/news/uknews/3460684/Baby-P-Father-speaks-out.html</link>
+							<category>Baby P</category>
+							<category>baby</category>
+							<category>Haringey</category>
+							<category>Haringey Council</category>
+							<category>Sharon S</category>
+							<category>child protection</category>
+							<category>child</category>
+							<category>children</category>
+							<category>CSCI</category>
+							<category>Nevres Ke</category>
+							<category>whistleblower</category>
+							<category>court</category>
+							<description>The father of Baby P has spoken for the first time about how the 'systematic torture' of his son was hidden from him. </description>
+							<pubDate>Fri, 14 Nov 2008 20:12:39 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/news/uknews/3460684/Baby-P-Father-speaks-out.html</guid>
+						</item>
+			<item>
+					<title>'Group of 20' summit could turn out to be the beginning of something quite important</title>
+							<link>http://www.telegraph.co.uk/finance/comment/3461006/Group-of-20-summit-could-turn-out-to-be-the-beginning-of-something-quite-important.html</link>
+							<description>It could be a movie script: 20 men and women gather in a secret location with   just a few hours to save the world from disaster. There are dubious   Russians a discredited American and some wily Orientals but the obvious   leaders are two European superheroes: a serious Scottish nerd and a dashing   Napoleon lookalike from France. What will they come up with?</description>
+							<pubDate>Fri, 14 Nov 2008 19:38:14 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/finance/comment/3461006/Group-of-20-summit-could-turn-out-to-be-the-beginning-of-something-quite-important.html</guid>
+						</item>
+			<item>
+					<title>Prince of Wales given a bus pass as 60th birthday present  </title>
+							<link>http://www.telegraph.co.uk/news/newstopics/theroyalfamily/3460013/Prince-of-Wales-given-a-bus-pass-as-60th-birthday-present.html</link>
+							<category>Prince of Wales Prince Charles</category>
+							<category>Duchess of Cornwall the Queen</category>
+							<category>Royal family Buckingham Palace</category>
+							<category>Clarence House Joanna Lumley Rod Stewart</category>
+							<description>The Prince of Wales was given a present which reminds him of one of the advantages of turning 60 &#045; a free bus pass. </description>
+							<pubDate>Fri, 14 Nov 2008 18:20:30 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/news/newstopics/theroyalfamily/3460013/Prince-of-Wales-given-a-bus-pass-as-60th-birthday-present.html</guid>
+						</item>
+			<item>
+					<title>Kanye West arrested in connection with alleged assault on photographer</title>
+							<link>http://www.telegraph.co.uk/news/newstopics/celebritynews/3460002/Kanye-West-arrested-in-connection-with-alleged-assault-on-photographer.html</link>
+							<category>kanye west</category>
+							<category>kanye</category>
+							<category>arrested</category>
+							<category>police</category>
+							<category>photographer</category>
+							<category>assault</category>
+							<category>club</category>
+							<category>newcastle</category>
+							<category>tup tup</category>
+							<description>Rapper held over alleged assault at Newcastle nightclub. </description>
+							<pubDate>Fri, 14 Nov 2008 18:05:31 +0000</pubDate>
+							<enclosure url="http://www.telegraph.co.uk/telegraph/multimedia/archive/01113/kanye_west_1113476i.jpg" length="99" type="image/jpeg" />
+									<guid>http://www.telegraph.co.uk/news/newstopics/celebritynews/3460002/Kanye-West-arrested-in-connection-with-alleged-assault-on-photographer.html</guid>
+						</item>
+			<item>
+					<title>Hillary Clinton in line for top job in Barack Obama cabinet</title>
+							<link>http://www.telegraph.co.uk/news/worldnews/northamerica/usa/barackobama/3460474/Hillary-Clinton-in-line-for-top-job-in-Barack-Obama-cabinet.html</link>
+							<category>Barack Obama</category>
+							<category>Hillary Clinton</category>
+							<category>secretary of state</category>
+							<category>foreign policy</category>
+							<category>top diplomat</category>
+							<category>bill clinton</category>
+							<category>rival</category>
+							<category>chicago</category>
+							<category>first lady</category>
+							<category>john kerry</category>
+							<category>secret talks</category>
+							<description>Hillary Clinton has held secret talks with Barack Obama about becoming his   Secretary of State.</description>
+							<pubDate>Fri, 14 Nov 2008 18:01:10 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/news/worldnews/northamerica/usa/barackobama/3460474/Hillary-Clinton-in-line-for-top-job-in-Barack-Obama-cabinet.html</guid>
+						</item>
+			<item>
+					<title>Seve Ballesteros ready to leave intensive care following surgery on brain tumour in Madrid</title>
+							<link>http://www.telegraph.co.uk/sport/golf/3460402/Seve-Ballesteros-ready-to-leave-intensive-care-following-surgery-on-brain-tumour-in-Madrid-Golf.html</link>
+							<description>Seve Ballesteros could be moved out of intensive care as soon as next week   according to the hospital treating the retired Spanish golfer.</description>
+							<pubDate>Fri, 14 Nov 2008 17:50:27 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/sport/golf/3460402/Seve-Ballesteros-ready-to-leave-intensive-care-following-surgery-on-brain-tumour-in-Madrid-Golf.html</guid>
+						</item>
+			<item>
+					<title>Inspectors criticised 'child protection concerns' in Haringey before Baby P's death </title>
+							<link>http://www.telegraph.co.uk/news/uknews/3460181/Inspectors-criticised-child-protection-concerns-in-Haringey-before-Baby-Ps-death.html</link>
+							<category>Victoria Climbi</category>
+							<category>Baby P</category>
+							<category>Haringey</category>
+							<category>abuse</category>
+							<category>scandal</category>
+							<category>obstruction</category>
+							<category>whistleblower</category>
+							<category>Sharon Shoesmith</category>
+							<category>Nevres Kemal</category>
+							<category>council</category>
+							<category>social worker</category>
+							<category>Oftsed</category>
+							<category>Juliet Winstanley</category>
+							<description>String of failings in the council at the centre of the Baby P abuse scandal   highlighted months before the toddler's death. </description>
+							<pubDate>Fri, 14 Nov 2008 17:24:51 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/news/uknews/3460181/Inspectors-criticised-child-protection-concerns-in-Haringey-before-Baby-Ps-death.html</guid>
+						</item>
+			<item>
+					<title>Number of people facing bankruptcy hits 20000 Ministry of Justice figures show </title>
+							<link>http://www.telegraph.co.uk/finance/personalfinance/3459774/Number-of-people-facing-bankruptcy-hits-20000-Ministry-of-Justice-figures-show.html</link>
+							<category>bankruptcy</category>
+							<category>bankruptcies</category>
+							<category>iva</category>
+							<category>ivas</category>
+							<category>individual voluntary arrangement</category>
+							<category>debt</category>
+							<category>loans</category>
+							<category>mortgages</category>
+							<category>unemployment</category>
+							<description>Bankruptcy levels reach their second highest since 1995. </description>
+							<pubDate>Fri, 14 Nov 2008 17:21:26 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/finance/personalfinance/3459774/Number-of-people-facing-bankruptcy-hits-20000-Ministry-of-Justice-figures-show.html</guid>
+						</item>
+			<item>
+					<title>Officer warned of equipment shortages on the frontline in letters to his fiancee </title>
+							<link>http://www.telegraph.co.uk/news/3459999/Officer-warned-of-equipment-shortages-on-the-frontline-in-letters-to-his-fiancee.html</link>
+							<category>afghanistan</category>
+							<category>david hicks</category>
+							<description>A decorated officer killed in Afghanistan told how his requests for equipment on the frontline were ignored in letters to his fiancee sent days before his death in a Taliban firefight. </description>
+							<pubDate>Fri, 14 Nov 2008 17:10:44 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/news/3459999/Officer-warned-of-equipment-shortages-on-the-frontline-in-letters-to-his-fiancee.html</guid>
+						</item>
+			<item>
+					<title>Andy Murray dumps defending champion Roger Federer out of the Masters Cup</title>
+							<link>http://www.telegraph.co.uk/sport/tennis/3459968/Andy-Murray-dumps-defending-champion-Roger-Federer-out-of-the-Masters-Cup-Tennis.html</link>
+							<category>roger federer</category>
+							<category>andy murray</category>
+							<category>masters cup</category>
+							<category>shanghai</category>
+							<description>Andy Murray&#039;s Masters Cup defeat of world No 2 was one of the most   entertaining contests of year. </description>
+							<pubDate>Fri, 14 Nov 2008 16:52:02 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/sport/tennis/3459968/Andy-Murray-dumps-defending-champion-Roger-Federer-out-of-the-Masters-Cup-Tennis.html</guid>
+						</item>
+			<item>
+					<title>RE: Fashion Awards 2008</title>
+							<link>http://www.telegraph.co.uk/fashion/3459905/RE-Fashion-Awards-2008.html</link>
+							<category>Jo Wood</category>
+							<category>ethical fashion</category>
+							<category>Vivienne Westwood</category>
+							<category>Bora Asku</category>
+							<category>Allegra Hicks</category>
+							<category>Notting Hill</category>
+							<category>From Somewhere</category>
+							<category>Daisy Lowe</category>
+							<category>Pixie Geldof</category>
+							<category>Leah Wood</category>
+							<category>Cyndi Rhoades</category>
+							<description>Alist celebrities turned out to support the RE: Ethical Fashion Awards which   were supported by some of the industry's top designers. </description>
+							<pubDate>Fri, 14 Nov 2008 16:22:24 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/fashion/3459905/RE-Fashion-Awards-2008.html</guid>
+						</item>
+			<item>
+					<title>Prince Charles's 60th birthday presents </title>
+							<link>http://www.telegraph.co.uk/news/newstopics/theroyalfamily/3459727/Prince-Charless-60th-birthday-presents.html</link>
+							<category>Prince Charles Prince of Wales</category>
+							<category>60th birthday Highgrove</category>
+							<category>Royal family Duchess of Cornwall Camilla</category>
+							<category>Rod Stewart Meera Syal Joanna Lumley</category>
+							<description>Choosing a 60th birthday present for a man who has everything is always difficult but in the case of the Prince of Wales the answer is simple: buy him a shrub. </description>
+							<pubDate>Fri, 14 Nov 2008 16:19:16 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/news/newstopics/theroyalfamily/3459727/Prince-Charless-60th-birthday-presents.html</guid>
+						</item>
+			<item>
+					<title>Rare albino hedgehog rescued by couple </title>
+							<link>http://www.telegraph.co.uk/earth/wildlife/3459736/Rare-albino-hedgehog-rescued-by-couple.html</link>
+							<category>albino</category>
+							<category>hedgehog</category>
+							<category>albino hedgehog</category>
+							<category>Tiggywinkles Wildlife Sanctuary</category>
+							<description>A rare albino hedgehog has been rescued by a couple who found it in their   garden </description>
+							<pubDate>Fri, 14 Nov 2008 16:14:24 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/earth/wildlife/3459736/Rare-albino-hedgehog-rescued-by-couple.html</guid>
+						</item>
+			<item>
+					<title>Number of people facing bankruptcy hits 20000 Ministry of Justice figures show </title>
+							<link>http://www.telegraph.co.uk/finance/financetopics/recession/3459036/Number-of-people-facing-bankruptcy-hits-20000-Ministry-of-Justice-figures-show.html</link>
+							<category>bankruptcies</category>
+							<category>Ministry of Justice</category>
+							<category>home owners</category>
+							<category>unemployment</category>
+							<description>The number of people facing bankruptcy increased to almost 20000 in the three   months to the end of September.</description>
+							<pubDate>Fri, 14 Nov 2008 16:03:23 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/finance/financetopics/recession/3459036/Number-of-people-facing-bankruptcy-hits-20000-Ministry-of-Justice-figures-show.html</guid>
+						</item>
+			<item>
+					<title>Andy Murray dumps Roger Federer out of the Masters Cup in Shanghai</title>
+							<link>http://www.telegraph.co.uk/sport/tennis/andymurray/3459599/Andy-Murray-dumps-Roger-Federer-out-of-the-Masters-Cup-in-Shanghai-Tennis.html</link>
+							<category>Radek Stepanek</category>
+							<category>Andy Murray</category>
+							<category>Roger Federer</category>
+							<category>Masters Cup</category>
+							<category>Andy Roddick</category>
+							<category>Shanghai</category>
+							<description>Epic threeset win for British number one sends reigning champion packing from   Masters Cup in Shanghai.</description>
+							<pubDate>Fri, 14 Nov 2008 15:31:40 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/sport/tennis/andymurray/3459599/Andy-Murray-dumps-Roger-Federer-out-of-the-Masters-Cup-in-Shanghai-Tennis.html</guid>
+						</item>
+			<item>
+					<title>Robert KilroySilk favourite to be voted off I'm A Celebrity... Get Me Out Of Here</title>
+							<link>http://www.telegraph.co.uk/news/3459270/Robert-Kilroy-Silk-favourite-to-be-voted-off-Im-A-Celebrity...-Get-Me-Out-Of-Here.html</link>
+							<category>celebrity</category>
+							<category>im a celebrity</category>
+							<category>itv</category>
+							<category>show</category>
+							<category>kilroy</category>
+							<category>takei</category>
+							<category>carly</category>
+							<category>dani</category>
+							<category>favourite</category>
+							<category>robert kilroysilk</category>
+							<category>kilroysilk</category>
+							<category></category>
+							<description>Robert KilroySilk is already tipped to be voted off I'm A Celebrity first.</description>
+							<pubDate>Fri, 14 Nov 2008 15:19:13 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/news/3459270/Robert-Kilroy-Silk-favourite-to-be-voted-off-Im-A-Celebrity...-Get-Me-Out-Of-Here.html</guid>
+						</item>
+			<item>
+					<title>Michael Stone guilty of attempted murder of Gerry Adams and Martin McGuinness </title>
+							<link>http://www.telegraph.co.uk/news/worldnews/europe/ireland/3459298/Michael-Stone-guilty-of-attempted-murder-of-Gerry-Adams-and-Martin-McGuinness.html</link>
+							<category>gerry adams</category>
+							<category>martin mcguinness</category>
+							<category>ireland</category>
+							<category>northern</category>
+							<category>michael stone</category>
+							<category>uda</category>
+							<category>ira</category>
+							<category>sinn fein</category>
+							<description>Loyalist killer Michael Stone has been found guilty of attempting to murder   Gerry Adams and Martin McGuinness.</description>
+							<pubDate>Fri, 14 Nov 2008 15:10:38 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/news/worldnews/europe/ireland/3459298/Michael-Stone-guilty-of-attempted-murder-of-Gerry-Adams-and-Martin-McGuinness.html</guid>
+						</item>
+			<item>
+					<title>The Andrew Chatto papers</title>
+							<link>http://www.telegraph.co.uk/gardening/3458335/The-Andrew-Chatto-papers.html</link>
+							<category>Beth Chatto</category>
+							<category>planting design</category>
+							<category>ecology</category>
+							<category>garden design</category>
+							<description>Beth Chatto's late husband Andrew was a quiet but key influence on her   planting design  as his research papers now reveal </description>
+							<pubDate>Fri, 14 Nov 2008 14:57:16 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/gardening/3458335/The-Andrew-Chatto-papers.html</guid>
+						</item>
+			<item>
+					<title>Arsene Wenger backs 'fair' Didier Drogba in cointhrowing row</title>
+							<link>http://www.telegraph.co.uk/sport/football/leagues/premierleague/arsenal/3459247/Arsene-Wenger-backs-fair-Didier-Drogba-in-coin-throwing-row.html</link>
+							<category>Arsenal</category>
+							<category>Arsene Wenger</category>
+							<category>Didier Drogba</category>
+							<category>Chelsea</category>
+							<category>cointrowing</category>
+							<category>coin</category>
+							<category>throw</category>
+							<category>FA</category>
+							<category>violent conduct</category>
+							<category>charge</category>
+							<description>Arsenal manager Arsene Wenger calls on authorities to focus on fans in   cointhrowing row. </description>
+							<pubDate>Fri, 14 Nov 2008 14:48:52 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/sport/football/leagues/premierleague/arsenal/3459247/Arsene-Wenger-backs-fair-Didier-Drogba-in-coin-throwing-row.html</guid>
+						</item>
+			<item>
+					<title>International Golf Federation launches bid for inclusion in 2016 Olympic Games </title>
+							<link>http://www.telegraph.co.uk/sport/othersports/olympics/3459057/International-Golf-Federation-launches-bid-for-inclusion-in-2016-Olympic-Games-Golf.html</link>
+							<category>Golf</category>
+							<category>olympics</category>
+							<category>Olympic Games 2016</category>
+							<category>International Golf Federation</category>
+							<category>Tiger Woods</category>
+							<description>International Golf Federation launch golf's bid to be accepted as an Olympic   sport in 2016.</description>
+							<pubDate>Fri, 14 Nov 2008 14:25:21 +0000</pubDate>
+							<guid>http://www.telegraph.co.uk/sport/othersports/olympics/3459057/International-Golf-Federation-launches-bid-for-inclusion-in-2016-Olympic-Games-Golf.html</guid>
+						</item>
+			</channel>
+</rss>
+

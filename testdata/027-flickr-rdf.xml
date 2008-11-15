@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:admin="http://webns.net/mvcb/"
+	xmlns="http://purl.org/rss/1.0/"
+        xmlns:flickr="urn:flickr:" >
+	<channel rdf:about="http://www.flickr.com/photos/tags/skyscraper/">
+
+
+		<title>Recent Uploads tagged skyscraper</title>
+		<link>http://www.flickr.com/photos/tags/skyscraper/</link>
+		<description></description>
+		<dc:date>2008-11-15T10:35:25-08:00</dc:date>
+		<admin:generatorAgent rdf:resource="http://www.flickr.com/" />
+
+		<image rdf:resource="http://l.yimg.com/g/images/buddyicon.jpg" />
+
+		<items>
+			<rdf:Seq>
+				<rdf:li rdf:resource="http://www.flickr.com/photos/d-arch/3031860741/" />
+				<rdf:li rdf:resource="http://www.flickr.com/photos/d-arch/3032700038/" />
+				<rdf:li rdf:resource="http://www.flickr.com/photos/uncle_buddha/3032481538/" />
+				<rdf:li rdf:resource="http://www.flickr.com/photos/45497849@N00/3032479052/" />
+				<rdf:li rdf:resource="http://www.flickr.com/photos/45497849@N00/3032479050/" />
+				<rdf:li rdf:resource="http://www.flickr.com/photos/uncle_buddha/3031642491/" />
+				<rdf:li rdf:resource="http://www.flickr.com/photos/mratter/3031652017/" />
+				<rdf:li rdf:resource="http://www.flickr.com/photos/letlet/3032231910/" />
+				<rdf:li rdf:resource="http://www.flickr.com/photos/letlet/3032230250/" />
+				<rdf:li rdf:resource="http://www.flickr.com/photos/9499968@N03/3031402021/" />
+				<rdf:li rdf:resource="http://www.flickr.com/photos/letlet/3032227102/" />
+				<rdf:li rdf:resource="http://www.flickr.com/photos/letlet/3032228362/" />
+				<rdf:li rdf:resource="http://www.flickr.com/photos/rnanavati/3031361525/" />
+				<rdf:li rdf:resource="http://www.flickr.com/photos/sybrenstuvel/3031325423/" />
+				<rdf:li rdf:resource="http://www.flickr.com/photos/sybrenstuvel/3032148640/" />
+				<rdf:li rdf:resource="http://www.flickr.com/photos/brennwald/3031271863/" />
+				<rdf:li rdf:resource="http://www.flickr.com/photos/fredrikn/3032017260/" />
+				<rdf:li rdf:resource="http://www.flickr.com/photos/timokoo/3031158869/" />
+				<rdf:li rdf:resource="http://www.flickr.com/photos/rutlo/3031866614/" />
+				<rdf:li rdf:resource="http://www.flickr.com/photos/tym/3031682950/" />
+			</rdf:Seq>
+		</items>
+
+	</channel>
+
+	<item rdf:about="http://www.flickr.com/photos/d-arch/3031860741/">
+		<title>NYC</title>
+		<link>http://www.flickr.com/photos/d-arch/3031860741/</link>
+		<description>&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/d-arch/&quot;&gt;d-arch&lt;/a&gt; posted a photo:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/d-arch/3031860741/&quot; title=&quot;NYC&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3250/3031860741_3d547f247b_m.jpg&quot; width=&quot;240&quot; height=&quot;91&quot; alt=&quot;NYC&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+		<dc:date>2008-11-15T10:35:25-08:00</dc:date>
+                <dc:date.Taken>2008-11-15T10:06:35-08:00</dc:date.Taken>
+		<dc:creator>d-arch (http://www.flickr.com/people/d-arch/)</dc:creator>
+                	</item>
+	<item rdf:about="http://www.flickr.com/photos/d-arch/3032700038/">
+		<title>Grand Central / Chrysler Building</title>
+		<link>http://www.flickr.com/photos/d-arch/3032700038/</link>
+		<description>&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/d-arch/&quot;&gt;d-arch&lt;/a&gt; posted a photo:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/d-arch/3032700038/&quot; title=&quot;Grand Central / Chrysler Building&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3038/3032700038_94e22a520b_m.jpg&quot; width=&quot;160&quot; height=&quot;240&quot; alt=&quot;Grand Central / Chrysler Building&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+		<dc:date>2008-11-15T10:35:17-08:00</dc:date>
+                <dc:date.Taken>2008-11-02T07:49:47-08:00</dc:date.Taken>
+		<dc:creator>d-arch (http://www.flickr.com/people/d-arch/)</dc:creator>
+                	</item>
+	<item rdf:about="http://www.flickr.com/photos/uncle_buddha/3032481538/">
+		<title>Hoge Building, Seattle</title>
+		<link>http://www.flickr.com/photos/uncle_buddha/3032481538/</link>
+		<description>&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/uncle_buddha/&quot;&gt;Uncle Buddha&lt;/a&gt; posted a photo:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/uncle_buddha/3032481538/&quot; title=&quot;Hoge Building, Seattle&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3273/3032481538_b803a08008_m.jpg&quot; width=&quot;240&quot; height=&quot;179&quot; alt=&quot;Hoge Building, Seattle&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Architectural details of the Hoge Building. Completed in 1911, it was Seattle's tallest until 1914.&lt;/p&gt;</description>
+		<dc:date>2008-11-15T09:05:21-08:00</dc:date>
+                <dc:date.Taken>2008-10-11T09:21:57-08:00</dc:date.Taken>
+		<dc:creator>Uncle Buddha (http://www.flickr.com/people/uncle_buddha/)</dc:creator>
+                	</item>
+	<item rdf:about="http://www.flickr.com/photos/45497849@N00/3032479052/">
+		<title>depth charge</title>
+		<link>http://www.flickr.com/photos/45497849@N00/3032479052/</link>
+		<description>&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/45497849@N00/&quot;&gt;mr_krebapel&lt;/a&gt; posted a photo:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/45497849@N00/3032479052/&quot; title=&quot;depth charge&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3017/3032479052_e1643a47c6_m.jpg&quot; width=&quot;240&quot; height=&quot;232&quot; alt=&quot;depth charge&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+		<dc:date>2008-11-15T09:04:16-08:00</dc:date>
+                <dc:date.Taken>2008-11-16T01:04:16-08:00</dc:date.Taken>
+		<dc:creator>mr_krebapel (http://www.flickr.com/people/45497849@N00/)</dc:creator>
+                	</item>
+	<item rdf:about="http://www.flickr.com/photos/45497849@N00/3032479050/">
+		<title>countdown to the end</title>
+		<link>http://www.flickr.com/photos/45497849@N00/3032479050/</link>
+		<description>&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/45497849@N00/&quot;&gt;mr_krebapel&lt;/a&gt; posted a photo:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/45497849@N00/3032479050/&quot; title=&quot;countdown to the end&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3142/3032479050_899ddcc29e_m.jpg&quot; width=&quot;240&quot; height=&quot;224&quot; alt=&quot;countdown to the end&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+		<dc:date>2008-11-15T09:04:16-08:00</dc:date>
+                <dc:date.Taken>2008-11-16T01:04:16-08:00</dc:date.Taken>
+		<dc:creator>mr_krebapel (http://www.flickr.com/people/45497849@N00/)</dc:creator>
+                	</item>
+	<item rdf:about="http://www.flickr.com/photos/uncle_buddha/3031642491/">
+		<title>Hoge Building, Seattle</title>
+		<link>http://www.flickr.com/photos/uncle_buddha/3031642491/</link>
+		<description>&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/uncle_buddha/&quot;&gt;Uncle Buddha&lt;/a&gt; posted a photo:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/uncle_buddha/3031642491/&quot; title=&quot;Hoge Building, Seattle&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3182/3031642491_3cebff7d29_m.jpg&quot; width=&quot;180&quot; height=&quot;240&quot; alt=&quot;Hoge Building, Seattle&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Completed in 1911, the Beaux-Arts Hoge Building was designed by architects Bebb and Mendel. It was Seattle's second true skyscraper and the city's tallest until 1914. It was added to the National Register of Historic Places in 1983 and sits on the site of Seattle's first house.&lt;/p&gt;</description>
+		<dc:date>2008-11-15T09:05:29-08:00</dc:date>
+                <dc:date.Taken>2008-10-11T09:22:55-08:00</dc:date.Taken>
+		<dc:creator>Uncle Buddha (http://www.flickr.com/people/uncle_buddha/)</dc:creator>
+                	</item>
+	<item rdf:about="http://www.flickr.com/photos/mratter/3031652017/">
+		<title>reflections</title>
+		<link>http://www.flickr.com/photos/mratter/3031652017/</link>
+		<description>&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/mratter/&quot;&gt;MR@tter&lt;/a&gt; posted a photo:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/mratter/3031652017/&quot; title=&quot;reflections&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3226/3031652017_c28d114050_m.jpg&quot; width=&quot;180&quot; height=&quot;240&quot; alt=&quot;reflections&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;IWO-building with reflection of the RWE-building&lt;/p&gt;</description>
+		<dc:date>2008-11-15T09:09:26-08:00</dc:date>
+                <dc:date.Taken>2008-11-08T13:43:55-08:00</dc:date.Taken>
+		<dc:creator>MR@tter (http://www.flickr.com/people/mratter/)</dc:creator>
+                	</item>
+	<item rdf:about="http://www.flickr.com/photos/letlet/3032231910/">
+		<title>Dubai 2008</title>
+		<link>http://www.flickr.com/photos/letlet/3032231910/</link>
+		<description>&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/letlet/&quot;&gt;let²&lt;/a&gt; posted a photo:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/letlet/3032231910/&quot; title=&quot;Dubai 2008&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3230/3032231910_19c3cedf7f_m.jpg&quot; width=&quot;142&quot; height=&quot;240&quot; alt=&quot;Dubai 2008&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;© All rights reserved &lt;a href=&quot;http://www.rnr.de&quot;&gt;www.rnr.de&lt;/a&gt; . &lt;br /&gt;
+Dubai 2008, UAE - Sheikh Zayed Road / Khalid Al Attar Tower 2&lt;/p&gt;</description>
+		<dc:date>2008-11-15T07:11:48-08:00</dc:date>
+                <dc:date.Taken>2008-11-15T16:11:48-08:00</dc:date.Taken>
+		<dc:creator>let² (http://www.flickr.com/people/letlet/)</dc:creator>
+                	</item>
+	<item rdf:about="http://www.flickr.com/photos/letlet/3032230250/">
+		<title>Dubai 2008</title>
+		<link>http://www.flickr.com/photos/letlet/3032230250/</link>
+		<description>&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/letlet/&quot;&gt;let²&lt;/a&gt; posted a photo:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/letlet/3032230250/&quot; title=&quot;Dubai 2008&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3168/3032230250_9de9636f16_m.jpg&quot; width=&quot;240&quot; height=&quot;181&quot; alt=&quot;Dubai 2008&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;© All rights reserved &lt;a href=&quot;http://www.rnr.de&quot;&gt;www.rnr.de&lt;/a&gt; .&lt;br /&gt;
+ Dubai 2008, UAE - Sheikh Zayed Road / HHHR Tower&lt;/p&gt;</description>
+		<dc:date>2008-11-15T07:10:54-08:00</dc:date>
+                <dc:date.Taken>2008-11-15T16:10:54-08:00</dc:date.Taken>
+		<dc:creator>let² (http://www.flickr.com/people/letlet/)</dc:creator>
+                	</item>
+	<item rdf:about="http://www.flickr.com/photos/9499968@N03/3031402021/">
+		<title>MMA_NL_Networking</title>
+		<link>http://www.flickr.com/photos/9499968@N03/3031402021/</link>
+		<description>&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/9499968@N03/&quot;&gt;craigfuhr&lt;/a&gt; posted a photo:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/9499968@N03/3031402021/&quot; title=&quot;MMA_NL_Networking&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3023/3031402021_1ef6b19f0c_m.jpg&quot; width=&quot;170&quot; height=&quot;240&quot; alt=&quot;MMA_NL_Networking&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Businesswomen shaking hands in a city&lt;br /&gt;
+Color&lt;br /&gt;
+High res&lt;/p&gt;</description>
+		<dc:date>2008-11-15T07:17:04-08:00</dc:date>
+                <dc:date.Taken>2008-11-15T07:17:04-08:00</dc:date.Taken>
+		<dc:creator>craigfuhr (http://www.flickr.com/people/9499968@N03/)</dc:creator>
+                	</item>
+	<item rdf:about="http://www.flickr.com/photos/letlet/3032227102/">
+		<title>Dubai 2008</title>
+		<link>http://www.flickr.com/photos/letlet/3032227102/</link>
+		<description>&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/letlet/&quot;&gt;let²&lt;/a&gt; posted a photo:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/letlet/3032227102/&quot; title=&quot;Dubai 2008&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3057/3032227102_f348a7b4c5_m.jpg&quot; width=&quot;164&quot; height=&quot;240&quot; alt=&quot;Dubai 2008&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;© All rights reserved &lt;a href=&quot;http://www.rnr.de&quot;&gt;www.rnr.de&lt;/a&gt; . &lt;br /&gt;
+Dubai 2008, UAE - Emirates Towers (Emirates Office Tower + Jumeirah Emirates Towers Hotel)&lt;/p&gt;</description>
+		<dc:date>2008-11-15T07:09:15-08:00</dc:date>
+                <dc:date.Taken>2008-11-15T16:09:15-08:00</dc:date.Taken>
+		<dc:creator>let² (http://www.flickr.com/people/letlet/)</dc:creator>
+                	</item>
+	<item rdf:about="http://www.flickr.com/photos/letlet/3032228362/">
+		<title>Dubai 2008</title>
+		<link>http://www.flickr.com/photos/letlet/3032228362/</link>
+		<description>&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/letlet/&quot;&gt;let²&lt;/a&gt; posted a photo:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/letlet/3032228362/&quot; title=&quot;Dubai 2008&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3176/3032228362_3ea8d0f433_m.jpg&quot; width=&quot;141&quot; height=&quot;240&quot; alt=&quot;Dubai 2008&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;© All rights reserved &lt;a href=&quot;http://www.rnr.de&quot;&gt;www.rnr.de&lt;/a&gt; . &lt;br /&gt;
+Dubai 2008, UAE - World Trade Centre&lt;/p&gt;</description>
+		<dc:date>2008-11-15T07:09:54-08:00</dc:date>
+                <dc:date.Taken>2008-11-15T16:09:54-08:00</dc:date.Taken>
+		<dc:creator>let² (http://www.flickr.com/people/letlet/)</dc:creator>
+                	</item>
+	<item rdf:about="http://www.flickr.com/photos/rnanavati/3031361525/">
+		<title>A City Awakens</title>
+		<link>http://www.flickr.com/photos/rnanavati/3031361525/</link>
+		<description>&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/rnanavati/&quot;&gt;$la$hnburn&lt;/a&gt; posted a photo:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/rnanavati/3031361525/&quot; title=&quot;A City Awakens&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3292/3031361525_d9f2bfb85d_m.jpg&quot; width=&quot;240&quot; height=&quot;83&quot; alt=&quot;A City Awakens&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The sun rises over downtown Chicago, the tallest buildings being the first hit by the warm yellow rays, before it spreads downwards to fill up all the little nooks and crannies of the great city. Soon it will be time to get back to the daily routine, but for a moment, it's worth stopping and taking it all in.&lt;br /&gt;
+&lt;br /&gt;
+This was taken from the 15th floor of the apartment looking north, same as the previous image. [HDR 3 shots at -2, 0, +2. Also, 3 images stiched together]&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://bighugelabs.com/flickr/onblack.php?id=3031361525&amp;amp;size=large&quot;&gt;Best Viewed Here!&lt;/a&gt;&lt;/p&gt;</description>
+		<dc:date>2008-11-15T06:55:31-08:00</dc:date>
+                <dc:date.Taken>2008-11-13T23:11:04-08:00</dc:date.Taken>
+		<dc:creator>$la$hnburn (http://www.flickr.com/people/rnanavati/)</dc:creator>
+                	</item>
+	<item rdf:about="http://www.flickr.com/photos/sybrenstuvel/3031325423/">
+		<title>Fog in Rotterdam</title>
+		<link>http://www.flickr.com/photos/sybrenstuvel/3031325423/</link>
+		<description>&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/sybrenstuvel/&quot;&gt;Sybren Stüvel&lt;/a&gt; posted a photo:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/sybrenstuvel/3031325423/&quot; title=&quot;Fog in Rotterdam&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3225/3031325423_a41e0005a4_m.jpg&quot; width=&quot;160&quot; height=&quot;240&quot; alt=&quot;Fog in Rotterdam&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+		<dc:date>2008-11-15T06:35:09-08:00</dc:date>
+                <dc:date.Taken>2008-11-14T17:07:05-08:00</dc:date.Taken>
+		<dc:creator>Sybren Stüvel (http://www.flickr.com/people/sybrenstuvel/)</dc:creator>
+                	</item>
+	<item rdf:about="http://www.flickr.com/photos/sybrenstuvel/3032148640/">
+		<title>Fog in Rotterdam</title>
+		<link>http://www.flickr.com/photos/sybrenstuvel/3032148640/</link>
+		<description>&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/sybrenstuvel/&quot;&gt;Sybren Stüvel&lt;/a&gt; posted a photo:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/sybrenstuvel/3032148640/&quot; title=&quot;Fog in Rotterdam&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3151/3032148640_f39bddafde_m.jpg&quot; width=&quot;160&quot; height=&quot;240&quot; alt=&quot;Fog in Rotterdam&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+		<dc:date>2008-11-15T06:24:31-08:00</dc:date>
+                <dc:date.Taken>2008-11-14T17:05:44-08:00</dc:date.Taken>
+		<dc:creator>Sybren Stüvel (http://www.flickr.com/people/sybrenstuvel/)</dc:creator>
+                	</item>
+	<item rdf:about="http://www.flickr.com/photos/brennwald/3031271863/">
+		<title>Modern Architecture, Shinjuku</title>
+		<link>http://www.flickr.com/photos/brennwald/3031271863/</link>
+		<description>&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/brennwald/&quot;&gt;Daniel Brennwald&lt;/a&gt; posted a photo:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/brennwald/3031271863/&quot; title=&quot;Modern Architecture, Shinjuku&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3247/3031271863_2d77b35583_m.jpg&quot; width=&quot;118&quot; height=&quot;240&quot; alt=&quot;Modern Architecture, Shinjuku&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+		<dc:date>2008-11-15T06:01:06-08:00</dc:date>
+                <dc:date.Taken>2008-10-20T13:59:10-08:00</dc:date.Taken>
+		<dc:creator>Daniel Brennwald (http://www.flickr.com/people/brennwald/)</dc:creator>
+                	</item>
+	<item rdf:about="http://www.flickr.com/photos/fredrikn/3032017260/">
+		<title>Going up or down?</title>
+		<link>http://www.flickr.com/photos/fredrikn/3032017260/</link>
+		<description>&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/fredrikn/&quot;&gt;FredrikN&lt;/a&gt; posted a photo:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/fredrikn/3032017260/&quot; title=&quot;Going up or down?&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3171/3032017260_d3499d1457_m.jpg&quot; width=&quot;240&quot; height=&quot;157&quot; alt=&quot;Going up or down?&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Quasi-HDR from a single JPG. New York City.&lt;/p&gt;</description>
+		<dc:date>2008-11-15T04:55:44-08:00</dc:date>
+                <dc:date.Taken>2008-11-09T16:40:11-08:00</dc:date.Taken>
+		<dc:creator>FredrikN (http://www.flickr.com/people/fredrikn/)</dc:creator>
+                	</item>
+	<item rdf:about="http://www.flickr.com/photos/timokoo/3031158869/">
+		<title>A view to south from the Empire State building</title>
+		<link>http://www.flickr.com/photos/timokoo/3031158869/</link>
+		<description>&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/timokoo/&quot;&gt;TimoOK&lt;/a&gt; posted a photo:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/timokoo/3031158869/&quot; title=&quot;A view to south from the Empire State building&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3218/3031158869_c6d7db1456_m.jpg&quot; width=&quot;240&quot; height=&quot;161&quot; alt=&quot;A view to south from the Empire State building&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;2008-10-17_10-04-29 Näkymä Empire State buildingista etelään&lt;/p&gt;</description>
+		<dc:date>2008-11-15T04:41:58-08:00</dc:date>
+                <dc:date.Taken>2008-10-17T10:04:29-08:00</dc:date.Taken>
+		<dc:creator>TimoOK (http://www.flickr.com/people/timokoo/)</dc:creator>
+                	</item>
+	<item rdf:about="http://www.flickr.com/photos/rutlo/3031866614/">
+		<title>80's-era office tower in Belltown</title>
+		<link>http://www.flickr.com/photos/rutlo/3031866614/</link>
+		<description>&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/rutlo/&quot;&gt;rutlo&lt;/a&gt; posted a photo:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/rutlo/3031866614/&quot; title=&quot;80's-era office tower in Belltown&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3215/3031866614_3a87229a2f_m.jpg&quot; width=&quot;240&quot; height=&quot;180&quot; alt=&quot;80's-era office tower in Belltown&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+		<dc:date>2008-11-15T02:53:22-08:00</dc:date>
+                <dc:date.Taken>2008-11-14T15:56:03-08:00</dc:date.Taken>
+		<dc:creator>rutlo (http://www.flickr.com/people/rutlo/)</dc:creator>
+                	</item>
+	<item rdf:about="http://www.flickr.com/photos/tym/3031682950/">
+		<title>Darkness Comes</title>
+		<link>http://www.flickr.com/photos/tym/3031682950/</link>
+		<description>&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/tym/&quot;&gt;Proggie&lt;/a&gt; posted a photo:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/tym/3031682950/&quot; title=&quot;Darkness Comes&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3051/3031682950_1a53c540f1_m.jpg&quot; width=&quot;240&quot; height=&quot;240&quot; alt=&quot;Darkness Comes&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description>
+		<dc:date>2008-11-15T00:07:15-08:00</dc:date>
+                <dc:date.Taken>2008-11-04T17:11:20-08:00</dc:date.Taken>
+		<dc:creator>Proggie (http://www.flickr.com/people/tym/)</dc:creator>
+                	</item>
+
+</rdf:RDF>
