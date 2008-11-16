@@ -17,7 +17,16 @@ if (true) {
 	//$feed = $parser->parseXml(file_get_contents('testdata/011-timesonline-video.xml'));
 	//$feed = $parser->parseXml(file_get_contents('testdata/012-telegraph-news.xml'));
 	//$feed = $parser->parseXml(file_get_contents('testdata/013-nytimes.xml'));
-	$feed = $parser->parseXml(file_get_contents('testdata/014-nytimes-weekinreview.xml'));
+	//$feed = $parser->parseXml(file_get_contents('testdata/014-nytimes-weekinreview.xml'));
+	//$feed = $parser->parseXml(file_get_contents('testdata/015-wallstreetjournal.xml'));
+	//$feed = $parser->parseXml(file_get_contents('testdata/016-financialtimes.xml'));
+	//$feed = $parser->parseXml(file_get_contents('testdata/017-financialtimes-webmaster.xml'));
+	//$feed = $parser->parseXml(file_get_contents('testdata/018-financialtimes-podcasts.xml'));
+	//$feed = $parser->parseXml(file_get_contents('testdata/019-financialtimes-moneyShow.xml'));
+	//$feed = $parser->parseXml(file_get_contents('testdata/020-yahoo-finance-yhoo.xml'));
+	//$feed = $parser->parseXml(file_get_contents('testdata/021-yahoo-uk-finance-yhoo.xml'));
+	//$feed = $parser->parseXml(file_get_contents('testdata/022-yahoo-news.xml'));
+	$feed = $parser->parseXml(file_get_contents('testdata/022-yahoo-uk-news.xml'));
 	echo "FEED: "; print_r($feed);
 }
 
@@ -132,6 +141,8 @@ class Rss20NamespaceHandler extends AbstractFeedNamespaceHandler {
 			case 'link':
 			case 'managingEditor':
 			case 'pubDate':
+			case 'source':
+			case 'rating':
 			case 'title':
 			case 'ttl':
 			case 'url':
@@ -200,6 +211,7 @@ class Rss20NamespaceHandler extends AbstractFeedNamespaceHandler {
 			case 'pubDate': // translate to atom:published
 				if ($this->isEntry) {
 					$this->entry->published = date('c', strtotime($elData->text));
+					$this->entry->{$elData->nsName} = $elData->text;
 				} elseif ($this->isFeed) {
 					// pubDate has a special meaning on the feedlevel.
 					$this->feed->{$elData->nsName} = $elData->text;
@@ -211,6 +223,7 @@ class Rss20NamespaceHandler extends AbstractFeedNamespaceHandler {
 					// Do nothing
 				} elseif($this->isFeed) {
 					$this->feed->updated = date('c', strtotime($elData->text));
+					$this->feed->{$elData->nsName} = $elData->text;
 				}
 				break;
 				
@@ -321,6 +334,15 @@ class Rss20NamespaceHandler extends AbstractFeedNamespaceHandler {
 					array_push($this->entry->authors, $author);
 				}
 				break;
+				
+			case 'source':
+				$source = (object) NULL;
+				$source->url = $elData->attr['url'];
+				$source->source = $elData->text;
+				if ($this->isEntry) {
+					$this->entry->{$elData->nsName} = $source;
+				}
+				break;
 			
 			// attribute-based RSS2.0 elements that remain namespaced
 			case 'cloud':
@@ -334,6 +356,7 @@ class Rss20NamespaceHandler extends AbstractFeedNamespaceHandler {
 			case 'docs':		
 			case 'guid':
 			case 'language':
+			case 'rating':
 			case 'ttl':
 			case 'webMaster':
 				if ($this->isEntry) {
@@ -627,28 +650,32 @@ class MediaNamespaceHandler extends AbstractFeedNamespaceHandler {
 				}
 				
 				if ($this->isGroup) {
-					if (empty($link->href)) {
+					if (empty($this->content->url)) {
 						// TODO: this needs to be more robust.
 						// Need to be able to iterate through the links array
 						// to find the right enclosure link.
 						echo "WARN: Guessing the media:content href.\n";
 						if (!empty($this->entry->links[0]->href)) {
-							$link->href = $this->entry->links[0]->href;
+							$this->content->url = $this->entry->links[0]->href;
 						}
 					}
 					array_push($this->group, $this->content);
 				} elseif ($this->isEntry) {
 					// Add enclosure to atom:links structure
-					if (empty($this->entry->links)) {
-						$this->entry->links = array();
+					if (!empty($link->href)) {
+						if (empty($this->entry->links)) {
+							$this->entry->links = array();
+						}
+						array_push($this->entry->links, $link);
 					}
-					array_push($this->entry->links, $link);
 					
 					// Add it with the media:contents structure
-					if (empty($this->entry->{'media-contents'})) {
-						$this->entry->{'media-contents'} = array();
+					if (!empty($this->content->url)) {
+						if (empty($this->entry->{'media-contents'})) {
+							$this->entry->{'media-contents'} = array();
+						}
+						array_push($this->entry->{'media-contents'}, $this->content);
 					}
-					array_push($this->entry->{'media-contents'}, $this->content);
 				}
 				$this->isContent = false;
 				break;
@@ -691,7 +718,7 @@ class MediaNamespaceHandler extends AbstractFeedNamespaceHandler {
 				$text = (object) $elData->attr;
 				$text->text = $elData->text;
 				
-				$this->addToFieldList($fieldName, $rating);
+				$this->addToFieldList($fieldName, $text);
 				break;
 				
 			case 'restriction':
