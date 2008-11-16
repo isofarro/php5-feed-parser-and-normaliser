@@ -27,9 +27,9 @@ if (true) {
 	//$feed = $parser->parseXml(file_get_contents('testdata/021-yahoo-uk-finance-yhoo.xml'));
 	//$feed = $parser->parseXml(file_get_contents('testdata/022-yahoo-news.xml'));
 	//$feed = $parser->parseXml(file_get_contents('testdata/022-yahoo-uk-news.xml'));
-	$feed = $parser->parseXml(file_get_contents('testdata/023-ap-news-author.xml'));
-	//$feed = $parser->parseXml(file_get_contents('testdata/024-afp-rssrdf.xml'));
-	//echo "FEED: "; print_r($feed);
+	//$feed = $parser->parseXml(file_get_contents('testdata/023-ap-news-author.xml'));
+	$feed = $parser->parseXml(file_get_contents('testdata/024-afp-rssrdf.xml'));
+	echo "FEED: "; print_r($feed);
 }
 
 
@@ -206,7 +206,8 @@ class Rss20NamespaceHandler extends AbstractFeedNamespaceHandler {
 				if ($this->isEntry) {
 					$this->entry->summary = $elData->text;
 				} elseif($this->isFeed) {
-					$this->feed->summary  = $elData->text;
+					// translate to atom:subtitle on the feed level.
+					$this->feed->subtitle  = $elData->text;
 				}
 				break;
 				
@@ -437,6 +438,225 @@ class AtomNamespaceHandler extends AbstractFeedNamespaceHandler {
 }
 
 
+/**
+ * An implementation of FeedNamespaceHandler for the RDF namespace
+ * Handles RDF namespaced elements in RSS
+ *
+ * http://www.w3.org/TR/rdf-syntax-grammar/
+ * No, I didn't implement that, just enough to parse an RSS1.0 feed.
+ * Which basically means ignoring everything in this namespace :-)
+ **/
+class RdfNamespaceHandler extends AbstractFeedNamespaceHandler {
+	public $prefix = 'rdf';
+	
+	/**
+	 * Callback handler for the FeedParser's startElement callback
+	 **/
+	public function startElement($elData) {
+		switch($elData->elName) {
+			case 'li':
+			case 'RDF':
+			case 'Seq':
+				break;
+
+			default:
+				echo "START rdf: $elData->elName not handled.\n";
+				break;
+		}
+	}
+	
+	/**
+	 * Callback handler for the FeedParser's startElement callback
+	 **/
+	public function endElement($elData) {
+		switch($elData->elName) {
+			case 'li':
+			case 'RDF':
+			case 'Seq':
+				break;
+				
+			default:
+				echo "END rdf:   $elData->elName not handled.\n";
+				break;
+		}
+	}
+}
+
+
+/**
+ * An implementation of FeedNamespaceHandler for the RSS 1.0 namespace
+ * Handles RSS 1.0 namespaced elements in RSS
+ *
+ * http://web.resource.org/rss/1.0/spec
+ **/
+class Rss10NamespaceHandler extends AbstractFeedNamespaceHandler {
+	public $prefix = 'rss10';
+	
+	private $rdfNamespaceUri = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#';
+
+	// Dealing with an RSS 1.0 image	
+	private $isImage = false;
+	private $image;
+	
+	// Dealing with an RSS 1.0 textinput
+	private $isTextinput = false;
+	private $textinput;
+	
+	/**
+	 * Callback handler for the FeedParser's startElement callback
+	 **/
+	public function startElement($elData) {
+		switch($elData->elName) {
+			case 'channel': // @rdf:about is the feed atom:id
+				$rdfAbout = $this->getRdfAttr('about', $elData);
+				if (!empty($rdfAbout)) {
+					$this->feed->id = $rdfAbout;
+				}
+				$this->isFeed = true;
+				break;
+				
+			case 'item': // @rdf:about is the entry atom:id
+				$rdfAbout = $this->getRdfAttr('about', $elData);
+				if (!empty($rdfAbout)) {
+					$this->entry->id = $rdfAbout;
+				}
+				$this->isEntry = true;
+				break;
+
+			case 'image':
+				if ($this->isFeed || $this->isEntry) {
+					// Do nothing
+				} else {
+					$this->image = (object) NULL;
+					$this->isImage = true;
+				}
+				break;
+
+			case 'textinput':
+				if ($this->isFeed || $this->isEntry) {
+					// Do nothing
+				} else {
+					$this->textinput   = (object) NULL;
+					$this->isTextinput = true;
+				}
+				break;
+
+			case 'description':
+			case 'items':
+			case 'link':
+			case 'title':
+			case 'url':
+				break;
+				
+			default:
+				echo "START rss10: $elData->elName not handled.\n";
+				break;
+		}
+	}
+	
+	/**
+	 * Callback handler for the FeedParser's startElement callback
+	 **/
+	public function endElement($elData) {
+		switch($elData->elName) {
+			case 'channel':
+				$this->isFeed = false;
+				break;
+
+			case 'item':
+				$this->isEntry = false;
+				break;
+				
+			case 'title': // translate to atom:title
+				if ($this->isImage) {
+					$this->image->{$elData->nsName} = $elData->text;
+				} elseif ($this->isTextinput) {
+					$this->textinput->{$elData->nsName} = $elData->text;
+				} elseif($this->isEntry) {
+					$this->entry->title = $elData->text;
+				} elseif ($this->isFeed) {
+					$this->feed->title = $elData->text;
+				}
+				break;
+				
+			case 'link': // translate to atom:link
+				$link = (object) NULL;
+				$link->href = $elData->text;
+				$link->rel  = 'alternate';
+				$link->type = 'text/html';
+				if ($this->isImage) {
+					$this->image->{$elData->nsName} = $elData->text;
+				} elseif ($this->isTextinput) {
+					$this->textinput->{$elData->nsName} = $elData->text;
+				} elseif ($this->isEntry) {
+					if (empty($this->entry->links)) {
+						$this->entry->links = array();
+					}
+					array_push($this->entry->links, $link);
+				} elseif ($this->isFeed) {
+					if (empty($this->feed->links)) {
+						$this->feed->links = array();
+					}
+					array_push($this->feed->links, $link);
+				}
+				break;
+				
+			case 'description': // translate to atom:summary
+				if ($this->isEntry) {
+					$this->entry->summary = $elData->text;
+				} elseif ($this->isTextinput) {
+					$this->textinput->{$elData->nsName} = $elData->text;
+				} elseif ($this->isFeed) {
+					// translate to atom:subtitle on the feed level.
+					$this->feed->subtitle = $elData->text;
+				}
+				break;
+				
+			case 'image':
+				if ($this->isImage) {
+					$this->feed->{$elData->nsName} = $this->image;
+					$this->isImage = false;
+				}
+				break;
+				
+			case 'url':
+				if ($this->isImage) {
+					$this->image->{$elData->nsName} = $elData->text;				
+				}
+				break;
+				
+			case 'textinput':
+				if ($this->isTextinput) {
+					$this->feed->{$elData->nsName} = $this->textinput;
+					$this->isTextinput = false;
+				}
+				break;
+				
+			case 'name':
+				if ($this->isTextinput) {
+					$this->textinput->{$elData->nsName} = $elData->text;
+				}
+				break;
+
+			case 'items':
+				break;
+				
+			default:
+				echo "END rss10:   $elData->elName not handled.\n";
+				break;
+		}
+	}
+	
+	public function getRdfAttr($attr, $elData) {
+		$attrName = $this->rdfNamespaceUri . ':' . $attr;
+		if (!empty($elData->attr[$attrName])) {
+			return $elData->attr[$attrName];
+		}
+		return NULL;
+	}
+}
+
+
 
 /**
  * An implementation of FeedNamespaceHandler for the Feedburner namespace
@@ -516,6 +736,7 @@ class FeedburnerNamespaceHandler extends AbstractFeedNamespaceHandler {
  * Handles dublin core namespaced elements in RSS
  *
  * http://dublincore.org/documents/dces/
+ * http://web.resource.org/rss/1.0/modules/dc/
  **/
 class DcNamespaceHandler extends AbstractFeedNamespaceHandler {
 	public $prefix = 'dc';
@@ -526,6 +747,13 @@ class DcNamespaceHandler extends AbstractFeedNamespaceHandler {
 	public function startElement($elData) {
 		switch($elData->elName) {
 			case 'creator':
+			case 'date':
+			case 'description':
+			case 'language':
+			case 'publisher':
+			case 'rights':			
+			case 'subject':
+			case 'title':
 			case 'type':
 				break;
 
@@ -555,7 +783,25 @@ class DcNamespaceHandler extends AbstractFeedNamespaceHandler {
 					array_push($this->feed->authors, $author);
 				}
 				break;
-			
+				
+			case 'date': // translate to atom:published
+				if ($this->isEntry) {
+					if (empty($this->entry->published)) {
+						$this->entry->published = $elData->text;
+					}
+				} elseif ($this->isFeed) {
+					if (empty($this->feed->updated)) {
+						$this->feed->updated = $elData->text;
+					}
+				}
+				break;
+
+			case 'description':
+			case 'publisher':
+			case 'language':		
+			case 'subject':
+			case 'rights':
+			case 'title':
 			case 'type':
 				if ($this->isEntry) {
 					$this->entry->{$elData->nsName} = $elData->text;
@@ -570,6 +816,53 @@ class DcNamespaceHandler extends AbstractFeedNamespaceHandler {
 		}
 	}
 }
+
+
+/**
+ * An implementation of FeedNamespaceHandler for the Syndication namespace
+ * Handles syndication namespaced elements in RSS
+ *
+ * http://web.resource.org/rss/1.0/modules/syndication/
+ **/
+class SynNamespaceHandler extends AbstractFeedNamespaceHandler {
+	public $prefix = 'syn';
+	
+	/**
+	 * Callback handler for the FeedParser's startElement callback
+	 **/
+	public function startElement($elData) {
+		switch($elData->elName) {
+			case 'updateBase':
+			case 'updateFrequency':
+			case 'updatePeriod':
+				break;
+				
+			default:
+				echo "START syn: $elData->elName not handled.\n";
+				break;
+		}
+	}
+	
+	/**
+	 * Callback handler for the FeedParser's startElement callback
+	 **/
+	public function endElement($elData) {
+		switch($elData->elName) {
+			case 'updateBase':
+			case 'updateFrequency':
+			case 'updatePeriod':
+				if ($this->isFeed) {
+					$this->feed->{$elData->nsName} = $elData->text;
+				}
+				break;
+				
+			default:
+				echo "END syn:   $elData->elName not handled.\n";
+				break;
+		}
+	}
+}
+
 
 
 /**
@@ -1087,13 +1380,21 @@ class FeedParser {
 	
 	// Default list of supported namespaces
 	public $namespaces = array(
-		'http://www.w3.org/1999/02/22-rdf-syntax-ns#' => 'rdf',
-		'http://www.w3.org/2005/Atom'                 => 'atom',
-		'http://rssnamespace.org/feedburner/ext/1.0'  => 'feedburner',
-		'http://purl.org/dc/elements/1.1/'            => 'dc',
-		'http://search.yahoo.com/mrss/'               => 'media',
-		'http://www.itunes.com/dtds/podcast-1.0.dtd'  => 'itunes',
-//		'http://purl.org/rss/1.0/modules/taxonomy/'   => 'taxo',
+		'http://www.w3.org/2005/Atom'                  => 'atom',
+
+		'http://purl.org/dc/elements/1.1/'             => 'dc',
+
+		'http://rssnamespace.org/feedburner/ext/1.0'   => 'feedburner',
+		'http://search.yahoo.com/mrss/'                => 'media',
+		'http://www.itunes.com/dtds/podcast-1.0.dtd'   => 'itunes',
+
+		'http://www.w3.org/1999/02/22-rdf-syntax-ns#'  => 'rdf',
+		'http://purl.org/rss/1.0/'                     => 'rss10',
+		'http://purl.org/rss/1.0/modules/syndication/' => 'syn',
+//		'http://purl.org/rss/1.0/modules/content/'     => 'content',
+//		'http://purl.org/rss/1.0/modules/taxonomy/'    => 'taxo',
+//		'http://webns.net/mvcb/'                       => 'admin',
+
 		'' => 'rss20'
 	);
 	
@@ -1145,14 +1446,19 @@ class FeedParser {
 	}
 	
 	private function initXmlData() {
-		$this->feed  = (object) NULL;
-		$this->entry = (object) NULL;
-
 		$this->elStack  = array();
 		$this->curEl    = (object) NULL;
 		
-		$this->isFeed        = false;
-		$this->isEntry       = false;
+		// TODO: Need to find a way to make these flags extensible
+		// So that dublin core elements get assigned to the right level.
+		// For example dc:creator on an RSS1.0 image (AFP feed 024)
+		$this->feed     = (object) NULL;
+		$this->entry    = (object) NULL;
+		$this->image    = (object) NULL;
+
+		$this->isFeed   = false;
+		$this->isEntry  = false;
+		$this->isImage  = false;
 	}
 
 	/**
