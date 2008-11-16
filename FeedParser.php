@@ -13,7 +13,8 @@ if (true) {
 	//$feed = $parser->parseXml(file_get_contents('testdata/007-bbc-frontpage.xml'));
 	//$feed = $parser->parseXml(file_get_contents('testdata/008-bbc-video.xml'));
 	//$feed = $parser->parseXml(file_get_contents('testdata/009-timesonline.xml'));
-	$feed = $parser->parseXml(file_get_contents('testdata/010-timesonline-podcasts.xml'));
+	//$feed = $parser->parseXml(file_get_contents('testdata/010-timesonline-podcasts.xml'));
+	$feed = $parser->parseXml(file_get_contents('testdata/011-timesonline-video.xml'));
 	echo "FEED: "; print_r($feed);
 }
 
@@ -562,14 +563,21 @@ class MediaNamespaceHandler extends AbstractFeedNamespaceHandler {
 				
 			case 'content':
 				$this->isContent = true;
-				$this->content = (object) NULL;
+				// Populate with all the attributes
+				$this->content = (object) $elData->attr;
 				break;
 				
 			case 'category':
 			case 'copyright':
 			case 'credit':
+			case 'description':
+			case 'hash':
+			case 'keywords':
 			case 'player':
+			case 'rating':
+			case 'restriction':
 			case 'text':
+			case 'title':
 			case 'thumbnail':
 				break;
 
@@ -584,14 +592,26 @@ class MediaNamespaceHandler extends AbstractFeedNamespaceHandler {
 	 **/
 	public function endElement($elData) {
 		switch($elData->elName) {
-			case 'content': // translate into atom:link
-				// pick up any child content.
-				$link = $this->content;
-				if (!empty($elData->attr['url'])) {
-					$link->href   = $elData->attr['url'];
-				} 
-				$link->rel    = 'enclosure';
-				$link->type   = $elData->attr['type'];
+			case 'content': // translate into atom:link too
+				// Create atom:link structure
+				$link = (object) NULL;
+				$link->rel = 'enclosure';
+				
+				// atom:link @href
+				if (!empty($this->content->url)) {
+					$link->href = $this->content->url;
+				} elseif (!empty($this->content->player->url)) {
+					$link->href = $this->content->player->url;
+				}
+				
+				// atom:link @type
+				if (!empty($elData->attr['type'])) {
+					$link->type = $elData->attr['type'];
+				} elseif (!empty($elData->attr['medium'])) {
+					$link->type = $elData->attr['medium'] . '/*';
+				}
+				
+				// atom:link @length
 				if (!empty($elData->attr['filesize'])) {
 					$link->length = $elData->attr['filesize'];
 				}
@@ -601,102 +621,182 @@ class MediaNamespaceHandler extends AbstractFeedNamespaceHandler {
 						// TODO: this needs to be more robust.
 						// Need to be able to iterate through the links array
 						// to find the right enclosure link.
+						echo "WARN: Guessing the media:content href.\n";
 						if (!empty($this->entry->links[0]->href)) {
 							$link->href = $this->entry->links[0]->href;
 						}
 					}
 					array_push($this->group, $link);
 				} elseif ($this->isEntry) {
+					// Add enclosure to atom:links structure
 					if (empty($this->entry->links)) {
 						$this->entry->links = array();
 					}
 					array_push($this->entry->links, $link);
 					
-					##// Also add it with the media namespace
-					##if (empty($this->entry->{'media-contents'})) {
-					##	$this->entry->{'media-contents'} = array();
-					##}
-					##array_push($this->entry->{'media-contents'}, $elData->attr);
+					// Add it with the media:contents structure
+					if (empty($this->entry->{'media-contents'})) {
+						$this->entry->{'media-contents'} = array();
+					}
+					array_push($this->entry->{'media-contents'}, $this->content);
 				}
 				$this->isContent = false;
 				break;
 				
 			case 'group':
-				$this->entry->{$elData->nsName} = $this->group;
+				if ($this->isEntry) {
+					$this->entry->{$elData->nsName} = $this->group;
+				}
 				$this->isGroup = false;
 				break;
 				
 			case 'thumbnail':
+				$thumbnail = (object) $elData->attr;
 				if ($this->isContent) {
-					$this->content->thumbnail = $elData->attr;
+					$this->content->thumbnail = $thumbnail;
 				} elseif ($this->isGroup) {
-					echo "WARN: thumbnail is inside a group, not content\n";
+					$this->group->thumbnail = $thumbnail;
 				} elseif ($this->isEntry) {
-					$this->entry->{$elData->nsName} = $elData->attr;
+					$this->entry->{$elData->nsName} = $thumbnail;
+				} elseif ($this->isFeed) {
+					$this->feed->{$elData->nsName} = $thumbnail;
 				}
 				break;
 				
 			case 'player':
+				$player = (object) $elData->attr;
 				if ($this->isContent) {
-					$this->content->href = $elData->attr['url'];
+					$this->content->player = $player;
 				} elseif ($this->isGroup) {
-					echo "WARN: player is inside a group, not content\n";
+					$this->group->player = $player;
 				} elseif ($this->isEntry) {
-					echo "WARN: player is inside an entry, not content\n";
+					$this->entry->player = $player;
+				} elseif ($this->isFeed) {
+					$this->feed->player = $player;
 				}
 				break;
 				
 			case 'text':
-				if ($this->isContent) {
-					echo "WARN: text is inside content, not a group\n";
-				} elseif ($this->isGroup) {
-					$text = (object) $elData->attr;
-					$text->text = $elData->text;
-					array_push($this->group, $text);
-				} elseif ($this->isEntry) {
-					echo "WARN: text is inside an entry, not a group\n";
-				}
+				$fieldName = 'media-texts';
+				$text = (object) $elData->attr;
+				$text->text = $elData->text;
+				
+				$this->addToFieldList($fieldName, $rating);
+				break;
+				
+			case 'restriction':
+				$fieldName = 'media-restrictions';
+				$restriction = (object) $elData->attr;
+				$restriction->countries = explode(' ', $elData->text);
+				
+				$this->addToFieldList($fieldName, $restriction);
 				break;
 				
 			case 'copyright':
+				$copyright = (object) NULL;
+				$copyright->text = $elData->text;
+				if (!empty($elData->attr['url'])) {
+					$copyright->url = $elData->attr['url'];
+				}				
+				
 				if ($this->isContent) {
-					echo "WARN: copyright is inside content, not an entry\n";
+					$this->content->{$elData->nsName} = $copyright;
 				} elseif ($this->isGroup) {
-					echo "WARN: copyright is inside a group, not an entry\n";
+					$this->group->{$elData->nsName} = $copyright;
 				} elseif ($this->isEntry) {
-					$this->entry->{$elData->nsName} = $elData->text;
+					$this->entry->{$elData->nsName} = $copyright;
+				} elseif ($this->isFeed) {
+					$this->feed->{$elData->nsName} = $copyright;
 				}
 				break;
 				
 			case 'credit':
+				$fieldName = 'media-credits';
+				
+				// Create a media:credit structure
 				$credit = (object) NULL;
-				$credit->role = $elData->attr['role'];
 				$credit->text = $elData->text;
-				if ($this->isContent) {
-					echo "WARN: credit is inside content, not an entry\n";
-				} elseif ($this->isGroup) {
-					echo "WARN: credit is inside a group, not an entry\n";
-				} elseif ($this->isEntry) {
-					$this->entry->{$elData->nsName} = $credit;
+				if (!empty($elData->attr['role'])) {
+					$credit->role = $elData->attr['role'];
 				}
+				if (!empty($elData->attr['scheme'])) {
+					$credit->scheme = $elData->attr['scheme'];
+				} else {
+					$credit->scheme = 'urn:ebu';
+				}
+
+				$this->addToFieldList($fieldName, $credit);
 				break;
 
 			case 'category':
+				$fieldName = 'media-categories';
 				$category = (object) NULL;
 				if(!empty($elData->attr['scheme'])) {
 					$category->scheme = $elData->attr['scheme'];
 				}
 				$category->term   = $elData->text;
 				
+				$this->addToFieldList($fieldName, $category);
+				break;
+				
+			case 'hash':
+				$fieldName = 'media-hashes';
+				$hash = (object) NULL;
+				if(!empty($elData->attr['algo'])) {
+					$hash->algo = $elData->attr['algo'];
+				} else {
+					$hash->algo = 'md5';
+				}
+				$hash->text   = $elData->text;
+
+				$this->addToFieldList($fieldName, $hash);
+				break;
+				
+			case 'rating':
+				$fieldName = 'media-ratings';
+				$rating = (object) NULL;
+				if (!empty($elData->attr['scheme'])) {
+					$rating->scheme = $elData->attr['scheme'];
+				} else {
+					$rating->scheme = 'urn:simple';
+				}
+				$rating->term = $elData->text;
+				
+				$this->addToFieldList($fieldName, $rating);
+				break;
+				
+			case 'title':
+			case 'description':
+				$text = (object) NULL;
+				$text->text = $elData->text;
+				if (!empty($elData->attr['type'])) {
+					$text->type = $elData->attr['type'];
+				}
+				
 				if ($this->isContent) {
-					echo "WARN: category is inside content, not an entry\n";
-				} elseif ($this->isGroup) {
-					echo "WARN: category is inside a group, not an entry\n";
-				} elseif ($this->isEntry) {
-					if (empty($this->entry->{'media-categories'})) {
-						$this->entry->{'media-categories'} = array();
+					$this->content->{$elData->nsName} = $text;
+				} elseif($this->isGroup) {
+					$this->group->{$elData->nsName} = $text;
+				} elseif($this->isEntry) {
+					$this->entry->{$elData->nsName} = $text;
+				} elseif($this->isFeed) {
+					$this->feed->{$elData->nsName} = $text;
+				}
+				break;
+				
+			case 'keywords':
+				if (!empty($elData->text)) {
+					$list = preg_replace('/, /', ',', $elData->text);
+					$keywords = explode(',', $list);
+					if ($this->isContent) {
+						$this->content->{$elData->nsName} = $keywords;
+					} elseif($this->isGroup) {
+						$this->group->{$elData->nsName} = $keywords;
+					} elseif ($this->isEntry) {
+						$this->entry->{$elData->nsName} = $keywords;
+					} elseif ($this->isFeed) {
+						$this->feed->{$elData->nsName} = $keywords;
 					}
-					array_push($this->entry->{'media-categories'}, $category);
 				}
 				break;
 
@@ -705,6 +805,31 @@ class MediaNamespaceHandler extends AbstractFeedNamespaceHandler {
 				break;
 		}
 	}
+	
+	private function addToFieldList($fieldName, $data) {
+		if ($this->isContent) {
+			if (empty($this->content->{$fieldName})) {
+				$this->content->{$fieldName} = array();
+			}
+			array_push($this->content->{$fieldName}, $data);
+		} elseif($this->isGroup) {
+			if (empty($this->group->{$fieldName})) {
+				$this->group->{$fieldName} = array();
+			}
+			array_push($this->group->{$fieldName}, $data);
+		} elseif ($this->isEntry) {
+			if (empty($this->entry->{$fieldName})) {
+				$this->entry->{$fieldName} = array();
+			}
+			array_push($this->entry->{$fieldName}, $data);
+		} elseif($this->isFeed) {
+			if (empty($this->feed->{$fieldName})) {
+				$this->feed->{$fieldName} = array();
+			}
+			array_push($this->feed->{$fieldName}, $data);
+		}
+	}
+	
 }
 
 
