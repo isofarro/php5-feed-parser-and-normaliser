@@ -11,7 +11,9 @@ if (true) {
 	//$feed = $parser->parseXml(file_get_contents('testdata/005-reuters-video.xml'));
 	//$feed = $parser->parseXml(file_get_contents('testdata/006-reuters-video.xml'));
 	//$feed = $parser->parseXml(file_get_contents('testdata/007-bbc-frontpage.xml'));
-	$feed = $parser->parseXml(file_get_contents('testdata/008-bbc-video.xml'));
+	//$feed = $parser->parseXml(file_get_contents('testdata/008-bbc-video.xml'));
+	//$feed = $parser->parseXml(file_get_contents('testdata/009-timesonline.xml'));
+	$feed = $parser->parseXml(file_get_contents('testdata/010-timesonline-podcasts.xml'));
 	echo "FEED: "; print_r($feed);
 }
 
@@ -129,7 +131,7 @@ class Rss20NamespaceHandler extends AbstractFeedNamespaceHandler {
 			case 'title':
 			case 'ttl':
 			case 'url':
-			case 'webmaster':
+			case 'webMaster':
 			case 'width':
 				break;
 				
@@ -329,7 +331,7 @@ class Rss20NamespaceHandler extends AbstractFeedNamespaceHandler {
 			case 'guid':
 			case 'language':
 			case 'ttl':
-			case 'webmaster':
+			case 'webMaster':
 				if ($this->isEntry) {
 					$this->entry->{$elData->nsName} = $elData->text;
 				} elseif ($this->isFeed) {
@@ -707,6 +709,177 @@ class MediaNamespaceHandler extends AbstractFeedNamespaceHandler {
 
 
 /**
+ * An implementation of FeedNamespaceHandler for the iTunes namespace
+ * Handles iTunes namespaced elements in RSS
+ *
+ * http://lists.apple.com/archives/syndication-dev/2005/Nov/msg00002.html#_Toc526931674
+ **/
+class ItunesNamespaceHandler extends AbstractFeedNamespaceHandler {
+	public $prefix = 'itunes';
+	
+	// itunes:category
+	private $isCategory = false;
+	private $isSubCategory = false;
+	private $category;
+	
+	// itunes:owner
+	private $isOwner = false;
+	private $owner;
+	
+	/**
+	 * Callback handler for the FeedParser's startElement callback
+	 **/
+	public function startElement($elData) {
+		switch($elData->elName) {
+			case 'owner':
+				$this->isOwner = true;
+				$this->owner = (object) NULL;
+				break;
+		
+			case 'category':
+				if ($this->isCategory) {
+					if (!empty($elData->attr['text'])) {
+						$this->category->subcategory = (object) NULL;
+						$this->category->subcategory->text = $elData->attr['text'];
+					}
+					$this->isSubCategory = true;
+				} elseif($this->isSubCategory) {
+					echo "WARN: itunes:subcategory has a subcategory itself.\n";
+				} else {
+					// A new itunes:category node
+					$this->category = (object) NULL;
+					if (!empty($elData->attr['text'])) {
+						$this->category->text = $elData->attr['text'];
+					}
+					$this->isCategory = true;
+				}
+				break;
+		
+			case 'author':
+			case 'block':
+			case 'duration':
+			case 'email':
+			case 'explicit':
+			case 'image':
+			case 'keywords':
+			case 'name':
+			case 'new-feed-url':
+			case 'pubDate':
+			case 'subtitle':
+			case 'summary':
+				break;
+
+			default:
+				echo "START itunes: $elData->elName not handled.\n";
+				break;
+		}
+	}
+	
+	/**
+	 * Callback handler for the FeedParser's startElement callback
+	 **/
+	public function endElement($elData) {
+		switch($elData->elName) {
+			case 'owner':
+				if ($this->isEntry) {
+					// Do nothing
+					echo "WARN: itunes:owner at an entry level.\n";
+				} elseif($this->isFeed) {
+					$this->feed->{$elData->nsName} = $this->owner;
+					$this->isOwner = false;
+				}
+				break;
+			
+			case 'email':
+			case 'name':
+				if ($this->isOwner) {
+					$this->owner->{$elData->elName} = $elData->text;
+				}
+				break;
+				
+			case 'category':
+				if ($this->isSubCategory) {
+					// We've done all this work already.
+					$this->isSubCategory = false;
+				} elseif($this->isCategory) {
+					//echo "INFO: end category: "; print_r($this->category);
+					$emptyCategory = (
+						empty($this->category->text) &&
+						empty($this->category->subcategory)
+					);
+					if (!$emptyCategory) {
+						$fieldName = 'itunes-categories';
+						if ($this->isEntry) {
+							echo "WARN: itunes:category at an entry level.\n";
+						} elseif ($this->isFeed) {
+							if (empty($this->feed->{$fieldName})) {
+								$this->feed->{$fieldName} = array();
+							}
+							array_push($this->feed->{$fieldName}, $this->category);
+						}
+					} else {
+						//echo "INFO: itunes:category empty.\n"; 
+						//print_r($this->category);
+					}
+					$this->isCategory = false;
+				}
+				break;
+				
+			case 'keywords':
+				if (!empty($elData->text)) {
+					$list = preg_replace('/, /', ',', $elData->text);
+					$keywords = explode(',', $list);
+					if ($this->isEntry) {
+						$this->entry->{$elData->nsName} = $keywords;
+					} elseif ($this->isFeed) {
+						$this->feed->{$elData->nsName} = $keywords;
+					}
+				}
+				break;
+		
+			case 'author':
+			case 'block':
+			case 'duration':
+			case 'explicit':
+			case 'keywords':
+			case 'new-feed-url':
+			case 'pubDate':
+			case 'subtitle':
+			case 'summary':
+				if ($this->isEntry) {
+					if (!empty($elData->text)) {
+						$this->entry->{$elData->nsName} = $elData->text;
+					}
+				} elseif ($this->isFeed) {
+					if (!empty($elData->text)) {
+						$this->feed->{$elData->nsName} = $elData->text;
+					}
+				}
+				break;
+			
+			case 'image':
+				if (!empty($elData->attr['href'])) {
+					$image = (object) NULL;
+					$image->href = $elData->attr['href'];
+					
+					if ($this->isEntry) {
+						// Do nothing
+					} elseif ($this->isFeed) {
+						$this->feed->{$elData->nsName} = $image;
+					}
+				}
+				break;
+				
+			default:
+				echo "END itunes:   $elData->elName not handled.\n";
+				break;
+		}
+	}
+}
+
+
+
+/**
  * Parses syndication feeds and returns a normalised data structure
  * based on Atom (RFC4287) constructs. The Parser supports data in
  * namespaces. Each namespace is handled by a separate *NamespaceHandler,
@@ -740,8 +913,8 @@ class FeedParser {
 		'http://rssnamespace.org/feedburner/ext/1.0'  => 'feedburner',
 		'http://purl.org/dc/elements/1.1/'            => 'dc',
 		'http://search.yahoo.com/mrss/'               => 'media',
+		'http://www.itunes.com/dtds/podcast-1.0.dtd'  => 'itunes',
 //		'http://purl.org/rss/1.0/modules/taxonomy/'   => 'taxo',
-//		'http://www.itunes.com/dtds/podcast-1.0.dtd'  => 'itunes',
 		'' => 'rss20'
 	);
 	
