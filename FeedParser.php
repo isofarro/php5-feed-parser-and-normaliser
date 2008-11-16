@@ -26,8 +26,10 @@ if (true) {
 	//$feed = $parser->parseXml(file_get_contents('testdata/020-yahoo-finance-yhoo.xml'));
 	//$feed = $parser->parseXml(file_get_contents('testdata/021-yahoo-uk-finance-yhoo.xml'));
 	//$feed = $parser->parseXml(file_get_contents('testdata/022-yahoo-news.xml'));
-	$feed = $parser->parseXml(file_get_contents('testdata/022-yahoo-uk-news.xml'));
-	echo "FEED: "; print_r($feed);
+	//$feed = $parser->parseXml(file_get_contents('testdata/022-yahoo-uk-news.xml'));
+	$feed = $parser->parseXml(file_get_contents('testdata/023-ap-news-author.xml'));
+	//$feed = $parser->parseXml(file_get_contents('testdata/024-afp-rssrdf.xml'));
+	//echo "FEED: "; print_r($feed);
 }
 
 
@@ -321,7 +323,15 @@ class Rss20NamespaceHandler extends AbstractFeedNamespaceHandler {
 			case 'author': // RSS2.0 author to atom:author/email
 			case 'managingEditor':
 				$author = (object) NULL;
-				$author->email = $elData->text;
+				
+				// Check author really contains an email address
+				if (strpos($elData->text, '@') > 0) {
+					$author->name  = $elData->text; // for the time being
+					$author->email = $elData->text;
+				} else {
+					$author->name = $elData->text;
+				}
+				
 				if ($this->isEntry) {
 					if (empty($this->entry->authors)) {
 						$this->entry->authors = array();
