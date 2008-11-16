@@ -14,7 +14,10 @@ if (true) {
 	//$feed = $parser->parseXml(file_get_contents('testdata/008-bbc-video.xml'));
 	//$feed = $parser->parseXml(file_get_contents('testdata/009-timesonline.xml'));
 	//$feed = $parser->parseXml(file_get_contents('testdata/010-timesonline-podcasts.xml'));
-	$feed = $parser->parseXml(file_get_contents('testdata/011-timesonline-video.xml'));
+	//$feed = $parser->parseXml(file_get_contents('testdata/011-timesonline-video.xml'));
+	//$feed = $parser->parseXml(file_get_contents('testdata/012-telegraph-news.xml'));
+	//$feed = $parser->parseXml(file_get_contents('testdata/013-nytimes.xml'));
+	$feed = $parser->parseXml(file_get_contents('testdata/014-nytimes-weekinreview.xml'));
 	echo "FEED: "; print_r($feed);
 }
 
@@ -580,7 +583,14 @@ class MediaNamespaceHandler extends AbstractFeedNamespaceHandler {
 			case 'title':
 			case 'thumbnail':
 				break;
-
+				
+			// Batshit crazy New York Times 'attributes-not-good-enough'
+			case 'url':
+			case 'medium':
+			case 'height':
+			case 'width':
+				break;
+				
 			default:
 				echo "START media: $elData->elName not handled.\n";
 				break;
@@ -626,7 +636,7 @@ class MediaNamespaceHandler extends AbstractFeedNamespaceHandler {
 							$link->href = $this->entry->links[0]->href;
 						}
 					}
-					array_push($this->group, $link);
+					array_push($this->group, $this->content);
 				} elseif ($this->isEntry) {
 					// Add enclosure to atom:links structure
 					if (empty($this->entry->links)) {
@@ -715,7 +725,7 @@ class MediaNamespaceHandler extends AbstractFeedNamespaceHandler {
 				
 				// Create a media:credit structure
 				$credit = (object) NULL;
-				$credit->text = $elData->text;
+				$credit->credit = $elData->text;
 				if (!empty($elData->attr['role'])) {
 					$credit->role = $elData->attr['role'];
 				}
@@ -768,7 +778,7 @@ class MediaNamespaceHandler extends AbstractFeedNamespaceHandler {
 			case 'title':
 			case 'description':
 				$text = (object) NULL;
-				$text->text = $elData->text;
+				$text->{$elData->elName} = $elData->text;
 				if (!empty($elData->attr['type'])) {
 					$text->type = $elData->attr['type'];
 				}
@@ -776,7 +786,7 @@ class MediaNamespaceHandler extends AbstractFeedNamespaceHandler {
 				if ($this->isContent) {
 					$this->content->{$elData->nsName} = $text;
 				} elseif($this->isGroup) {
-					$this->group->{$elData->nsName} = $text;
+					array_push($this->group, $text);
 				} elseif($this->isEntry) {
 					$this->entry->{$elData->nsName} = $text;
 				} elseif($this->isFeed) {
@@ -800,6 +810,16 @@ class MediaNamespaceHandler extends AbstractFeedNamespaceHandler {
 				}
 				break;
 
+			// Batshit crazy New York Times 'attributes-not-good-enough'
+			case 'url':
+			case 'medium':
+			case 'height':
+			case 'width':
+				if($this->isContent) {
+					$this->content->{$elData->elName} = $elData->text;
+				}
+				break;
+
 			default:
 				echo "END media:   $elData->elName not handled.\n";
 				break;
@@ -813,10 +833,7 @@ class MediaNamespaceHandler extends AbstractFeedNamespaceHandler {
 			}
 			array_push($this->content->{$fieldName}, $data);
 		} elseif($this->isGroup) {
-			if (empty($this->group->{$fieldName})) {
-				$this->group->{$fieldName} = array();
-			}
-			array_push($this->group->{$fieldName}, $data);
+			array_push($this->group, $data);
 		} elseif ($this->isEntry) {
 			if (empty($this->entry->{$fieldName})) {
 				$this->entry->{$fieldName} = array();
