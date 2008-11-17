@@ -37,4 +37,37 @@ end result is a feed data structure that's normalised to something more
 sane and easier for an application to consume.
 
 
+List of issues
+--------------
+
+* atom:links structure needs to be normalised to remove duplicates
+  (such as duplicates of enclosures thanks to multiple namespaces)
+* where rss20:author is an email with a bracketed name, create a regex
+  that will split the two up and populate both the atom:author name
+  and email.
+* how to deal with attributes that are namespaced (like flickr:profile
+  on rss20:author
+* how to deal with dublin core (or other external elements) when they
+  are children of something other than feed and entry. And without
+  dublin core having to know about other possible levels. Can we create
+  a 'current parent' object that this info can be attached to?
+  Something like $this->currentParent->{$elData->nsName} = $elData->text
+* how to capture RSS2.0's isPermaLink attribute on the rss20:guid field.
+* media:content - when video links don't supply a valid mime-type, but
+  return an attribute with a value of 'video' or 'audio', how to map
+  that adequately into a valid atom:link type.
+* A flag/option that normalises times into a user-specified timezone.
+  At the moment, any conversions are made to GMT, which is a decent
+  start, I guess.
+* How to handle invalid RFC-822 formats - do I write a custom method
+  that gets called when we get 1 Jan 1970?
+* dc:creator on the Flickr RDF feed returns a bracketed website URL and
+  an unbracketed name. That can be translated into name and url of
+  atom:author.
+* When the rss20:author contains two people, whether to convert that into
+  two atom:authors, and whether to remove the 'By' prefix on some
+  rss20:author fields.
+  
+  
+
 

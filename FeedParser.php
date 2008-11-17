@@ -28,7 +28,13 @@ if (true) {
 	//$feed = $parser->parseXml(file_get_contents('testdata/022-yahoo-news.xml'));
 	//$feed = $parser->parseXml(file_get_contents('testdata/022-yahoo-uk-news.xml'));
 	//$feed = $parser->parseXml(file_get_contents('testdata/023-ap-news-author.xml'));
-	$feed = $parser->parseXml(file_get_contents('testdata/024-afp-rssrdf.xml'));
+	//$feed = $parser->parseXml(file_get_contents('testdata/024-afp-rssrdf.xml'));
+	//$feed = $parser->parseXml(file_get_contents('testdata/025-flickr-rss2.xml'));
+	##$feed = $parser->parseXml(file_get_contents('testdata/026-flickr-atom.xml'));
+	//$feed = $parser->parseXml(file_get_contents('testdata/027-flickr-rdf.xml'));
+	//$feed = $parser->parseXml(file_get_contents('testdata/028-flickr-rss092.xml'));
+	//$feed = $parser->parseXml(file_get_contents('testdata/029-flickr-rss091.xml'));
+	$feed = $parser->parseXml(file_get_contents('testdata/030-flickr-rss2-enclosure.xml'));
 	echo "FEED: "; print_r($feed);
 }
 
@@ -277,7 +283,9 @@ class Rss20NamespaceHandler extends AbstractFeedNamespaceHandler {
 					$link = (object) NULL;
 					$link->href   = $elData->attr['url'];
 					$link->rel    = 'enclosure';
-					$link->length = $elData->attr['length'];
+					if (!empty($link->length)) {
+						$link->length = $elData->attr['length'];
+					}
 					$link->type   = $elData->attr['type'];
 					if (empty($this->entry->links)) {
 						$this->entry->links = array();
@@ -1061,8 +1069,6 @@ class MediaNamespaceHandler extends AbstractFeedNamespaceHandler {
 				}
 				if (!empty($elData->attr['scheme'])) {
 					$credit->scheme = $elData->attr['scheme'];
-				} else {
-					$credit->scheme = 'urn:ebu';
 				}
 
 				$this->addToFieldList($fieldName, $credit);
@@ -1073,6 +1079,9 @@ class MediaNamespaceHandler extends AbstractFeedNamespaceHandler {
 				$category = (object) NULL;
 				if(!empty($elData->attr['scheme'])) {
 					$category->scheme = $elData->attr['scheme'];
+				}
+				if(!empty($elData->attr['label'])) {
+					$category->label = $elData->attr['label'];
 				}
 				$category->term   = $elData->text;
 				
@@ -1562,11 +1571,25 @@ class FeedParser {
 			// Identify the feed type
 			switch($this->curEl->elName) {
 				case 'rss':
-				case 'rss20-rss':
+				//case 'rss20-rss':
+				//case 'XXX-rss':
 					$this->isFeed = true;
 					if (!empty($attr['version'])) {
-						$this->feed->defaultNs = 
-							'rss' . preg_replace('/\./', '', $attr['version']);
+						$this->feed->{'rss-version'} = $attr['version'];
+						switch ($attr['version']) {
+							case '2.0':
+							case '0.92':
+							case '0.91':
+								// treat all these versions as RSS 2.0
+								$this->feed->defaultNs = 'rss20';
+								break;
+								
+							default:
+								echo "ERROR: unsupported RSS variant",
+									$attr['version'], "\n";
+								$this->feed->defaultNs = 'rss' . 
+									preg_replace('/\./', '', $attr['version']);
+						}
 					} else {
 						$this->feed->defaultNs = 'rss20';
 					}
