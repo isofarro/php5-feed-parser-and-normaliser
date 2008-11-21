@@ -69,6 +69,9 @@ List of issues
   rss20:author fields.
 * Need to type-check the title/summary type fields and process the content
   if needed.
+* deal with xml:base and xml:lang attributes in the Atom feed - at any point.
+* How to deal with proper XHTML content in an Atom Feed?
+* atom:source is being ignored for the moment.
   
   
 

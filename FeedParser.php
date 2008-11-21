@@ -130,7 +130,7 @@ class Rss20NamespaceHandler extends AbstractFeedNamespaceHandler {
 				$this->isImage = true;
 				$this->image = (object) NULL;
 				break;
-								
+				
 			// Quietly do nothing.
 			case 'author':
 			case 'category':
@@ -404,9 +404,10 @@ class Rss20NamespaceHandler extends AbstractFeedNamespaceHandler {
 class AtomNamespaceHandler extends AbstractFeedNamespaceHandler {
 	public $prefix = 'atom';
 	
-	public $isAuthor      = false;
-	public $isContributor = false;
-	public $author;
+	private $isAuthor      = false;
+	private $isContributor = false;
+	private $isSource      = false;
+	private $author;
 	
 	/**
 	 * Callback handler for the FeedParser's startElement callback
@@ -430,6 +431,10 @@ class AtomNamespaceHandler extends AbstractFeedNamespaceHandler {
 				$this->author = (object) NULL;
 				$this->isContributor = true;
 				break;
+				
+			case 'source':
+				$this->isSource = true;
+				break;
 
 			case 'category':
 			case 'content':
@@ -438,9 +443,12 @@ class AtomNamespaceHandler extends AbstractFeedNamespaceHandler {
 			case 'icon':
 			case 'id':
 			case 'link':
+			case 'logo':
 			case 'name':
 			case 'published':
+			case 'rights':
 			case 'subtitle':
+			case 'summary':
 			case 'title':
 			case 'updated':
 			case 'uri':
@@ -465,8 +473,14 @@ class AtomNamespaceHandler extends AbstractFeedNamespaceHandler {
 				$this->isEntry = false;
 				break;
 				
+			case 'source':
+				$this->isSource = false;
+				break;
+				
 			case 'author':
-				if ($this->isEntry) {
+				if ($this->isSource) {
+					// Do nothing
+				} elseif ($this->isEntry) {
 					if (empty($this->entry->authors)) {
 						$this->entry->authors = array();
 					}
@@ -481,7 +495,9 @@ class AtomNamespaceHandler extends AbstractFeedNamespaceHandler {
 				break;
 				
 			case 'contributor':
-				if ($this->isEntry) {
+				if ($this->isSource) {
+					// Do nothing
+				} elseif ($this->isEntry) {
 					if (empty($this->entry->contributors)) {
 						$this->entry->contributors = array();
 					}
@@ -499,25 +515,88 @@ class AtomNamespaceHandler extends AbstractFeedNamespaceHandler {
 			case 'name':
 			case 'email':
 			case 'uri':
-				if ($this->isAuthor || $this->isContributor) {
+				if ($this->isSource) {
+					// Do nothing
+				} elseif ($this->isAuthor || $this->isContributor) {
 					$this->author->{$elData->elName} = $elData->text;
 				}
 				break;
 				
 			case 'content':
-			case 'subtitle':
-			case 'title':
-				// TODO: needs to check the title mime-type
-				if ($this->isEntry) {
-					$this->entry->{$elData->elName} = $elData->text;
-				} elseif ($this->isFeed) {
-					$this->feed->{$elData->elName} = $elData->text;
+				$content = (object) NULL;
+
+				// what type of content do we have?
+				if (!empty($elData->attr['src'])) {
+					// This can only be atom:content
+					if ($elData->elName=='content') {
+						$content->src = $elData->attr['src'];
+					}
+
+					if (!empty($elData->attr['type'])) {
+						$content->type = $elData->attr['type'];
+					}
+				} elseif(!empty($elData->text)) {
+					$content->text = $elData->text;
+					// Make sure the output is HTML-ready
+					if (!empty($elData->attr['type'])) {
+						if ($elData->attr['type'] == 'html') {
+							// Do nothing new
+						} elseif ($elData->attr['type'] == 'text') {
+							// Entity escape => transform to HTML-ready
+							$content->text = htmlentities($content->text);
+						} elseif ($elData->attr['type'] == 'xhtml') {
+							echo "WARN: Contains real XHTML content.\n";
+						} else {
+							// So we probably have a mime type
+							$content->type = $elData->attr['type'];
+						}
+					} else {
+						// no type attribute -- so it's plain text
+						$content->text = htmlentities($content->text);
+					}
+				}
+				
+				if ($this->isSource) {
+					// Do nothing
+				} elseif ($this->isEntry) {
+					$this->entry->content = $content;
 				}
 				break;
 				
+			case 'rights':
+			case 'subtitle':
+			case 'summary':
+			case 'title':
+				$content = $elData->text;
+
+				if (!empty($elData->attr['type'])) {
+					if ($elData->attr['type'] == 'html') {
+						// Do nothing new
+					} elseif ($elData->attr['type'] == 'text') {
+						// Entity escape => transform to HTML-ready
+						$content = htmlentities($content);
+					} elseif ($elData->attr['type'] == 'xhtml') {
+						echo "WARN: Contains real XHTML content.\n";
+					}
+				} else {
+					// no type attribute -- so it's plain text
+					$content = htmlentities($content);
+				}
+
+				if ($this->isSource) {
+					// Do nothing
+				} elseif ($this->isEntry) {
+					$this->entry->{$elData->elName} = $content;
+				} elseif ($this->isFeed) {
+					$this->feed->{$elData->elName} = $content;
+				}
+				break;
+
 			case 'link':
 				$link = (object) $elData->attr;
-				if ($this->isEntry) {
+				if ($this->isSource) {
+					// Do nothing
+				} elseif ($this->isEntry) {
 					if (empty($this->entry->links)) {
 						$this->entry->links = array();
 					}
@@ -536,6 +615,18 @@ class AtomNamespaceHandler extends AbstractFeedNamespaceHandler {
 				if (!empty($category->attr['scheme'])) {
 					$category->scheme = $category->attr['scheme'];
 				}
+				if (!empty($category->attr['label'])) {
+					$category->label = $category->attr['label'];
+				}
+				
+				if ($this->isSource) {
+					// Do nothing
+				} elseif ($this->isEntry) {
+					if (empty($this->entry->categories)) {
+						$this->entry->categories = array();
+					}
+					array_push($this->entry->categories, $category);
+				}
 				break;
 				
 			case 'generator':
@@ -544,8 +635,15 @@ class AtomNamespaceHandler extends AbstractFeedNamespaceHandler {
 				if (!empty($elData->attr['uri'])) {
 					$generator->uri = $elData->attr['uri'];
 				}
+				if (!empty($elData->attr['version'])) {
+					$generator->uri = $elData->attr['version'];
+				}
 
-				if ($this->isFeed) {
+				if ($this->isSource) {
+					// Do nothing
+				} elseif ($this->isEntry) {
+					// Do nothing
+				} elseif ($this->isFeed) {
 					$this->feed->generator = $generator;
 				}
 				break;
@@ -553,9 +651,12 @@ class AtomNamespaceHandler extends AbstractFeedNamespaceHandler {
 			// Copy-across type data				
 			case 'icon':
 			case 'id':
+			case 'logo':
 			case 'published':
 			case 'updated':
-				if ($this->isEntry) {
+				if ($this->isSource) {
+					// Do nothing
+				} elseif ($this->isEntry) {
 					$this->entry->{$elData->elName} = $elData->text;
 				} elseif ($this->isFeed) {
 					$this->feed->{$elData->elName} = $elData->text;
@@ -1527,6 +1628,7 @@ class FeedParser {
 //		'http://purl.org/rss/1.0/modules/content/'     => 'content',
 //		'http://purl.org/rss/1.0/modules/taxonomy/'    => 'taxo',
 //		'http://webns.net/mvcb/'                       => 'admin',
+//		'http://www.w3.org/1999/xhtml'                 => 'xhtml',
 
 		'' => 'rss20'
 	);
