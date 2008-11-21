@@ -67,6 +67,8 @@ List of issues
 * When the rss20:author contains two people, whether to convert that into
   two atom:authors, and whether to remove the 'By' prefix on some
   rss20:author fields.
+* Need to type-check the title/summary type fields and process the content
+  if needed.
   
   
 

@@ -30,11 +30,11 @@ if (true) {
 	//$feed = $parser->parseXml(file_get_contents('testdata/023-ap-news-author.xml'));
 	//$feed = $parser->parseXml(file_get_contents('testdata/024-afp-rssrdf.xml'));
 	//$feed = $parser->parseXml(file_get_contents('testdata/025-flickr-rss2.xml'));
-	##$feed = $parser->parseXml(file_get_contents('testdata/026-flickr-atom.xml'));
+	$feed = $parser->parseXml(file_get_contents('testdata/026-flickr-atom.xml'));
 	//$feed = $parser->parseXml(file_get_contents('testdata/027-flickr-rdf.xml'));
 	//$feed = $parser->parseXml(file_get_contents('testdata/028-flickr-rss092.xml'));
 	//$feed = $parser->parseXml(file_get_contents('testdata/029-flickr-rss091.xml'));
-	$feed = $parser->parseXml(file_get_contents('testdata/030-flickr-rss2-enclosure.xml'));
+	//$feed = $parser->parseXml(file_get_contents('testdata/030-flickr-rss2-enclosure.xml'));
 	echo "FEED: "; print_r($feed);
 }
 
@@ -404,12 +404,46 @@ class Rss20NamespaceHandler extends AbstractFeedNamespaceHandler {
 class AtomNamespaceHandler extends AbstractFeedNamespaceHandler {
 	public $prefix = 'atom';
 	
+	public $isAuthor      = false;
+	public $isContributor = false;
+	public $author;
+	
 	/**
 	 * Callback handler for the FeedParser's startElement callback
 	 **/
 	public function startElement($elData) {
 		switch($elData->elName) {
+			case 'feed':
+				$this->isFeed = true;
+				break;
+				
+			case 'entry':
+				$this->isEntry = true;
+				break;
+				
+			case 'author':
+				$this->author = (object) NULL;
+				$this->isAuthor = true;
+				break;
+				
+			case 'contributor':
+				$this->author = (object) NULL;
+				$this->isContributor = true;
+				break;
+
+			case 'category':
+			case 'content':
+			case 'email':
+			case 'generator':
+			case 'icon':
+			case 'id':
 			case 'link':
+			case 'name':
+			case 'published':
+			case 'subtitle':
+			case 'title':
+			case 'updated':
+			case 'uri':
 				break;
 
 			default:
@@ -423,6 +457,64 @@ class AtomNamespaceHandler extends AbstractFeedNamespaceHandler {
 	 **/
 	public function endElement($elData) {
 		switch($elData->elName) {
+			case 'feed':
+				$this->isFeed = false;
+				break;
+				
+			case 'entry':
+				$this->isEntry = false;
+				break;
+				
+			case 'author':
+				if ($this->isEntry) {
+					if (empty($this->entry->authors)) {
+						$this->entry->authors = array();
+					}
+					array_push($this->entry->authors, $this->author);
+				} elseif ($this->isFeed) {
+					if (empty($this->feed->authors)) {
+						$this->feed->authors = array();
+					}
+					array_push($this->feed->authors, $this->author);
+				}
+				$this->isAuthor = false;
+				break;
+				
+			case 'contributor':
+				if ($this->isEntry) {
+					if (empty($this->entry->contributors)) {
+						$this->entry->contributors = array();
+					}
+					array_push($this->entry->contributors, $this->author);
+				} elseif ($this->isFeed) {
+					if (empty($this->feed->contributors)) {
+						$this->feed->contributors = array();
+					}
+					array_push($this->feed->contributors, $this->author);
+				}
+				$this->isContributor = false;
+				break;
+				
+			// contributor and author elements
+			case 'name':
+			case 'email':
+			case 'uri':
+				if ($this->isAuthor || $this->isContributor) {
+					$this->author->{$elData->elName} = $elData->text;
+				}
+				break;
+				
+			case 'content':
+			case 'subtitle':
+			case 'title':
+				// TODO: needs to check the title mime-type
+				if ($this->isEntry) {
+					$this->entry->{$elData->elName} = $elData->text;
+				} elseif ($this->isFeed) {
+					$this->feed->{$elData->elName} = $elData->text;
+				}
+				break;
+				
 			case 'link':
 				$link = (object) $elData->attr;
 				if ($this->isEntry) {
@@ -435,6 +527,38 @@ class AtomNamespaceHandler extends AbstractFeedNamespaceHandler {
 						$this->feed->links = array();
 					}
 					array_push($this->feed->links, $link);
+				}
+				break;
+				
+			case 'category':
+				$category = (object) NULL;
+				$category->term = $elData->attr['term'];
+				if (!empty($category->attr['scheme'])) {
+					$category->scheme = $category->attr['scheme'];
+				}
+				break;
+				
+			case 'generator':
+				$generator = (object) NULL;
+				$generator->generator = $elData->text;
+				if (!empty($elData->attr['uri'])) {
+					$generator->uri = $elData->attr['uri'];
+				}
+
+				if ($this->isFeed) {
+					$this->feed->generator = $generator;
+				}
+				break;
+
+			// Copy-across type data				
+			case 'icon':
+			case 'id':
+			case 'published':
+			case 'updated':
+				if ($this->isEntry) {
+					$this->entry->{$elData->elName} = $elData->text;
+				} elseif ($this->isFeed) {
+					$this->feed->{$elData->elName} = $elData->text;
 				}
 				break;
 				
