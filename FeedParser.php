@@ -9,15 +9,17 @@
  * of the namespace, with the first letter uppercased. For example: 
  * The Dublin Core namespace is named internally as 'dc', so the class to
  * handle this namespaced data must be called DcNamespaceHandler.
+ *
  * This class needs to implement two methods:
  * * startElement($elData)
  * * endElement($elData)
+ * 
  * where $elData is a data structure representing the current namespaced
  * element.
  *
  **/
 abstract class AbstractFeedNamespaceHandler {
-	public  $prefix='XXX';
+	public    $prefix='XXX';
 	protected $parser;
 
 	protected $feed;
@@ -953,7 +955,7 @@ class DcNamespaceHandler extends AbstractFeedNamespaceHandler {
 				break;
 
 			default:
-				echo "START dc: $elData->elName not handled.\n";
+				//echo "START dc: $elData->elName not handled.\n";
 				break;
 		}
 	}
@@ -1006,7 +1008,7 @@ class DcNamespaceHandler extends AbstractFeedNamespaceHandler {
 				break;
 				
 			default:
-				echo "END dc:   $elData->elName not handled.\n";
+				//echo "END dc:   $elData->elName not handled.\n";
 				break;
 		}
 	}
@@ -1587,10 +1589,10 @@ class FeedParser {
 		'http://www.w3.org/1999/02/22-rdf-syntax-ns#'  => 'rdf',
 		'http://purl.org/rss/1.0/'                     => 'rss10',
 		'http://purl.org/rss/1.0/modules/syndication/' => 'syn',
-//		'http://purl.org/rss/1.0/modules/content/'     => 'content',
-//		'http://purl.org/rss/1.0/modules/taxonomy/'    => 'taxo',
-//		'http://webns.net/mvcb/'                       => 'admin',
-//		'http://www.w3.org/1999/xhtml'                 => 'xhtml',
+		//'http://purl.org/rss/1.0/modules/content/'     => 'content',
+		//'http://purl.org/rss/1.0/modules/taxonomy/'    => 'taxo',
+		//'http://webns.net/mvcb/'                       => 'admin',
+		//'http://www.w3.org/1999/xhtml'                 => 'xhtml',
 
 		'' => 'rss20'
 	);
@@ -1673,7 +1675,7 @@ class FeedParser {
 		xml_parser_set_option($xmlParser, XML_OPTION_CASE_FOLDING, 0);
 
 		// Element handlers are part of this object
-		xml_set_object($xmlParser,$this); 
+		xml_set_object($xmlParser, $this); 
 
 		// Set the element handler functions
 		xml_set_element_handler(
@@ -1757,6 +1759,7 @@ class FeedParser {
 
 		if (!$this->isFeed) {
 			// Identify the feed type
+			// TODO: Allow this to be extensible
 			switch($this->curEl->elName) {
 				case 'rss':
 				//case 'rss20-rss':
@@ -1792,7 +1795,7 @@ class FeedParser {
 		if (!empty($elHandler)) {
 			$elHandler->startElementCallback($this->curEl);
 		} else {
-			echo "START: ", $this->curEl->prefix, ":", $this->curEl->elName, "\n";
+			//echo "START: ", $this->curEl->prefix, ":", $this->curEl->elName, "\n";
 			//echo "WARN: No namespace handler for ", $this->curEl->prefix, "\n";
 		}
 	}
@@ -1812,7 +1815,7 @@ class FeedParser {
 		if (!empty($elHandler)) {
 			$elHandler->endElementCallback($this->curEl);
 		} else {
-			echo "END:   ", $this->curEl->prefix, ":", $this->curEl->elName, "\n";
+			//echo "END:   ", $this->curEl->prefix, ":", $this->curEl->elName, "\n";
 			//echo "WARN: No namespace handler for ", $this->curEl->prefix, "\n";
 		}
 		

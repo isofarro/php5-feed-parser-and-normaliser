@@ -4,7 +4,7 @@ require_once 'FeedParser.php';
 
 $feeds = array(
 	'http://twitter.com/statuses/user_timeline/15039921.atom',
-	'http://api.flickr.com/services/feeds/photos_public.gne?id=3051697@N00&lang=en-us&format=atom',
+	'http://api.flickr.com/services/feeds/photos_public.gne?id=30516977@N00&lang=en-us&format=atom',
 	'http://feeds.delicious.com/v2/rss/isofarro?count=15',
 	'http://www.isolani.co.uk/blog/index.atom',
 	'http://www.isolani.co.uk/blog/links.atom',
@@ -17,7 +17,7 @@ $feeds = array(
 $parser = new FeedParser();
 
 $feed = $parser->parse($feeds[0]);
-print_r($feed);
+print_r($feed->entries[0]);
 
 
 
