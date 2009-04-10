@@ -334,10 +334,18 @@ class Rss20NamespaceHandler extends AbstractFeedNamespaceHandler {
 				} elseif($this->isFeed) {
 					$this->feed->{$elData->nsName} = $elData->attr;
 				}
-			
+				
+			// RSS2.0 GUID is a unique identifier. 
+			case 'guid':
+				if ($this->isEntry) {
+					$this->entry->{$elData->nsName} = $elData->text;
+					$this->entry->id = $elData->text;
+				} elseif ($this->isFeed) {
+					$this->feed->{$elData->nsName} = $elData->text;				
+					$this->feed->id = $elData->text;				
+				}
 			// RSS2.0 elements that remain namespaced
 			case 'docs':		
-			case 'guid':
 			case 'language':
 			case 'rating':
 			case 'ttl':
