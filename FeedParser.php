@@ -261,7 +261,11 @@ class Rss20NamespaceHandler extends AbstractFeedNamespaceHandler {
 			case 'comments': // Translate to atom:link
 				if ($this->isEntry) {
 					$link = (object) NULL;
-					$link->href   = $elData->attr['url'];
+					if (!empty($elData->attr['url'])) {
+						$link->href   = $elData->attr['url'];
+					} else if (!empty($elData->text)) {
+						$link->href   = $elData->text;
+					}
 					$link->rel    = 'comments';
 					$link->type   = 'text/html';
 					if (empty($this->entry->links)) {
